@@ -27,11 +27,11 @@ const EfficientModel = () => {
           <div className="flex flex-col items-center custom:h-full custom:w-[456px] custom:justify-center">
             {/* First box---- */}
             <div
-              className="w-[342px] h-[123px] px-[30px] rounded-[9px] border-t-[0.75px] border-[#FC5A5A] flex flex-col justify-center items-center gap-[16.5px] mb-[18px] custom:w-full custom:h-[164px] custom:border-t-[1px] custom:radius-[12px]  max-xs:w-[300px]"
+              className="w-[342px] h-[123px] px-[30px] rounded-[9px] border-t-[0.75px] border-[#FC5A5A] flex flex-col justify-center items-center gap-[16.5px] mb-[18px] custom:w-full custom:h-[164px] custom:border-t-[1px] custom:radius-[12px]  max-xs:w-[300px] max-xs:px-0 max-xs:gap-2"
               style={{ boxShadow: "9px 9px 37.5px 0px #00000014" }}
             >
               {/* firstText */}
-              <div className="flex justify-start gap-[4.5px] w-[282px] custom:w-[376px] custom:gap-[13px]">
+              <div className="flex justify-start gap-[4.5px] w-[282px] custom:w-[376px] custom:gap-[13px] max-xs:w-[250px]">
                 {/* circle */}
                 <div className="rounded-full w-[30px] h-[30px] bg-[#FFF2CF] border-[0.75px] border-[#000000] text-[#000000] font-inter font-semibold text-[15.75px] leading-[21px] text-center flex justify-center items-center custom:w-[40px] custom:h-[40px]">
                   <p>1</p>
@@ -40,10 +40,11 @@ const EfficientModel = () => {
                   <p>1 min payroll</p>
                 </div>
               </div>
-              <div className="w-[282px] custom:w-[376px]">
-                <p className="font-inter font-normal text-[12.0px] leading-[16.5px] text-[#000000BF] custom:text-[14px] custom:leading-[22px] ">
+              <div className="w-[282px] custom:w-[376px] max-xs:w-[250px] ">
+                <p className="font-inter font-normal text-[12.0px] leading-[16.5px] text-[#000000BF] custom:text-[14px] custom:leading-[22px]  ">
                   Cut 90% of payroll admin vs. legacy tools or outsourcing.
-                  Dramatically increase accuracy. User-friendly interface.
+                  Dramatically increase accuracy.
+                  <br className="max-xs:hidden" /> User-friendly interface.
                 </p>
               </div>
             </div>

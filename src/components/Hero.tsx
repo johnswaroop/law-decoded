@@ -107,16 +107,16 @@ const Hero = () => {
           <p className="font-inter font-medium text-[14px] leading-[28px] -tracking-[0.2px]">
             Trusted by the best
           </p>
-          <div className="flex">
-            <Carousel className="w-full p-2">
-              <CarouselContent>
-                <CarouselItem className="basis-1/3">
-                  <Image src={rebank} alt="image" />
+          <div className="flex justify-center items-center">
+            <Carousel className="w-[90%] p-2 flex justify-center">
+              <CarouselContent className="flex justify-evenly">
+                <CarouselItem className="basis-1/3 w-[85px]">
+                  <Image src={rebank} alt="image" className="w-[85px]" />
                 </CarouselItem>
                 <CarouselItem className="basis-1/3">
                   <Image src={packfleet} alt="image" />
                 </CarouselItem>
-                <CarouselItem className="basis-1/3">
+                <CarouselItem className="basis-1/3 w-[66px]">
                   <Image src={cable} alt="image" />
                 </CarouselItem>
                 <CarouselItem className="basis-1/3">
@@ -125,7 +125,7 @@ const Hero = () => {
                 <CarouselItem className="basis-1/3">
                   <Image src={citation} alt="image" />
                 </CarouselItem>
-                <CarouselItem className="basis-1/3">
+                <CarouselItem className="basis-1/3 align-bottom">
                   <Image src={minimum} alt="image" />
                 </CarouselItem>
               </CarouselContent>
