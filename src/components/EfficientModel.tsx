@@ -13,7 +13,7 @@ const EfficientModel = () => {
         </p>
         <p
           className="font-inter font-normal text-[16px] leading-[28px] -tracking-[0.2px] text-center px-[26px] mb-[92px]
-        custom:mb-[56px]"
+        custom:mb-[56px] max-xs:px-0"
         >
           Myself and he brought and to and text the <br className="md:hidden" />
           thought, of she line such
@@ -50,13 +50,13 @@ const EfficientModel = () => {
 
             {/* Second Box */}
             <div
-              className="w-[342px] h-[78px] py-[24px] pl-[30px] pr-[59.25px] flex justify-start gap-[9.75px] bg-white rounded-[9px] mb-[18px] custom:w-full custom:h-[164px] custom:radius-[12px] custom:p-0 custom:flex custom:justify-center custom:text-center  max-xs:w-[300px]"
+              className="w-[342px] h-[78px] py-[24px] pl-[30px] pr-[59.25px] flex justify-start gap-[9.75px] bg-white rounded-[9px] mb-[18px] custom:w-full custom:h-[164px] custom:radius-[12px] custom:p-0 custom:flex custom:justify-center custom:text-center  max-xs:w-[300px] max-xs:gap-[4.5px] max-xs:p-0 max-xs:justify-center max-xs:items-center "
               style={{ boxShadow: "9px 9px 37.5px 0px #00000014" }}
             >
               <div className="rounded-full w-[30px] h-[30px] bg-white border-[0.75px] border-[#000000] text-[#000000] font-inter font-semibold text-[15.75px] leading-[21px] text-center flex justify-center items-center ">
                 <p>2</p>
               </div>
-              <div className="flex justify-center items-center">
+              <div className="flex justify-center items-center max-xs:w-[210px]">
                 <p className="font-inter font-semibold text-[15.75px] leading-[21px] -tracking-[0.18px] text-center">
                   Your people info, centralised
                 </p>
@@ -65,14 +65,14 @@ const EfficientModel = () => {
 
             {/* Third Box */}
             <div
-              className="w-[342px] h-[78px] py-[24px] pl-[30px] pr-[37.25px] flex justify-start gap-[9.75px] bg-white rounded-[9px] mb-[18px]  max-xs:w-[300px]"
+              className="w-[342px] h-[78px] py-[24px] pl-[30px] pr-[37.25px] flex justify-start gap-[9.75px] bg-white rounded-[9px] mb-[18px]  max-xs:w-[300px] max-xs:gap-[4.5px] max-xs:p-0 max-xs:justify-center max-xs:items-center"
               style={{ boxShadow: "9px 9px 37.5px 0px #00000014" }}
             >
               <div className="rounded-full w-[30px] h-[30px] bg-white border-[0.75px] border-[#000000] text-[#000000] font-inter font-semibold text-[15.75px] leading-[21px] text-center flex justify-center items-center ">
                 <p>3</p>
               </div>
-              <div className="flex justify-center items-center">
-                <p className="font-inter font-semibold text-[15.75px] leading-[21px] -tracking-[0.18px] text-center">
+              <div className="flex justify-center items-center max-xs:w-[210px]">
+                <p className="font-inter font-semibold text-[15.75px] leading-[21px] -tracking-[0.18px] text-center max-xs:leading-[18px]">
                   Reporting across HR & pay data
                 </p>
               </div>
