@@ -4,7 +4,7 @@ const EfficientModel = () => {
   return (
     <>
       {/* only height */}
-      <div className="h-[1146px] w-full custom:h-[997px] flex flex-col items-center">
+      <div className="h-[1140px] w-full custom:h-[870px] flex flex-col items-center">
         <p className="text-[32px] font-georgia font-normal leading-[40px] -tracking-[2.4px] text-center mb-[40px] custom:mb-[24px]">
           A single, efficient platform <br className="md:hidden" /> for managing
           all
@@ -27,7 +27,7 @@ const EfficientModel = () => {
           <div className="flex flex-col items-center custom:h-full custom:w-[456px] custom:justify-center">
             {/* First box---- */}
             <div
-              className="w-[342px] h-[123px] px-[30px] rounded-[9px] border-t-[0.75px] border-[#FC5A5A] flex flex-col justify-center items-center gap-[16.5px] mb-[18px] custom:w-full custom:h-[164px] custom:border-t-[1px] custom:radius-[12px]  max-xs:w-[300px] max-xs:px-0 max-xs:gap-2"
+              className="w-[342px] h-[123px] px-[30px] rounded-[9px] border-t-[0.75px] border-[#FC5A5A] flex flex-col justify-center items-center gap-[16.5px] mb-[18px] custom:w-full custom:h-[164px] custom:border-t-[1px] custom:radius-[12px] custom:mb-[24px]  max-xs:w-[300px] max-xs:px-0 max-xs:gap-2"
               style={{ boxShadow: "9px 9px 37.5px 0px #00000014" }}
             >
               {/* firstText */}
@@ -51,7 +51,7 @@ const EfficientModel = () => {
 
             {/* Second Box */}
             <div
-              className="w-[342px] h-[78px] py-[24px] pl-[30px] pr-[59.25px] flex justify-start gap-[9.75px] bg-white rounded-[9px] mb-[18px] custom:w-full custom:h-[164px] custom:radius-[12px] custom:p-0 custom:flex custom:justify-center custom:text-center  max-xs:w-[300px] max-xs:gap-[4.5px] max-xs:p-0 max-xs:justify-center max-xs:items-center "
+              className="w-[342px] h-[78px] py-[24px] pl-[30px] pr-[59.25px] flex justify-start gap-[9.75px] bg-white rounded-[9px] mb-[18px] custom:w-full custom:h-[104px] custom:radius-[12px] custom:p-0 custom:flex custom:justify-center custom:text-center custom:mb-[24px] max-xs:w-[300px] max-xs:gap-[4.5px] max-xs:p-0 max-xs:justify-center max-xs:items-center "
               style={{ boxShadow: "9px 9px 37.5px 0px #00000014" }}
             >
               <div className="rounded-full w-[30px] h-[30px] bg-white border-[0.75px] border-[#000000] text-[#000000] font-inter font-semibold text-[15.75px] leading-[21px] text-center flex justify-center items-center ">
@@ -66,7 +66,7 @@ const EfficientModel = () => {
 
             {/* Third Box */}
             <div
-              className="w-[342px] h-[78px] py-[24px] pl-[30px] pr-[37.25px] flex justify-start gap-[9.75px] bg-white rounded-[9px] mb-[18px]  max-xs:w-[300px] max-xs:gap-[4.5px] max-xs:p-0 max-xs:justify-center max-xs:items-center"
+              className="w-[342px] h-[78px] py-[24px] pl-[30px] pr-[37.25px] flex justify-start gap-[9.75px] bg-white rounded-[9px] mb-[18px] custom:w-full custom:h-[104px] custom:radius-[12px] custom:p-0 custom:flex custom:justify-center custom:text-center max-xs:w-[300px] max-xs:gap-[4.5px] max-xs:p-0 max-xs:justify-center max-xs:items-center"
               style={{ boxShadow: "9px 9px 37.5px 0px #00000014" }}
             >
               <div className="rounded-full w-[30px] h-[30px] bg-white border-[0.75px] border-[#000000] text-[#000000] font-inter font-semibold text-[15.75px] leading-[21px] text-center flex justify-center items-center ">

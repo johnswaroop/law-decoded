@@ -6,9 +6,9 @@ const LawDecoded = () => {
   return (
     <>
       {/* height =  self + bottom */}
-      <div className="h-[774px] w-full flex flex-col items-center">
+      <div className="h-[774px] w-full flex flex-col items-center custom:h-[799px]">
         {/* Mt icon */}
-        <div className="w-[66px] h-[49px] overflow-hidden relative mb-[135px] ">
+        <div className="w-[66px] h-[49px] overflow-hidden relative mb-[135px] custom:mb-[92px] custom:mt-[81px]">
           <Image
             src={MountainIcon}
             alt="mountain"
@@ -18,15 +18,15 @@ const LawDecoded = () => {
         </div>
         {/* Text */}
         <div className="w-full h-[95px] flex justify-center items-center">
-          <p className="font-georgia font-normal text-[32px] leading-[40px] -tracking-[1px] text-center">
+          <p className="font-georgia font-normal text-[32px] leading-[40px] -tracking-[1px] text-center custom:text-[40px] custom:leading-[50px]">
             Law Decoded with
             <br className="md:hidden" /> Sajan Poovayya
           </p>
         </div>
 
         {/* small text + button */}
-        <div className="w-full h-[469px] flex flex-col  items-center pt-[30px]">
-          <p className="w-[336px] h-[315px] font-inter font-normal text-[16px] leading-[28px] -tracking-tighter-[0.2px] text-justify  max-xs:w-[300px]">
+        <div className="w-full h-[400px] flex flex-col  items-center pt-[30px]">
+          <p className="w-[336px] h-[315px] font-inter font-normal text-[16px] leading-[28px] -tracking-tighter-[0.2px] text-justify  max-xs:w-[300px] custom:text-[18px] custom:leading-[28px] custom:w-[618px] custom:h-[217px]">
             Proin libero nunc consequat interdum varius sit amet mattis
             vulputate. Dui sapien eget mi proin sed libero enim sed. Et ultrices
             neque ornare aenean. A arcu cursus vitae congue mauris rhoncus
@@ -36,7 +36,7 @@ const LawDecoded = () => {
             maecenas accumsan. Neque volutpat ac tincidunt vitae semper. Quis
             vel eros{" "}
           </p>
-          <button className="w-[129px] h-[48px] flex justify-center items-center bg-[#DD4826] mt-[39.9px] text-white">
+          <button className="w-[129px] h-[48px] flex justify-center items-center bg-[#DD4826] mt-[39.9px] text-white custom:mt-[28px] custom:w-[466px] custom:h-[64px]">
             <p className="font-inter font-medium text-[16px]">Read More</p>
           </button>
         </div>
