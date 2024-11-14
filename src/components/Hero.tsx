@@ -26,7 +26,7 @@ const Hero = () => {
       <div className="w-full h-[77px] bg-[#FFFBFA]">
         <div className="w-full h-full px-[25px] flex justify-between items-center custom:px-[34px]">
           {/* logo */}
-          <div className="w-[150px] h-[50.12px] overflow-hidden relative">
+          <div className="w-[150px] h-[50.12px] overflow-hidden relative ">
             <Image
               src={Logo}
               alt="image"
@@ -72,9 +72,9 @@ const Hero = () => {
       </div>
 
       {/* Hero */}
-      <div className="w-full h-[831px] custom:h-[633px] flex flex-col  items-center ">
+      <div className="w-full h-[831px] custom:h-[633px] flex flex-col  items-center custom:mt-[68.53px] ">
         {/* Owl Image */}
-        <div className="h-[228px] w-full custom:h-[267px] overflow-hidden relative flex justify-center items-center">
+        <div className="h-[228px] w-full custom:h-[267px] overflow-hidden relative flex justify-center items-center ">
           <div className="overflow-hidden relative w-[159.38px] h-[179.58px]">
             <Image src={OwlImage} alt="image" fill className="object-cover" />
           </div>
