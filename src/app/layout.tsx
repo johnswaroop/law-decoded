@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import { Outfit, Inter } from "next/font/google";
+import NavBar from "@/components/NavBar";
 
 import "./globals.css";
 
@@ -47,6 +48,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${outfit.variable} ${georgia.variable} ${inter.variable} antialiased`}
       >
+        <NavBar />
         {children}
       </body>
     </html>
