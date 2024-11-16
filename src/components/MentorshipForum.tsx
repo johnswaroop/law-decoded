@@ -2,6 +2,8 @@
 
 import React, { useState } from "react";
 
+import { usePathname } from "next/navigation";
+
 const MentorshipForum = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -30,10 +32,15 @@ const MentorshipForum = () => {
       message: "",
     });
   };
+  const pathname = usePathname();
   return (
     <>
       {/* h = s */}
-      <div className="w-full h-[1079px] bg-[#FFF2CF] flex flex-col items-center custom:h-[1142px]">
+      <div
+        className={`w-full h-[1079px]  flex flex-col items-center custom:h-[1142px]  ${
+          pathname.endsWith("mentorship") ? "bg-white" : "bg-[#FFF2CF]"
+        }`}
+      >
         {/* h = t + s + b */}
         <p className="font-georgia font-bold text-[32px] leading-[50px] text-center mt-[60px] mb-[65px] custom:mt-[80px] custom:text-[40px] custom:leading-[50px] custom:mb-[22px]">
           Sagar Poovayya Mentorship

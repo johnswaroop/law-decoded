@@ -20,8 +20,8 @@ const NavBar = () => {
         {/* middle buttons */}
         <div className="font-outfit font-medium text-[15px] leading-[20px] max-md:hidden flex justify-between items-center gap-[16px] text-[#281D1B]">
           <Link href={"/"}>Home</Link>
-          <Link href={"/"}>About Us</Link>
-          <Link href={"/blogs"}>Mentorship Programme</Link>
+          <Link href={"/blogs"}>About Us</Link>
+          <Link href={"/mentorship"}>Mentorship Programme</Link>
           <Link href={"/"}>Join Community</Link>
           <Link href={"/videos"}>Videos</Link>
           <Link href={"/latestNews"}>Latest News</Link>
