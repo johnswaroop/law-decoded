@@ -46,18 +46,24 @@ const MentorshipForum = () => {
           Sagar Poovayya Mentorship
           <br className="max-custom:hidden" /> Program
         </p>
-        <p className="font-inter font-semibold text-[16px] leading-[28px] -tracking-[0.2px] text-center mb-[50px] custom:text-[18px] custom:leading-[28px] custom:font-semibold custom:mb-[22px]">
+        {/* <p className="font-inter font-semibold text-[16px] leading-[28px] -tracking-[0.2px] text-center mb-[50px] custom:text-[18px] custom:leading-[28px] custom:font-semibold custom:mb-[22px]">
           Join Our Community
+        </p> */}
+        <p className="font-inter font-normal text-[16px] leading-[28px] -tracking-[0.2px] text-center w-[304.49px] mb-[52px] custom:text-[18px] custom:leading-[28px] custom:font-normal custom:w-[551px] custom:text-justify custom:mb-[51px] text-[#212424]">
+          Sajan Poovayya Mentorship program is designed to bridge the gap
+          between academic learning and real world legal practice. The number of
+          law students across the country has seen a sharp rise. Many sharp
+          minds often find lack of mentorship, opportunities and face a glass
+          ceiling. We have designed series of measures to bridge this gap. Our
+          efforts include weekly newsletters, opportunity for students to write
+          for our website and newsletters, special seminars and events designed
+          for law students, court internships and also a merit based
+          scholarship. We also host series of guest lectures and workshops
         </p>
-        <p className="font-inter font-normal text-[16px] leading-[28px] -tracking-[0.2px] text-center w-[304.49px] mb-[52px] custom:text-[18px] custom:leading-[28px] custom:font-normal custom:w-[551px] custom:text-justify custom:mb-[22px]">
-          Et ultrices neque ornare aenean. A arcu cursus vitae congue mauris
-          rhoncus aenean vel elit. Accumsan sit amet nulla facilisi. Fames ac
-          turpis egestas integer. Vel risus commodo viverra maecenas accumsan
-        </p>
-        <p className="max-custom:hidden font-inter -tracking-[0.2px] text-justify custom:text-[18px] custom:leading-[28px] custom:font-normal custom:w-[551px] custom:mb-[72px]">
+        {/* <p className="max-custom:hidden font-inter -tracking-[0.2px] text-justify custom:text-[18px] custom:leading-[28px] custom:font-normal custom:w-[551px] custom:mb-[72px]">
           Neque volutpat ac tincidunt vitae semper. Quis vel eros donec aca
           odio.
-        </p>
+        </p> */}
         <form
           onSubmit={handleSubmit}
           className="flex flex-col gap-[25px] items-center"
