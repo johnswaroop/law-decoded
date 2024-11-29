@@ -7,18 +7,18 @@ const LawDecoded = () => {
   return (
     <>
       {/* height =  self + bottom */}
-      <div className="h-[774px] w-full flex flex-col items-center custom:h-[615px] custom:mb-[100px] custom:mt-[63px]">
+      <div className="h-[774px] w-full flex flex-col items-center custom:h-[615px] custom:mb-[100px] custom:mt-[63px] mt-[70px]">
         {/* Mt icon */}
-        <div className="w-[442px] h-[121px] overflow-hidden relative mb-[135px] custom:mb-[60px] ">
+        <div className="w-[442px] h-[121px] overflow-hidden relative mb-[135px] custom:mb-[60px] max-custom:w-[342px] max-custom:mb-[40px]">
           <Image
             src={LawDecodedw}
             alt="mountain"
             fill
-            className="object-cover w-[443px] h-[148px]"
+            className="object-fit w-[443px] h-[148px] max-custom:w-[342px] "
           />
         </div>
         {/* Text */}
-        <div className="w-full h-[95px] flex justify-center items-center">
+        <div className="w-full h-[95px] flex justify-center items-center max-custom:mb-[20px]">
           <p className="font-georgia font-normal text-[32px] leading-[40px] -tracking-[1px] text-center custom:text-[40px] custom:leading-[50px]">
             Law Decoded with
             <br className="md:hidden" /> Sajan Poovayya

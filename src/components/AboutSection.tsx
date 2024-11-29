@@ -5,8 +5,8 @@ import LawyerImage from "@/assets/AboutSection/LawyerImage.png";
 const AboutSection = () => {
   return (
     <>
-      <div className="h-[907px] custom:h-[724px] flex flex-col items-center custom:flex-row custom:items-center mb-[131px]">
-        <div className="max-mid:hidden h-full w-1/2 flex justify-center items-center">
+      <div className="h-[907px] custom:h-[724px] flex flex-col items-center custom:flex-row custom:items-center mb-[131px] custom:justify-center custom:gap-[139px]git">
+        <div className="max-mid:hidden h-full w-1/2 flex justify-center items-center custom:w-[591px]">
           <div className="w-[591px] h-[550px] relative overflow-hidden my-[80px] max-mid:hidden">
             <Image
               src={LawyerImage}
@@ -16,7 +16,7 @@ const AboutSection = () => {
             />
           </div>
         </div>
-        <div className="flex flex-col items-center  custom:w-1/2 custom:justify-start custom:mx-auto custom:h-[483px]">
+        <div className="flex flex-col items-center  custom:w-[462px] custom:justify-start  custom:h-[483px]">
           <p className="font-georgia font-normal text-[32px] leading-[50px] text-center -tracking-[1px] custom:text-[40px] custom:mb-[24px] custom:w-[466px]  custom:text-start ">
             About Sajan Poovayya
           </p>
