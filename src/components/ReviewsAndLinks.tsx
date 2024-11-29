@@ -9,7 +9,7 @@ import VideoImg3 from "@/assets/ReviewAndLinks/VideoImage3.png";
 import Image from "next/image";
 
 const ReviewsAndLinks = () => {
-  // const [num, setNumber] = useState<number>(2);
+  const [num, setNumber] = useState<number>(2);
 
   return (
     <>
@@ -17,7 +17,7 @@ const ReviewsAndLinks = () => {
       <div className="h-[1173.01px] w-full flex flex-col items-center custom:h-[1132px]">
         {/* Text + buttons */}
         {/* h = s + b */}
-        {/* <div className="mt-[108.01px] w-[342px] h-[167.85px] flex flex-col items-center mb-[188.15px] custom:h-[500px] custom:w-[623.5px]  custom:m-0 custom:justify-center">
+        <div className="mt-[108.01px] w-[342px] h-[167.85px] flex flex-col items-center mb-[188.15px] custom:h-[500px] custom:w-[623.5px]  custom:m-0 custom:justify-center custom:hidden">
           <p className="w-full h-[95.72px] font-inter font-normal italic text-[12px] leading-[17.55px] -tracking-[0.22px] text-center mb-[5.21px]  max-xs:w-[300px] custom:h-[174.5px] custom:text-[20px] custom:leading-[32px] custom:mb-[9.5px]">
             “Quis vel eros donec ac odio. Cras tincidunt lobortis feugiat
             vivamus at augue eget arcu dictum. Arcu cursus euismod quis viverra
@@ -57,8 +57,8 @@ const ReviewsAndLinks = () => {
               onClick={() => setNumber(2)}
             ></div>
           </div>
-        </div> */}
-        <div className="flex flex-col items-center">
+        </div>
+        <div className="flex flex-col items-center max-custom:hidden">
           <p className="font-georgia font-normal text-[48px] leading-[50px] -tracking-[1px] mt-[108px] mb-[87px]">
             Videos
           </p>
