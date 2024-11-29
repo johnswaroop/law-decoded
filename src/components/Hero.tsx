@@ -1,26 +1,26 @@
 import React from "react";
 import Image from "next/image";
 
-import rebank from "@/assets/Hero/rebank.svg";
-import packfleet from "@/assets/Hero/packFleet.svg";
-import cable from "@/assets/Hero/cable.svg";
-import hyperMile from "@/assets/Hero/hyperMile.svg";
-import citation from "@/assets/Hero/citationsy.svg";
-import minimum from "@/assets/Hero/minimum.svg";
+// import rebank from "@/assets/Hero/rebank.svg";
+// import packfleet from "@/assets/Hero/packFleet.svg";
+// import cable from "@/assets/Hero/cable.svg";
+// import hyperMile from "@/assets/Hero/hyperMile.svg";
+// import citation from "@/assets/Hero/citationsy.svg";
+// import minimum from "@/assets/Hero/minimum.svg";
 import OwlImage from "@/assets/Hero/Mask-group.png";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
+// import {
+//   Carousel,
+//   CarouselContent,
+//   CarouselItem,
+//   CarouselNext,
+//   CarouselPrevious,
+// } from "@/components/ui/carousel";
 
 const Hero = () => {
   return (
     <>
       {/* Hero */}
-      <div className="w-full h-[831px] custom:h-[633px] flex flex-col  items-center custom:mt-[68.53px] ">
+      <div className="w-full h-[831px] custom:h-[603px] flex flex-col  items-center custom:mt-[68.53px] custom:mb-[50px]">
         {/* Owl Image */}
         <div className="h-[228px] w-full custom:h-[267px] overflow-hidden relative flex justify-center items-center ">
           <div className="overflow-hidden relative w-[159.38px] h-[179.58px]">
@@ -36,10 +36,11 @@ const Hero = () => {
               Declutter the <br className="md:hidden" /> Maze of Law{" "}
               <br className="max-custom:hidden" /> with Sajan Poovayya
             </p>
-            <p className="font-inter font-normal text-[16px] leading-[28px] -tracking-[0.2px] text-center custom:text-[18px] custom:leading-[28px] custom:-tracking-[0.2px] ">
+            <p className="font-inter font-normal text-[16px] leading-[28px] -tracking-[0.2px] text-center custom:text-[18px] custom:leading-[28px] custom:-tracking-[0.2px] text-[#000000BF]">
               Law as a subject or law as a profession is not just for the
-              privileged. It must be <br className="max-custom:hidden" />
-              democratic within to foster democratic temper
+              privileged. We dejargonise law,
+              <br className="max-custom:hidden" /> make legal studies
+              accessible, reducing systemic barriers.
             </p>
           </div>
           {/* knowMore */}
@@ -51,7 +52,7 @@ const Hero = () => {
         </div>
 
         {/* Trusted by + icons */}
-        <div className="pt-[49px] flex flex-col justify-center items-center gap-[20px]">
+        {/* <div className="pt-[49px] flex flex-col justify-center items-center gap-[20px]">
           <p className="font-inter font-medium text-[14px] leading-[28px] -tracking-[0.2px]">
             Trusted by the best
           </p>
@@ -81,7 +82,7 @@ const Hero = () => {
               <CarouselNext className="max-custom:hidden" />
             </Carousel>
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   );

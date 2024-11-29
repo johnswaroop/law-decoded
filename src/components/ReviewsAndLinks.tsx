@@ -3,10 +3,13 @@
 import React, { useState } from "react";
 import YouIcon from "@/assets/ReviewAndLinks/youtube.svg";
 import WhatIacon from "@/assets/ReviewAndLinks/whatsapp.svg";
+import VideoImg1 from "@/assets/ReviewAndLinks/videoImage1.png";
+import VideoImg2 from "@/assets/ReviewAndLinks/videoImage2.png";
+import VideoImg3 from "@/assets/ReviewAndLinks/VideoImage3.png";
 import Image from "next/image";
 
 const ReviewsAndLinks = () => {
-  const [num, setNumber] = useState<number>(2);
+  // const [num, setNumber] = useState<number>(2);
 
   return (
     <>
@@ -14,7 +17,7 @@ const ReviewsAndLinks = () => {
       <div className="h-[1173.01px] w-full flex flex-col items-center custom:h-[1132px]">
         {/* Text + buttons */}
         {/* h = s + b */}
-        <div className="mt-[108.01px] w-[342px] h-[167.85px] flex flex-col items-center mb-[188.15px] custom:h-[500px] custom:w-[623.5px]  custom:m-0 custom:justify-center">
+        {/* <div className="mt-[108.01px] w-[342px] h-[167.85px] flex flex-col items-center mb-[188.15px] custom:h-[500px] custom:w-[623.5px]  custom:m-0 custom:justify-center">
           <p className="w-full h-[95.72px] font-inter font-normal italic text-[12px] leading-[17.55px] -tracking-[0.22px] text-center mb-[5.21px]  max-xs:w-[300px] custom:h-[174.5px] custom:text-[20px] custom:leading-[32px] custom:mb-[9.5px]">
             “Quis vel eros donec ac odio. Cras tincidunt lobortis feugiat
             vivamus at augue eget arcu dictum. Arcu cursus euismod quis viverra
@@ -53,6 +56,52 @@ const ReviewsAndLinks = () => {
               } `}
               onClick={() => setNumber(2)}
             ></div>
+          </div>
+        </div> */}
+        <div className="flex flex-col items-center">
+          <p className="font-georgia font-normal text-[48px] leading-[50px] -tracking-[1px] mt-[108px] mb-[87px]">
+            Videos
+          </p>
+          <div className="w-[1192px] flex justify-between">
+            <div className="w-[383.14px] h-[254.29px] flex flex-col">
+              <Image
+                alt="image"
+                src={VideoImg1}
+                className="w-full h-[199px] mb-[10px]"
+              />
+              <p className="font-georgia font-normal text-[15px] leading-[21px] text-[#281D1B] mb-[7.1px]">
+                Why marital rape is still not a crime in India
+              </p>
+              <p className="font-inter font-semibold text-[11.53px] leading-[14.19px] text-[#DD4826]">
+                12 Mins
+              </p>
+            </div>
+            <div className="w-[383.14px] h-[254.29px] flex flex-col">
+              <Image
+                alt="image"
+                src={VideoImg2}
+                className="w-full h-[199px] mb-[10px]"
+              />
+              <p className="font-georgia font-normal text-[15px] leading-[21px] text-[#281D1B] mb-[7.1px]">
+                Juniors deserve better{" "}
+              </p>
+              <p className="font-inter font-semibold text-[11.53px] leading-[14.19px] text-[#DD4826]">
+                12 Mins
+              </p>
+            </div>
+            <div className="w-[383.14px] h-[254.29px] flex flex-col">
+              <Image
+                alt="image"
+                src={VideoImg3}
+                className="w-full h-[199px] mb-[10px]"
+              />
+              <p className="font-georgia font-normal text-[15px] leading-[21px] text-[#281D1B] mb-[7.1px]">
+                Alcohol ban in India?{" "}
+              </p>
+              <p className="font-inter font-semibold text-[11.53px] leading-[14.19px] text-[#DD4826]">
+                14 Mins
+              </p>
+            </div>
           </div>
         </div>
 
