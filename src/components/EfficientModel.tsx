@@ -6,22 +6,22 @@ const EfficientModel = () => {
   return (
     <>
       {/* only height */}
-      <div className="h-[1140px] w-full custom:h-[870px] flex flex-col items-center">
+      <div className="h-[1075px] w-full custom:h-[870px] flex flex-col items-center  ">
         <p className="text-[48px] max-custom:text-[32px] font-georgia font-normal leading-[52px] -tracking-[2.4px] text-center mb-[40px] custom:mb-[24px]">
           Sajan Poovayya Mentorship Programme
         </p>
         <p
-          className=" w-[844px]  font-inter font-normal text-[17.66px] leading-[28px] -tracking-[0.2px] text-center px-[70px] mb-[92px] text-[#000000BF]
-        custom:mb-[56px] max-xs:px-0 max-custom:text-[16px] max-custom:w-[338px] max-custom:px-0"
+          className=" w-[844px]  font-inter font-normal text-[17.66px] leading-[28px] -tracking-[0.2px] text-center px-[70px] mb-[30px] text-[#000000BF]
+        custom:mb-[56px] max-xs:px-0 max-custom:text-[16px] max-custom:w-[338px] max-custom:px-0 max-md:w-[300px]"
         >
           A unique mentorship programme that offers law students and young
           lawyers an opportunity to engage with real time litigation. We also
           host special seminars and conversations that help young lawyers make
           strides in the profession of law.
         </p>
-        <div className="flex flex-col items-center  px-[24px] custom:flex-row custom:w-[1232px] custom:h-[550px] custom:justify-center custom:gap-[41px]">
+        <div className="flex flex-col items-center  px-[24px] max-xs:px-0 custom:flex-row custom:w-[1232px] custom:h-[550px] custom:justify-center custom:gap-[41px]">
           {/* yellow screen */}
-          <div className="w-[342px] h-[270px] rounded-[12px] mb-[81px] custom:h-full custom:w-[695px] custom:mb-0 max-xs:w-[300px]">
+          <div className="w-[342px] h-[270px] rounded-[12px] mb-[30px] custom:h-full custom:w-[695px] custom:mb-0 max-xs:w-[300px]">
             <Image src={LaywerImage} alt="image" />
           </div>
           <div className="flex flex-col items-center custom:h-full custom:w-[456px] custom:justify-center">

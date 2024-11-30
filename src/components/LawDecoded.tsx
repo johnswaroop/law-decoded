@@ -9,12 +9,12 @@ const LawDecoded = () => {
       {/* height =  self + bottom */}
       <div className="h-[774px] w-full flex flex-col items-center custom:h-[615px] custom:mb-[100px] custom:mt-[63px] mt-[70px]">
         {/* Mt icon */}
-        <div className="w-[442px] h-[121px] overflow-hidden relative mb-[135px] custom:mb-[60px] max-custom:w-[342px] max-custom:mb-[40px]">
+        <div className="w-[442px] h-[121px] overflow-hidden relative mb-[135px] custom:mb-[60px] max-custom:w-[342px] max-custom:mb-[40px] max-xs:w-[300px] ">
           <Image
             src={LawDecodedw}
             alt="mountain"
             fill
-            className="object-fit w-[443px] h-[148px] max-custom:w-[342px] "
+            className="object-fit w-[443px] h-[148px] max-custom:w-[342px] max-xs:w-[300px] "
           />
         </div>
         {/* Text */}

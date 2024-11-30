@@ -7,9 +7,9 @@ const ILinkeBeing = () => {
   return (
     <>
       {/* h = self */}
-      <div className="flex flex-col items-center bg-[#FFA89A4D] justify-center gap-[63.01px] w-full h-[835.99px] custom:flex-row custom:gap-0 custom:h-[808px]">
-        <div className="w-[304.87px] h-[282.78px] pr-[20.87px] flex flex-col justify-between gap-[14px] custom:w-[614px] custom:h-[577px] custom:gap-[24px]">
-          <div className="w-[284px] h-[192px] font-georgia font-normal text-[17.19px] leading-[27.42px] -tracking-[1.17px] custom:text-[32px] custom:leading-[47px] custom:w-[614px] custom:h-[423px] custom:-tracking-[2px] ">
+      <div className="flex flex-col items-center bg-[#FFA89A4D] justify-center gap-[63.01px] w-full h-[935.99px] custom:flex-row custom:gap-0 custom:h-[808px]">
+        <div className="w-[304.87px] h-[382.78px] pr-[20.87px] flex flex-col justify-between gap-[14px] custom:w-[614px] custom:h-[577px] custom:gap-[24px]">
+          <div className="w-[284px] h-[292px] font-georgia font-normal text-[17.19px] leading-[27.42px] -tracking-[1.17px] custom:text-[32px] custom:leading-[47px] custom:w-[614px] custom:h-[423px] custom:-tracking-[2px] ">
             When only a privileged few have access to legal knowledge, it
             creates barriers that prevent fair representation and the full
             participation of marginalized communities in legal and civic

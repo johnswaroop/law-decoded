@@ -20,7 +20,7 @@ const Hero = () => {
   return (
     <>
       {/* Hero */}
-      <div className="w-full h-[831px] custom:h-[603px] flex flex-col  items-center custom:mt-[68.53px] custom:mb-[50px]">
+      <div className="w-full h-auto max-custom:mb-[120px] custom:h-[603px] flex flex-col  items-center custom:mt-[68.53px] custom:mb-[50px]">
         {/* Owl Image */}
         <div className="h-[228px] w-full custom:h-[267px] overflow-hidden relative flex justify-center items-center ">
           <div className="overflow-hidden relative w-[159.38px] h-[179.58px]">

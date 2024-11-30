@@ -37,7 +37,7 @@ const MentorshipForum = () => {
     <>
       {/* h = s */}
       <div
-        className={`w-full h-[1079px]  flex flex-col items-center custom:h-[1142px]  ${
+        className={`w-full h-[1079px]  flex flex-col items-center custom:h-[1142px] max-md:h-auto max-md:pb-[50px] ${
           pathname.endsWith("mentorship") ? "bg-white" : "bg-[#FFF2CF]"
         }`}
       >

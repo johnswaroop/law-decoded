@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+// import React, { useState } from "react";
 import YouIcon from "@/assets/ReviewAndLinks/youtube.svg";
 import WhatIacon from "@/assets/ReviewAndLinks/whatsapp.svg";
 import VideoImg1 from "@/assets/ReviewAndLinks/videoImage1.png";
@@ -9,15 +9,15 @@ import VideoImg3 from "@/assets/ReviewAndLinks/VideoImage3.png";
 import Image from "next/image";
 
 const ReviewsAndLinks = () => {
-  const [num, setNumber] = useState<number>(2);
+  // const [num, setNumber] = useState<number>(2);
 
   return (
     <>
       {/* h = T + S + B */}
-      <div className="h-[1173.01px] w-full flex flex-col items-center custom:h-[1132px]">
+      <div className="h-auto w-full flex flex-col items-center custom:h-[1132px] max-md:mb-[97px]">
         {/* Text + buttons */}
         {/* h = s + b */}
-        <div className="mt-[108.01px] w-[342px] h-[167.85px] flex flex-col items-center mb-[188.15px] custom:h-[500px] custom:w-[623.5px]  custom:m-0 custom:justify-center custom:hidden">
+        {/* <div className="mt-[108.01px] w-[342px] h-[167.85px] flex flex-col items-center mb-[188.15px] custom:h-[500px] custom:w-[623.5px]  custom:m-0 custom:justify-center custom:hidden">
           <p className="w-full h-[95.72px] font-inter font-normal italic text-[12px] leading-[17.55px] -tracking-[0.22px] text-center mb-[5.21px]  max-xs:w-[300px] custom:h-[174.5px] custom:text-[20px] custom:leading-[32px] custom:mb-[9.5px]">
             “Quis vel eros donec ac odio. Cras tincidunt lobortis feugiat
             vivamus at augue eget arcu dictum. Arcu cursus euismod quis viverra
@@ -57,17 +57,17 @@ const ReviewsAndLinks = () => {
               onClick={() => setNumber(2)}
             ></div>
           </div>
-        </div>
-        <div className="flex flex-col items-center max-custom:hidden">
-          <p className="font-georgia font-normal text-[48px] leading-[50px] -tracking-[1px] mt-[108px] mb-[87px]">
+        </div> */}
+        <div className="flex flex-col items-center  ">
+          <p className="font-georgia font-normal text-[48px] leading-[50px] -tracking-[1px] mt-[108px] mb-[87px] max-md:mb-[40px]">
             Videos
           </p>
-          <div className="w-[1192px] flex justify-between">
-            <div className="w-[383.14px] h-[254.29px] flex flex-col">
+          <div className="w-[1192px] flex justify-between max-md:flex-col max-md:w-auto max-md:items-center max-md:gap-[25px]">
+            <div className="w-[383.14px] h-[254.29px] flex flex-col max-md:w-[300px] max-md:h-[220px]">
               <Image
                 alt="image"
                 src={VideoImg1}
-                className="w-full h-[199px] mb-[10px]"
+                className="w-full h-[199px] mb-[10px] max-md:h-[160px]"
               />
               <p className="font-georgia font-normal text-[15px] leading-[21px] text-[#281D1B] mb-[7.1px]">
                 Why marital rape is still not a crime in India
@@ -76,11 +76,11 @@ const ReviewsAndLinks = () => {
                 12 Mins
               </p>
             </div>
-            <div className="w-[383.14px] h-[254.29px] flex flex-col">
+            <div className="w-[383.14px] h-[254.29px] flex flex-col  max-md:w-[300px] max-md:h-[220px] ">
               <Image
                 alt="image"
                 src={VideoImg2}
-                className="w-full h-[199px] mb-[10px]"
+                className="w-full h-[199px] mb-[10px] max-md:h-[160px]"
               />
               <p className="font-georgia font-normal text-[15px] leading-[21px] text-[#281D1B] mb-[7.1px]">
                 Juniors deserve better{" "}
@@ -89,11 +89,11 @@ const ReviewsAndLinks = () => {
                 12 Mins
               </p>
             </div>
-            <div className="w-[383.14px] h-[254.29px] flex flex-col">
+            <div className="w-[383.14px] h-[254.29px] flex flex-col max-md:mb-[87px]  max-md:w-[300px] max-md:h-[220px]">
               <Image
                 alt="image"
                 src={VideoImg3}
-                className="w-full h-[199px] mb-[10px]"
+                className="w-full h-[199px] mb-[10px] max-md:h-[160px]"
               />
               <p className="font-georgia font-normal text-[15px] leading-[21px] text-[#281D1B] mb-[7.1px]">
                 Alcohol ban in India?{" "}
@@ -105,12 +105,12 @@ const ReviewsAndLinks = () => {
           </div>
         </div>
 
-        <p className="font-georgia font-normal  text-[32px] leading-[52px] -tracking-[2.4px] text-black custom:mt-[160px] custom:text-[48px] custom:leading-[52px] custom:mb-[56px]">
+        <p className="font-georgia font-normal  text-[32px] leading-[52px] -tracking-[2.4px] text-black custom:mt-[160px] custom:text-[48px] custom:leading-[52px] custom:mb-[56px] max-md:mb-[10px]">
           Join our community
         </p>
 
         {/* whatsapp ans youtube combined div */}
-        <div className="w-[342px] h-[520.64px] flex flex-col items-center justify-center gap-[34.3px] custom:flex-row custom:w-[1000px] custom:h-[284px] custom:gap-[252px]">
+        <div className="w-[342px] h-[520.64px] flex flex-col items-center justify-center gap-[0px] custom:flex-row custom:w-[1000px] custom:h-[284px] custom:gap-[252px] max-xs:w-[300px]">
           <div className="w-full h-[243.33px] pt-[23.94px] flex flex-col items-center custom:w-[348px] custom:h-full custom:pt-[28px] ">
             <Image
               src={YouIcon}

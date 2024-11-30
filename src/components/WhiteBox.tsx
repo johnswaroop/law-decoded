@@ -58,7 +58,7 @@ const WhiteBox = () => {
           Sahoo, of rape and other offenses—a bold move that challenged...
         </div>
 
-        <button className="bg-[#DD4826] w-[129px] h-[48px] flex justify-center items-center text-white text-[16px] font-inter font-medium custom:w-[812px] custom:h-[64px] custom:rounded-[8px] custom:hidden">
+        <button className="bg-[#DD4826] w-[139px] h-[48px] flex justify-center items-center text-white text-[14px] font-inter font-medium custom:w-[812px] custom:h-[64px] custom:rounded-[8px] custom:hidden rounded-[7px]">
           <p>Continue Reading</p>
         </button>
       </div>
