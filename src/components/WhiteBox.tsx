@@ -45,7 +45,7 @@ const WhiteBox = () => {
         <div className="w-[329px] text-[28px] font-georgia font-normal leading-[36px] text-center mb-[12px]  max-xs:w-[300px] custom:text-[40px] custom:leading-[50px] custom:w-[812px] custom:h-[100px] custom:text-start custom:mb-[43px] custom:hidden">
           Marital Rape
         </div>
-        <p className="mb-[30px] font-inter font-medium text-[#121212] ">
+        <p className="mb-[30px] font-inter font-medium text-[#121212] custom:hidden ">
           Sajan Poovayya
         </p>
 
