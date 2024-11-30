@@ -36,11 +36,11 @@ const Hero = () => {
               Declutter the <br className="md:hidden" /> Maze of Law{" "}
               <br className="max-custom:hidden" /> with Sajan Poovayya
             </p>
-            <p className="font-inter font-normal text-[16px] leading-[28px] -tracking-[0.2px] text-center custom:text-[18px] custom:leading-[28px] custom:-tracking-[0.2px] text-[#000000BF]">
-              Law as a subject or law as a profession is not just for the
+            <p className="font-inter font-normal italic text-[16px] leading-[28px] -tracking-[0.2px] text-center custom:text-[18px] custom:leading-[28px] custom:-tracking-[0.2px] text-[#000000BF]">
+              &quot;Law as a subject or law as a profession is not just for the
               privileged. We dejargonise law,
               <br className="max-custom:hidden" /> make legal studies
-              accessible, reducing systemic barriers.
+              accessible, reducing systemic barriers.&quot; -SP
             </p>
           </div>
           {/* knowMore */}
