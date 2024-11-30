@@ -5,7 +5,7 @@ import LawyerImage from "@/assets/AboutSection/LawyerImage.png";
 const AboutSection = () => {
   return (
     <>
-      <div className="h-[907px] max-xs:h-[1075px] custom:h-[724px] flex flex-col items-center  custom:flex-row custom:items-center mb-[60px] custom:justify-center custom:gap-[139px]">
+      <div className="h-[907px] xs:h-[1000px] max-xs:h-[1075px] custom:h-[724px] flex flex-col items-center  custom:flex-row custom:items-center mb-[60px] custom:justify-center custom:gap-[139px]">
         <div className="max-mid:hidden h-full w-1/2 flex justify-center items-center custom:w-[591px]">
           <div className="w-[591px] h-[550px] relative overflow-hidden my-[80px] max-mid:hidden">
             <Image
