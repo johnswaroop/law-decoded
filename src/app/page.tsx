@@ -14,12 +14,12 @@ export default function Home() {
       <Hero />
       <AboutSection />
       <EfficientModel />
-      {/* <LawDecoded />
+      <LawDecoded />
       <AboutSanjay />
       <WhiteBox />
       <ILinkeBeing />
       <ReviewsAndLinks />
-      <MentorshipForum /> */}
+      <MentorshipForum />
     </>
   );
 }

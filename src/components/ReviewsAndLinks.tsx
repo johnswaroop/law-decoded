@@ -9,136 +9,89 @@ import VideoImg3 from "@/assets/ReviewAndLinks/VideoImage3.png";
 import Image from "next/image";
 
 const ReviewsAndLinks = () => {
-  // const [num, setNumber] = useState<number>(2);
-
   return (
     <>
       {/* h = T + S + B */}
-      <div className="h-auto w-full flex flex-col items-center custom:h-[1132px] max-md:mb-[97px]">
-        {/* Text + buttons */}
-        {/* h = s + b */}
-        {/* <div className="mt-[108.01px] w-[342px] h-[167.85px] flex flex-col items-center mb-[188.15px] custom:h-[500px] custom:w-[623.5px]  custom:m-0 custom:justify-center custom:hidden">
-          <p className="w-full h-[95.72px] font-inter font-normal italic text-[12px] leading-[17.55px] -tracking-[0.22px] text-center mb-[5.21px]  max-xs:w-[300px] custom:h-[174.5px] custom:text-[20px] custom:leading-[32px] custom:mb-[9.5px]">
-            “Quis vel eros donec ac odio. Cras tincidunt lobortis feugiat
-            vivamus at augue eget arcu dictum. Arcu cursus euismod quis viverra
-            nibh cras. accumsan. Neque volutpat ac tincidunt vitae semper. Quis
-            vel eros donec ac odio. Cras tincidunt lobortis feugiat vivamus at
-            augue eget arcu dictum.”
-          </p>
-          <p className="font-georgia font-normal text-[14px] leading-[17.55px] mb-[5.07px] custom:text-[22px] custom:leading-[32px] custom:mb-[4px]">
-            Rose Schultz
-          </p>
-          <p className="font-inter font-semibold text-[8px]  leading-[13.16px] tracking-[2.19px] mb-[20.52px] custom:text-[14px] custom:leading-[24px] custom:mb-[45px] custom:tracking-[4px]">
-            UI DESIGNER SHADYLABS
-          </p>
-          <div className="w-[66.92px] h-[9.32px] flex justify-between custom:w-[122px] custom:h-[17px] ">
-            <div
-              className={`h-full rounded-full transition-all duration-300 ${
-                num === 0
-                  ? "w-[30.72px] bg-[#DD4826] custom:w-[56px] "
-                  : "w-[9.32px] bg-[#eea292] custom:w-[17px]"
-              } `}
-              onClick={() => setNumber(0)}
-            ></div>
-            <div
-              className={`h-full transition-all duration-300 ${
-                num === 1
-                  ? "w-[30.72px] bg-[#DD4826] rounded-full custom:w-[56px]"
-                  : "w-[9.32px] bg-[#eea292] rounded-full custom:w-[17px]"
-              } `}
-              onClick={() => setNumber(1)}
-            ></div>
-            <div
-              className={`h-full transition-all duration-300 ${
-                num === 2
-                  ? "w-[30.72px] bg-[#DD4826] rounded-full custom:w-[56px]"
-                  : "w-[9.32px] bg-[#eea292] rounded-full custom:w-[17px]"
-              } `}
-              onClick={() => setNumber(2)}
-            ></div>
-          </div>
-        </div> */}
+      <div className="h-auto w-full flex flex-col items-center custom:h-auto max-md:mb-[97px] ">
         <div className="flex flex-col items-center  ">
-          <p className="font-georgia font-normal text-[48px] leading-[50px] -tracking-[1px] mt-[108px] mb-[87px] max-md:mb-[40px]">
+          <p className="font-georgia font-normal text-[48px] leading-[50px] -tracking-[1px] mt-[108px] mb-[87px] max-md:mb-[40px] md:mt-[55.25px] md:mb-[43.12px] md:text-[25.55px] md:leading-[26.5px] custom:text-[48px] custom:leading-[50px] custom:mt-[108px] custom:mb-[87px]">
             Videos
           </p>
-          <div className="w-[1192px] flex justify-between max-md:flex-col max-md:w-auto max-md:items-center max-md:gap-[25px]">
-            <div className="w-[383.14px] h-[254.29px] flex flex-col max-md:w-[300px] max-md:h-[220px]">
+          <div className="custom:w-[1192px] flex justify-between max-md:flex-col max-md:w-auto max-md:items-center max-md:gap-[25px] md:w-[631.86px] md:mb-[109.29px] custom:mb-[128px]">
+            <div className="custom:w-[383.14px] custom:h-[254.29px] flex flex-col max-md:w-[300px] max-md:h-[220px] md:w-[203.1px] md:h-[135.18px]">
               <Image
                 alt="image"
                 src={VideoImg1}
-                className="w-full h-[199px] mb-[10px] max-md:h-[160px]"
+                className="custom:w-full custom:h-[199px] custom:mb-[10px] max-md:h-[160px] md:w-[203.1px] md:h-[105.78px] md:mb-[5.64px]"
               />
-              <p className="font-georgia font-normal text-[15px] leading-[21px] text-[#281D1B] mb-[7.1px]">
+              <p className="font-georgia font-normal custom:text-[15px] custom:leading-[21px] text-[#281D1B] custom:mb-[7.1px] md:text-[7.99px] md:mb-[3.76px] md:leading-[11.28px]">
                 Why marital rape is still not a crime in India
               </p>
-              <p className="font-inter font-semibold text-[11.53px] leading-[14.19px] text-[#DD4826]">
+              <p className="font-inter font-semibold custom:text-[11.53px] custom:leading-[14.19px] text-[#DD4826] md:text-[6.11px]">
                 12 Mins
               </p>
             </div>
-            <div className="w-[383.14px] h-[254.29px] flex flex-col  max-md:w-[300px] max-md:h-[220px] ">
+            <div className="custom:w-[383.14px] custom:h-[254.29px] flex flex-col max-md:w-[300px] max-md:h-[220px] md:w-[203.1px] md:h-[135.18px]">
               <Image
                 alt="image"
                 src={VideoImg2}
-                className="w-full h-[199px] mb-[10px] max-md:h-[160px]"
+                className="custom:w-full custom:h-[199px] custom:mb-[10px] max-md:h-[160px] md:w-[203.1px] md:h-[105.78px] md:mb-[5.64px]"
               />
-              <p className="font-georgia font-normal text-[15px] leading-[21px] text-[#281D1B] mb-[7.1px]">
+              <p className="font-georgia font-normal custom:text-[15px] custom:leading-[21px] text-[#281D1B] custom:mb-[7.1px] md:text-[7.99px] md:mb-[3.76px] md:leading-[11.28px]">
                 Juniors deserve better{" "}
               </p>
-              <p className="font-inter font-semibold text-[11.53px] leading-[14.19px] text-[#DD4826]">
+              <p className="font-inter font-semibold custom:text-[11.53px] custom:leading-[14.19px] text-[#DD4826] md:text-[6.11px]">
                 12 Mins
               </p>
             </div>
-            <div className="w-[383.14px] h-[254.29px] flex flex-col max-md:mb-[87px]  max-md:w-[300px] max-md:h-[220px]">
+            <div className="custom:w-[383.14px] custom:h-[254.29px] flex flex-col max-md:w-[300px] max-md:h-[220px] md:w-[203.1px] md:h-[135.18px]">
               <Image
                 alt="image"
                 src={VideoImg3}
-                className="w-full h-[199px] mb-[10px] max-md:h-[160px]"
+                className="custom:w-full custom:h-[199px] custom:mb-[10px] max-md:h-[160px] md:w-[203.1px] md:h-[105.78px] md:mb-[5.64px]"
               />
-              <p className="font-georgia font-normal text-[15px] leading-[21px] text-[#281D1B] mb-[7.1px]">
+              <p className="font-georgia font-normal custom:text-[15px] custom:leading-[21px] text-[#281D1B] custom:mb-[7.1px] md:text-[7.99px] md:mb-[3.76px] md:leading-[11.28px]">
                 Alcohol ban in India?{" "}
               </p>
-              <p className="font-inter font-semibold text-[11.53px] leading-[14.19px] text-[#DD4826]">
+              <p className="font-inter font-semibold custom:text-[11.53px] custom:leading-[14.19px] text-[#DD4826] md:text-[6.11px]">
                 14 Mins
               </p>
             </div>
           </div>
         </div>
 
-        <p className="font-georgia font-normal  text-[32px] leading-[52px] -tracking-[2.4px] text-black custom:mt-[160px] custom:text-[48px] custom:leading-[52px] custom:mb-[56px] max-md:mb-[10px]">
+        <p className="font-georgia font-normal text-[32px] leading-[52px] -tracking-[2.4px] text-black custom:mt-[79.47px] custom:text-[48px] custom:leading-[51.65px] custom:mb-[55.63px] max-md:mb-[10px] md:text-[25.44px] md:leading-[27.38px] md:-tracking-[0.53px]">
           Join our community
         </p>
 
         {/* whatsapp ans youtube combined div */}
-        <div className="w-[342px] h-[520.64px] flex flex-col items-center justify-center gap-[0px] custom:flex-row custom:w-[1000px] custom:h-[284px] custom:gap-[252px] max-xs:w-[300px]">
-          <div className="w-full h-[243.33px] pt-[23.94px] flex flex-col items-center custom:w-[348px] custom:h-full custom:pt-[28px] ">
+        <div className="w-[342px] h-[520.64px] flex flex-col items-center justify-center gap-[0px] custom:flex-row custom:w-[993.33px] custom:h-[254.91px] custom:gap-[198px] max-xs:w-[300px] md:flex-row md:w-[526.55px] md:h-[135.35px] md:mt-[29.49px] md:gap-[105.31px] md:mb-[42.12px] custom:mb-[70px] ">
+          <div className="w-full h-[243.33px] pt-[23.94px] flex flex-col items-center custom:w-[397.33px] custom:h-full    md:h-[135.35px] md:w-[210.62px] md:pt-[14.74px] custom:pt-[37.08px]">
             <Image
               src={YouIcon}
               alt="image"
-              className="custom:w-[64px] custom:h-[64px]"
+              className="custom:w-[64px] custom:h-[64px] md:w-[33.7px] md:h-[33.7px] "
             />
-            <p className="font-inter font-semibold text-[23.94px] leading-[30.78px] -tracking-[0.27px] text-black mt-[27.36px] mb-[10.26px] custom:mt-[32px] custom:mb-[12px] custom:text-[28px] custom:leading-[36px]">
+            <p className="font-inter font-semibold text-[23.94px] leading-[30.78px] -tracking-[0.27px] text-black mt-[27.36px] mb-[10.26px] custom:mt-[32px] custom:mb-[12px] custom:text-[28px] custom:leading-[36px] md:text-[14.74px] md:leading-[18.96px] md:mt-[16.85px] md:mb-[6.32px] md:-tracking-[0.17] custom:-tracking-[0.32px]">
               Youtube
             </p>
-            <p className="font-inter font-medium text-[15.36px] leading-[23.94px] -tracking-[0.17px] text-center custom:text-[18px] custom:leading-[28px] custom:font-normal custom:-tracking-[0.2px]">
-              Seamlessly integrate with HMRC,
-              <br className="md:hidden" /> accounting software for efficient
-              payroll management.
+            <p className="font-inter font-medium text-[15.36px] leading-[23.94px] -tracking-[0.17px] text-center custom:text-[18px] custom:leading-[28px] custom:font-normal custom:-tracking-[0.2px] md:text-[9.48px] md:leading-[14.74px] md:-tracking-[0.11px] text-[#000000BF]">
+              Subscribe to our Youtube channel to
+              <br className="" /> watch more videos.
             </p>
           </div>
-          <div className="w-full h-[243.33px] pt-[23.94px] flex flex-col items-center custom:w-[348px] custom:h-full custom:pt-[28px]  ">
+          <div className="w-full h-[243.33px] pt-[23.94px] flex flex-col items-center custom:w-[348px] custom:h-full custom:pt-[37.08px]  md:h-[135.35px] md:w-[210.62px] md:pt-[14.74px]">
             <Image
               src={WhatIacon}
               alt="image"
-              className="custom:w-[64px] custom:h-[64px]"
+              className="custom:w-[64px] custom:h-[64px] md:w-[33.7px] md:h-[33.7px] w-[56px] h-[56px]"
             />
-            <p className="font-inter font-semibold text-[23.94px] leading-[30.78px] -tracking-[0.27px] text-black mt-[27.36px] mb-[10.26px] custom:mt-[32px] custom:mb-[12px] custom:text-[28px] custom:leading-[36px]">
+            <p className="font-inter font-semibold text-[23.94px] leading-[30.78px] -tracking-[0.27px] text-black mt-[27.36px] mb-[10.26px] custom:mt-[32px] custom:mb-[12px] custom:text-[28px] custom:leading-[36px] md:text-[14.74px] md:leading-[18.96px] md:mt-[16.85px] md:mb-[6.32px] md:-tracking-[0.17]">
               Whatsapp Community
             </p>
-            <p className="font-inter font-medium text-[15.36px] leading-[23.94px] -tracking-[0.17px] text-center custom:text-[18px] custom:leading-[28px] custom:font-normal custom:-tracking-[0.2px]">
-              Seamlessly integrate with HMRC,
-              <br className="md:hidden" /> accounting software for efficient
-              payroll management.
+            <p className="font-inter font-medium text-[15.36px] leading-[23.94px] -tracking-[0.17px] text-center custom:text-[18px] custom:leading-[28px] custom:font-normal custom:-tracking-[0.2px] md:text-[9.48px] md:leading-[14.74px] md:-tracking-[0.11px] text-[#000000BF] ">
+              Join our whatsapp community of daily
+              <br className="" /> updates.
             </p>
           </div>
         </div>

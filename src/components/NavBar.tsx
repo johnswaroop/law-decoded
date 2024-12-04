@@ -6,7 +6,7 @@ import Link from "next/link";
 import Image from "next/image";
 const NavBar = () => {
   return (
-    <div className="w-full h-[77px] bg-[#FFFBFA] custom:h-[77px] md:h-[29.7px]">
+    <div className="w-full h-[77px] bg-[#FFF0EC] custom:h-[77px] md:h-[29.7px]">
       <div className="w-full h-full px-[25px] flex justify-between items-center custom:px-[34px]  md:px-[17.6px]">
         {/* logo */}
         <div className="w-[150px] h-[50.12px] overflow-hidden relative custom:w-[150px] custom:h-[50.12px] md:w-[58.3px] md:h-[19.5px]">
