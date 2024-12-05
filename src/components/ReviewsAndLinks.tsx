@@ -60,7 +60,7 @@ const ReviewsAndLinks = () => {
           </div>
         </div>
 
-        <p className="font-georgia font-normal text-[32px] leading-[52px] -tracking-[2.4px] text-black custom:mt-[79.47px] custom:text-[48px] custom:leading-[51.65px] custom:mb-[55.63px] max-md:mb-[10px] md:text-[25.44px] md:leading-[27.38px] md:-tracking-[0.53px]">
+        <p className="font-georgia font-normal text-[32px] leading-[52px] -tracking-[2.4px] text-black custom:mt-[79.47px] custom:text-[48px] custom:leading-[51.65px] custom:mb-[55.63px] max-md:mb-[10px] md:text-[25.44px] md:leading-[27.38px] md:-tracking-[0.53px] max-md:mt-[108px]">
           Join our community
         </p>
 

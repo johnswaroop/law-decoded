@@ -47,7 +47,7 @@ const MentorshipForum = () => {
           <br className="max-custom:hidden" /> Program
         </p>
 
-        <p className="font-inter font-normal text-[16px] leading-[28px] -tracking-[0.2px] text-center w-[304.49px] mb-[52px] custom:text-[18px] custom:leading-[28px] custom:font-normal custom:w-[551px] custom:text-justify custom:mb-[51px] text-[#212424] md:text-[9.54px] md:leading-[14.84px] md:text-justify md:mb-[27.03px]">
+        <p className="font-inter font-normal text-[16px] leading-[28px] -tracking-[0.2px] text-justify w-[304.49px] mb-[52px] custom:text-[18px] custom:leading-[28px] custom:font-normal custom:w-[551px] custom:text-justify custom:mb-[51px] text-[#212424] md:text-[9.54px] md:leading-[14.84px] md:text-justify md:mb-[27.03px]">
           Sajan Poovayya Mentorship program is designed to bridge the gap
           between academic learning and real world legal practice. The number of
           law students across the country has seen a sharp rise. Many sharp
@@ -96,7 +96,7 @@ const MentorshipForum = () => {
           />
           <button
             type="submit"
-            className="w-[341px] h-[64px] flex justify-center items-center rounded-[8px] bg-[#DD4826] hover:bg-[#5f271a] max-xs:w-[300px] custom:w-[551px] custom:h-[55px] custom:rounded-[5px]  md:placeholder:text-[9.54px] md:w-[292.08px] md:roudded-[4.24px] md:mb-[51.42px] custom:placeholder:text-[18px]"
+            className="w-[341px] h-[64px] flex justify-center items-center rounded-[8px] bg-[#DD4826] hover:bg-[#5f271a] max-xs:w-[300px] custom:w-[551px] custom:h-[55px] custom:rounded-[5px]  md:placeholder:text-[9.54px] md:w-[292.08px] md:h-[33px] md:roudded-[4.24px] md:mb-[51.42px] custom:placeholder:text-[18px]"
           >
             <p className="text-white font-inter font-medium text-[16px] leading-[24px] -tracking-[0.16px] md:text-[8.48px] custom:text-[16px] custom:leading-[24px] ">
               {" "}
