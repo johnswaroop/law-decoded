@@ -10,6 +10,7 @@ import WhiteBox from "@/components/WhiteBox";
 
 export default function Home() {
   return (
+    //checking
     <>
       <Hero />
       <AboutSection />
