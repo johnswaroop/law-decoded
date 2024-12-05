@@ -56,7 +56,7 @@ const MentorshipForum = () => {
           efforts include weekly newsletters, opportunity for students to write
           for our website and newsletters, special seminars and events designed
           for law students, court internships and also a merit based
-          scholarship. We also host series of guest lectures and workshops
+          scholarship. We also host series of guest lectures and workshops.
         </p>
 
         <form
