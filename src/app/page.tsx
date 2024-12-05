@@ -1,6 +1,7 @@
 import AboutSanjay from "@/components/AboutSanjay";
 import AboutSection from "@/components/AboutSection";
 import EfficientModel from "@/components/EfficientModel";
+import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import ILinkeBeing from "@/components/ILinkeBeing";
 import LawDecoded from "@/components/LawDecoded";
@@ -21,6 +22,7 @@ export default function Home() {
       <ILinkeBeing />
       <ReviewsAndLinks />
       <MentorshipForum />
+      <Footer />
     </>
   );
 }
