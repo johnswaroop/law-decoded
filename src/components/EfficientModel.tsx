@@ -12,7 +12,7 @@ const EfficientModel = () => {
         </p>
         <p
           className=" w-[844px]  font-inter font-normal text-[17.66px] leading-[28px] -tracking-[0.2px] text-center px-[70px] mb-[30px] text-[#000000BF]
-        custom:mb-[56px] md:mb-[29px] max-xs:px-0 max-custom:text-[16px] md:text-[9px] max-custom:w-[338px] md:w-[447px] max-custom:px-0 md:px-0 max-md:w-[300px] md:leading-[14.85px] custom:text-[17.66px] custom:leading-[28px] custom:-tracking-[0.2px] custom:w-[844px]"
+        custom:mb-[56px] md:mb-[29px] max-xs:px-0 max-custom:text-[16px] md:text-[9px] max-custom:w-[338px] md:w-[447px] max-custom:px-0 md:px-0 max-md:w-[300px] md:leading-[14.85px] custom:text-[17.66px] custom:leading-[28px] custom:-tracking-[0.2px] custom:w-[844px] text-justify"
         >
           A unique mentorship programme that offers law students and young
           lawyers an opportunity to engage with real time litigation. We also
