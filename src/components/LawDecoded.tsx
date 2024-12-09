@@ -7,7 +7,7 @@ const LawDecoded = () => {
   return (
     <>
       {/* height =  self + bottom */}
-      <div className="h-[774px] w-full flex flex-col items-center custom:h-auto custom:mb-[100px] custom:mt-[63px] mt-[70px] md:mt-0 md:h-auto md:mb-[71.01px] custom:mb-[157px]">
+      <div className="h-[774px] w-full flex flex-col items-center custom:h-auto  custom:mt-[63px] mt-[70px] md:mt-0 md:h-auto md:mb-[71.01px] custom:mb-[157px]">
         {/* Mt icon */}
         <div className="w-[442px] h-[121px] overflow-hidden relative mb-[135px] custom:mb-[60px] max-custom:w-[342px] max-custom:mb-[40px] max-xs:w-[300px] md:w-[235px] md:h-[78px] md:mb-[28.21px] custom:w-[443px] custom:h-[148px]">
           <Image
