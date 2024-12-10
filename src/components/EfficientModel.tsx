@@ -1,12 +1,24 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import Image from "next/image";
 import LaywerImage from "@/assets/EfficientModel/lawyerPic.png";
 
 const EfficientModel = () => {
+  const [expand, setExpande] = useState(0);
+
+  const handleClick = (num: number): void => {
+    setExpande((prevExpand) => {
+      if (num === prevExpand) {
+        return prevExpand === 2 ? 0 : prevExpand + 1;
+      } else {
+        return num;
+      }
+    });
+  };
   return (
     <>
       {/* only height */}
-      <div className="h-[1075px] w-full custom:h-[870px] md:h-[479.8px] flex flex-col items-center   ">
+      <div className="h-auto w-full custom:h-[870px] md:h-[479.8px] flex flex-col items-center  ">
         <p className="text-[48px] custom:text-[48px] md:text-[25px] font-georgia font-normal leading-[52px] -tracking-[2.4px] text-center mb-[40px] custom:mb-[24px] md:mb-[12px] md:leading-[27px] custom:leading-[52px]">
           Sajan Poovayya Mentorship Programme
         </p>
@@ -27,8 +39,14 @@ const EfficientModel = () => {
           <div className="flex flex-col items-center custom:h-full md:h-full custom:w-[456px] md:w-[284px] custom:justify-center md:justify-center gap-[18px] md:gap-[12px] custom:gap-[24px] max-md:mt-[50px]">
             {/* First box */}
             <div
-              className="w-[342px] h-[124px] rounded-[9px] border-t-[0.75px] border-[#FC5A5A] px-[30px] py-[24px] flex flex-col justify-between max-xs:w-[300px] bg-white md:w-[243px] md:h-[86px] md:px-[21.2px] md:py-[16.96px] custom:w-[458px] custom:h-[164px] custom:px-[40px] custom:py-[32px]"
+              className={`w-[342px]  rounded-[9px]  px-[30px] py-[24px] flex flex-col justify-between max-xs:w-[300px] bg-white md:w-[243px]  md:px-[21.2px] md:py-[16.96px] custom:w-[458px]  custom:px-[40px] custom:py-[32px] transition-all duration-300 ease-in-out
+                ${
+                  expand === 0
+                    ? "h-[124px] border-t-[0.75px] border-[#FC5A5A] md:h-[86px] custom:h-[164px]"
+                    : "h-[78px] md:h-[55.13px] custom:h-[104px]"
+                }`}
               style={{ boxShadow: "9px 9px 37.5px 0px #00000014" }}
+              onClick={() => handleClick(0)}
             >
               {/* Circle and text */}
               <div
@@ -46,7 +64,13 @@ const EfficientModel = () => {
               </div>
 
               {/* Text */}
-              <p className="font-inter font-normal text-[10.5px] leading-[16.5px] text-[#000000BF] md:text-[7.42px] md:leading-[11.66px] custom:text-[14px] custom:leading-[22px]">
+              <p
+                className={`font-inter font-normal text-[10.5px] leading-[16.5px] text-[#000000BF] md:text-[7.42px] md:leading-[11.66px] custom:text-[14px] custom:leading-[22px] transition-all duration-300 ease-in-out ${
+                  expand === 0
+                    ? "opacity-100 max-h-[33px] delay-300 "
+                    : "opacity-0 max-h-0"
+                }`}
+              >
                 Subscribe to us to say updated- hyperlink (takes you to the
                 social media pages)
               </p>
@@ -54,8 +78,13 @@ const EfficientModel = () => {
 
             {/* second box */}
             <div
-              className="w-[342px] h-[78px] rounded-[9px]  px-[30px] py-[24px] flex flex-col justify-between bg-white max-xs:w-[300px] md:w-[243px] md:h-[55.13px] md:px-[21.2px] md:py-[16.96px] custom:w-[458px] custom:h-[104px] custom:px-[40px] custom:py-[32px]"
+              className={`w-[342px] rounded-[9px]  px-[30px] py-[24px] flex flex-col justify-between bg-white max-xs:w-[300px] md:w-[243px]  md:px-[21.2px] md:py-[16.96px] custom:w-[458px]  custom:px-[40px] custom:py-[32px] transition-all duration-300 ease-in-out ${
+                expand === 1
+                  ? "h-[124px] border-t-[0.75px] border-[#FC5A5A] md:h-[86px] custom:h-[164px]"
+                  : "h-[78px] md:h-[55.13px] custom:h-[104px]"
+              }`}
               style={{ boxShadow: "9px 9px 37.5px 0px #00000014" }}
+              onClick={() => handleClick(1)}
             >
               {/* Circle and text */}
               <div className="w-full h-[30px] flex justify-start items-center gap-[9.75px]  md:h-[21.2px] md:gap-[6.89px] custom:h-[40px] custom:gap-[13px]">
@@ -70,7 +99,13 @@ const EfficientModel = () => {
               </div>
 
               {/* Text */}
-              <p className="font-inter font-normal text-[10.5px] leading-[16.5px] text-[#000000BF] hidden custom:text-[21px] custom:leading-[28px] custom:-tracking-[0.24px]">
+              <p
+                className={`font-inter font-normal text-[10.5px] leading-[16.5px] text-[#000000BF] md:text-[7.42px] md:leading-[11.66px] custom:text-[14px] custom:leading-[22px] transition-all duration-300 ease-in-out ${
+                  expand === 1
+                    ? "opacity-100 max-h-[33px] delay-300"
+                    : "opacity-0 max-h-0"
+                }`}
+              >
                 Subscribe to us to say updated- hyperlink (takes you to the
                 social media pages)
               </p>
@@ -78,8 +113,13 @@ const EfficientModel = () => {
 
             {/* Third box */}
             <div
-              className="w-[342px] h-[78px] rounded-[9px] px-[30px] py-[24px] flex flex-col justify-between bg-white max-xs:w-[300px]  custom:w-[458px] custom:h-[104px] custom:px-[40px] custom:py-[32px] md:w-[243px] md:h-[55.13px] md:px-[21.2px] md:py-[16.96px]"
+              className={`w-[342px] rounded-[9px] px-[30px] py-[24px] flex flex-col justify-between bg-white max-xs:w-[300px]  custom:w-[458px] custom:h-[104px] custom:px-[40px] custom:py-[32px] md:w-[243px] md:h-[55.13px] md:px-[21.2px] md:py-[16.96px] max-md:mb-[44px] transition-all duration-300 ease-in-out ${
+                expand === 2
+                  ? "h-[124px] border-t-[0.75px] border-[#FC5A5A] md:h-[86px] custom:h-[164px]"
+                  : "h-[78px] md:h-[55.13px] custom:h-[104px]"
+              }`}
               style={{ boxShadow: "9px 9px 37.5px 0px #00000014" }}
+              onClick={() => handleClick(2)}
             >
               {/* Circle and text */}
               <div className="w-full h-[30px] flex justify-start items-center gap-[9.75px]  md:h-[21.2px] md:gap-[6.89px] custom:h-[40px] custom:gap-[13px]">
@@ -94,7 +134,13 @@ const EfficientModel = () => {
               </div>
 
               {/* Text */}
-              <p className="font-inter font-normal text-[10.5px] leading-[16.5px] text-[#000000BF] hidden custom:text-[21px] custom:leading-[28px] custom:-tracking-[0.24px]">
+              <p
+                className={`font-inter font-normal text-[10.5px] leading-[16.5px] text-[#000000BF] md:text-[7.42px] md:leading-[11.66px] custom:text-[14px] custom:leading-[22px] transition-all duration-300 ease-in-out ${
+                  expand === 2
+                    ? "opacity-100 max-h-[33px] delay-300"
+                    : "opacity-0 max-h-0"
+                }`}
+              >
                 Subscribe to us to say updated- hyperlink (takes you to the
                 social media pages)
               </p>
