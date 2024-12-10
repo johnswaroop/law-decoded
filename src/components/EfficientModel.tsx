@@ -39,7 +39,7 @@ const EfficientModel = () => {
           <div className="flex flex-col items-center custom:h-full md:h-full custom:w-[456px] md:w-[284px] custom:justify-center md:justify-center gap-[18px] md:gap-[12px] custom:gap-[24px] max-md:mt-[50px]">
             {/* First box */}
             <div
-              className={`w-[342px]  rounded-[9px]  px-[30px] py-[24px] flex flex-col justify-between max-xs:w-[300px] bg-white md:w-[243px]  md:px-[21.2px] md:py-[16.96px] custom:w-[458px]  custom:px-[40px] custom:py-[32px] transition-all duration-300 ease-in-out
+              className={`w-[342px]  rounded-[9px]  px-[30px] py-[24px] flex flex-col justify-between max-xs:w-[300px] bg-white md:w-[243px]  md:px-[21.2px] md:py-[16.96px] custom:w-[458px]  custom:px-[40px] custom:py-[32px] transition-all duration-300 ease-in-out cursor-pointer
                 ${
                   expand === 0
                     ? "h-[124px] border-t-[0.75px] border-[#FC5A5A] md:h-[86px] custom:h-[164px]"
@@ -78,7 +78,7 @@ const EfficientModel = () => {
 
             {/* second box */}
             <div
-              className={`w-[342px] rounded-[9px]  px-[30px] py-[24px] flex flex-col justify-between bg-white max-xs:w-[300px] md:w-[243px]  md:px-[21.2px] md:py-[16.96px] custom:w-[458px]  custom:px-[40px] custom:py-[32px] transition-all duration-300 ease-in-out ${
+              className={`w-[342px] rounded-[9px]  px-[30px] py-[24px] flex flex-col justify-between bg-white max-xs:w-[300px] md:w-[243px]  md:px-[21.2px] md:py-[16.96px] custom:w-[458px]  custom:px-[40px] custom:py-[32px] transition-all duration-300 ease-in-out cursor-pointer ${
                 expand === 1
                   ? "h-[124px] border-t-[0.75px] border-[#FC5A5A] md:h-[86px] custom:h-[164px]"
                   : "h-[78px] md:h-[55.13px] custom:h-[104px]"
@@ -113,7 +113,7 @@ const EfficientModel = () => {
 
             {/* Third box */}
             <div
-              className={`w-[342px] rounded-[9px] px-[30px] py-[24px] flex flex-col justify-between bg-white max-xs:w-[300px]  custom:w-[458px] custom:h-[104px] custom:px-[40px] custom:py-[32px] md:w-[243px] md:h-[55.13px] md:px-[21.2px] md:py-[16.96px] max-md:mb-[44px] transition-all duration-300 ease-in-out ${
+              className={`w-[342px] rounded-[9px] px-[30px] py-[24px] flex flex-col justify-between bg-white max-xs:w-[300px]  custom:w-[458px] custom:h-[104px] custom:px-[40px] custom:py-[32px] md:w-[243px] md:h-[55.13px] md:px-[21.2px] md:py-[16.96px] max-md:mb-[44px] transition-all duration-300 ease-in-out cursor-pointer ${
                 expand === 2
                   ? "h-[124px] border-t-[0.75px] border-[#FC5A5A] md:h-[86px] custom:h-[164px]"
                   : "h-[78px] md:h-[55.13px] custom:h-[104px]"
