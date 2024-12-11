@@ -56,6 +56,7 @@ export default {
         outfit: ["var(--font-outfit)"],
         georgia: ["var(--font-georgia)"],
         inter: ["var(--font-inter)"],
+        domine: ["var(--font-domine)"],
       },
       screens: {
         mid: "764px",
