@@ -2,10 +2,12 @@ import React from "react";
 import Image from "next/image";
 import LawyerImage from "@/assets/AboutSection/LawyerImage.png";
 
+// h-[907px] xs:h-[1000px] max-xs:h-[1075px] custom:h-auto md:h-[384px]
+
 const AboutSection = () => {
   return (
     <>
-      <div className="h-[907px] xs:h-[1000px] max-xs:h-[1075px] custom:h-auto md:h-[384px] flex flex-col items-center custom:flex-row md:flex-row custom:items-center md:items-center mb-[60px] custom:justify-center md:justify-center custom:gap-[139px] md:gap-[70px] md:mb-[40px] custom:mb-[80px]">
+      <div className="h-auto flex flex-col items-center custom:flex-row md:flex-row custom:items-center md:items-center mb-[60px] custom:justify-center md:justify-center custom:gap-[139px] md:gap-[70px] md:mb-[40px] custom:mb-[80px]">
         <div className="max-mid:hidden h-full w-1/2 flex justify-center items-center custom:w-[591px] md:w-[300px]">
           <div className="w-[591px] h-[550px] relative overflow-hidden my-[80px] max-mid:hidden md:w-[313.28px] md:h-[291.55px] custom:w-[591px] custom:h-[550px]">
             <Image

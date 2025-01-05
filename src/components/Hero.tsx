@@ -8,7 +8,7 @@ const Hero = () => {
       {/* Hero */}
       <div className="w-full h-auto  custom:h-[603px] flex flex-col items-center  custom:mb-[50px] md:mb-[30px]">
         {/* Owl Image */}
-        <div className="h-[228px] w-full custom:h-[267px] overflow-hidden relative flex justify-center items-center md:h-[141px] md:items-end custom:items-end max-md:items-end">
+        <div className="h-[228px] w-full custom:h-auto custom:mt-[60px] custom:mb-[20px] overflow-hidden relative flex justify-center items-center md:h-[141px] md:items-end custom:items-end max-md:items-end">
           <div className="overflow-hidden relative w-[159.38px] h-[179.58px] custom:w-[159.38px] custom:h-[179.58px] max-custom:w-[99.71px] max-custom:h-[112.35px]">
             <Image src={OwlImage} alt="image" fill className="object-cover" />
           </div>
