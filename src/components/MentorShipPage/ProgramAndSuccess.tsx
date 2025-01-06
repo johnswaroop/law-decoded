@@ -123,118 +123,68 @@ const ProgramAndSuccess = () => {
 
 export default ProgramAndSuccess;
 
+const carouselData = [
+  {
+    image: Test1,
+    name: "Amara Singh",
+    role: "Law Student",
+    feedback: "Thanks to Law Decoded, I secured an internship at a top firm.",
+  },
+  {
+    image: Test2,
+    name: "Liam Thompson",
+    role: "Law Graduate",
+    feedback: "Mentoring helped me navigate the complexities of law school.",
+  },
+  {
+    image: Test3,
+    name: "Sophia Martinez",
+    role: "Junior Associate",
+    feedback: "The guidance I received was instrumental in my career growth.",
+  },
+  {
+    image: Test4,
+    name: "Ethan Brown",
+    role: "Paralegal",
+    feedback: "I found my mentor's advice on work-life balance invaluable.",
+  },
+];
 const CarouselComponent = () => {
   return (
     <>
-      <Carousel className="custom:w-[1344px] custom:mx-auto mb-[139px] custom:mb-[170px]">
-        <CarouselContent className="mx-auto">
-          <CarouselItem className="basis-1/2 custom:basis-1/4 custom:">
-            <div className="w-[175px] h-[138.22px] bg-[#FFF2CF66] rounded-[12.19px] flex flex-col justify-center items-center gap-[10.97px] max-xs:w-[140px] custom:w-[288px] custom:h-[250px] ">
-              <div className="w-[141px] h-[29.25px] flex justify-start gap-[7.31px] max-xs:w-[120px] custom:w-[232px] custom:h-[48px] custom:gap-[12px]">
-                <Image
-                  src={Test1}
-                  alt="image"
-                  className="w-[29px] h-[29px] custom:w-[48px] custom:h-[48px]"
-                />
-                <div className="flex flex-col w-[104px] items-start custom:w-[172px] custom:justify-center">
-                  <p className="font-inter font-semibold text-[9.14px] leading-[12.19px] custom:text-[15px] custom:leading-[20px]">
-                    Amara Singh
-                  </p>
-                  <p className="font-inter font-normal text-[9.14px] leading-[12.19px] text-[#14202E9E] custom:text-[15px] custom:leading-[20px]">
-                    Law Student
+      <Carousel className="custom:w-[1344px] custom:mx-auto mb-[139px] custom:mb-[170px] w-full overflow-hidden ">
+        <CarouselContent className="mx-auto w-[768px] custom:w-[1232px]">
+          {carouselData.map((item, index) => (
+            <CarouselItem
+              key={index}
+              className="basis-1/2 custom:basis-1/4 max-w-[192px] custom:max-w-[308px]"
+            >
+              <div className="w-[175px] h-[138.22px] bg-[#FFF2CF66] rounded-[12.19px] flex flex-col justify-center items-center gap-[10.97px] max-xs:w-[140px] custom:w-[288px] custom:h-[250px]">
+                <div className="w-[141px] h-[29.25px] flex justify-start gap-[7.31px] max-xs:w-[120px] custom:w-[232px] custom:h-[48px] custom:gap-[12px]">
+                  <Image
+                    src={item.image}
+                    alt="image"
+                    className="w-[29px] h-[29px] custom:w-[48px] custom:h-[48px]"
+                  />
+                  <div className="flex flex-col w-[104px] items-start custom:w-[172px] custom:justify-center">
+                    <p className="font-inter font-semibold text-[9.14px] leading-[12.19px] custom:text-[15px] custom:leading-[20px]">
+                      {item.name}
+                    </p>
+                    <p className="font-inter font-normal text-[9.14px] leading-[12.19px] text-[#14202E9E] custom:text-[15px] custom:leading-[20px]">
+                      {item.role}
+                    </p>
+                  </div>
+                </div>
+                <div className="w-[141px] h-[63.38px] flex justify-start gap-[21.9px] ml-[14.61px] max-xs:w-[120px] custom:w-[232px] custom:h-[128px] custom:ml-[24px] custom:items-center">
+                  <div className="w-[0.91px] h-[59px] bg-[#495A6E33] custom:w-[1.5px] custom:h-[120px]"></div>
+                  <p className="font-inter font-normal text-[12.19px] leading-[14.63px] max-xs:text-[10px] custom:text-[20px] custom:leading-[24px]">
+                    {item.feedback}
                   </p>
                 </div>
               </div>
-              <div className="w-[141px] h-[63.38px] flex justify-start gap-[21.9px] ml-[14.61px] max-xs:w-[120px] custom:w-[232px] custom:h-[128px] custom:ml-[24px] custom:items-center">
-                <div className="w-[0.91px] h-[59px] bg-[#495A6E33] custom:w-[1.5px] custom:h-[120px]"></div>
-                <p className="font-inter font-normal text-[12.19px] leading-[14.63px] max-xs:text-[10px] custom:text-[20px] custom:leading-[24px]">
-                  Thanks to Law Decoded, I secured an internship at a top firm.
-                </p>
-              </div>
-            </div>
-          </CarouselItem>
-          <CarouselItem className="basis-1/2 custom:basis-1/4">
-            {" "}
-            <div className="w-[175px] h-[138.22px] bg-[#FFF2CF66] rounded-[12.19px] flex flex-col justify-center items-center gap-[10.97px]  max-xs:w-[140px] custom:w-[288px] custom:h-[250px] ">
-              <div className="w-[141px] h-[29.25px] flex justify-start gap-[7.31px] max-xs:w-[120px]  custom:w-[232px] custom:h-[48px] custom:gap-[12px]">
-                <Image
-                  src={Test2}
-                  alt="image"
-                  className="w-[29px] h-[29px]  custom:w-[48px] custom:h-[48px]"
-                />
-                <div className="flex flex-col w-[104px] items-start custom:w-[172px] custom:justify-center">
-                  <p className="font-inter font-semibold text-[9.14px] leading-[12.19px] custom:text-[15px] custom:leading-[20px]">
-                    Liam Thompson
-                  </p>
-                  <p className="font-inter font-normal text-[9.14px] leading-[12.19px] text-[#14202E9E] custom:text-[15px] custom:leading-[20px]">
-                    Law Graduate
-                  </p>
-                </div>
-              </div>
-              <div className="w-[141px] h-[63.38px] flex justify-start gap-[21.9px] ml-[14.61px] max-xs:w-[120px] custom:w-[232px] custom:h-[128px] custom:ml-[24px]">
-                <div className="w-[0.91px] h-[59px] bg-[#495A6E33] custom:w-[1.5px] custom:h-[120px]"></div>
-                <p className="font-inter font-normal text-[12.19px] leading-[14.63px]  max-xs:text-[10px] custom:text-[20px] custom:leading-[24px] ">
-                  Mentoring helped me navigate the complexities of law school.{" "}
-                </p>
-              </div>
-            </div>
-          </CarouselItem>
-          <CarouselItem className="basis-1/2 custom:basis-1/4">
-            {" "}
-            <div className="w-[175px] h-[138.22px] bg-[#FFF2CF66] rounded-[12.19px] flex flex-col justify-center items-center gap-[10.97px]  max-xs:w-[140px] custom:w-[288px] custom:h-[250px] ">
-              <div className="w-[141px] h-[29.25px] flex justify-start gap-[7.31px] max-xs:w-[120px]  custom:w-[232px] custom:h-[48px] custom:gap-[12px]">
-                <Image
-                  src={Test3}
-                  alt="image"
-                  className="w-[29px] h-[29px]  custom:w-[48px] custom:h-[48px]"
-                />
-                <div className="flex flex-col w-[104px] items-start custom:w-[172px] custom:justify-center">
-                  <p className="font-inter font-semibold text-[9.14px] leading-[12.19px] custom:text-[15px] custom:leading-[20px]">
-                    Sophia Martinez
-                  </p>
-                  <p className="font-inter font-normal text-[9.14px] leading-[12.19px] text-[#14202E9E] custom:text-[15px] custom:leading-[20px]">
-                    Junior Associate
-                  </p>
-                </div>
-              </div>
-              <div className="w-[141px] h-[63.38px] flex justify-start gap-[21.9px] ml-[14.61px] max-xs:w-[120px] custom:w-[232px] custom:h-[128px] custom:ml-[24px] custom:items-center">
-                <div className="w-[0.91px] h-[59px] bg-[#495A6E33] custom:w-[1.5px] custom:h-[120px]"></div>
-                <p className="font-inter font-normal text-[12.19px] leading-[14.63px]  max-xs:text-[10px] custom:text-[20px] custom:leading-[24px]">
-                  The guidance I received was instrumental in my career growth.
-                </p>
-              </div>
-            </div>
-          </CarouselItem>
-          <CarouselItem className="basis-1/2 custom:basis-1/4">
-            {" "}
-            <div className="w-[175px] h-[138.22px] bg-[#FFF2CF66] rounded-[12.19px] flex flex-col justify-center items-center gap-[10.97px]  max-xs:w-[140px] custom:w-[288px] custom:h-[250px] ">
-              <div className="w-[141px] h-[29.25px] flex justify-start gap-[7.31px] max-xs:w-[120px]  custom:w-[232px] custom:h-[48px] custom:gap-[12px]">
-                <Image
-                  src={Test4}
-                  alt="image"
-                  className="w-[29px] h-[29px]  custom:w-[48px] custom:h-[48px]"
-                />
-                <div className="flex flex-col w-[104px] items-start custom:w-[172px] custom:justify-center">
-                  <p className="font-inter font-semibold text-[9.14px] leading-[12.19px] custom:text-[15px] custom:leading-[20px]">
-                    Ethan Brown{" "}
-                  </p>
-                  <p className="font-inter font-normal text-[9.14px] leading-[12.19px] text-[#14202E9E] custom:text-[15px] custom:leading-[20px]">
-                    Paralegal{" "}
-                  </p>
-                </div>
-              </div>
-              <div className="w-[141px] h-[63.38px] flex justify-start gap-[21.9px] ml-[14.61px] max-xs:w-[120px] custom:w-[232px] custom:h-[128px] custom:ml-[24px] custom:items-center">
-                <div className="w-[0.91px] h-[59px] bg-[#495A6E33] custom:w-[1.5px] custom:h-[120px]"></div>
-                <p className="font-inter font-normal text-[12.19px] leading-[14.63px]  max-xs:text-[10px] custom:text-[20px] custom:leading-[24px]">
-                  I found my mentor&apos;s advice on work-life balance
-                  invaluable.{" "}
-                </p>
-              </div>
-            </div>
-          </CarouselItem>
+            </CarouselItem>
+          ))}
         </CarouselContent>
-        {/* <CarouselPrevious />
-        <CarouselNext /> */}
       </Carousel>
     </>
   );
