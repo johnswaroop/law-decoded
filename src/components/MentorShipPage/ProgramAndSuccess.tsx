@@ -21,75 +21,75 @@ import Test4 from "@/assets/MentorPage/TestimonyImage4.png";
 const ProgramAndSuccess = () => {
   return (
     <>
-      <div className="flex flex-col ">
-        <p className="mt-[64px] ml-[24px] mr-[24px] mb-[24px] font-georgia font-normal text-[28px] leading-[52px] -tracking-[-1%] text-[#281D1B] custom:mt-[64px] custom:w-[1344px] custom:text-start custom:mx-auto custom:mb-">
+      <div className="flex flex-col items-center ">
+        <p className="mt-[64px] ml-[24px] mr-[24px] mb-[24px] font-georgia font-normal text-[28px] leading-[52px] -tracking-[-1%] text-[#281D1B] custom:mt-[64px]  md:w-[92%] custom:text-start md:mx-0 custom:text-[48px] custom:leading-[52px]">
           Program Benefits
         </p>
         {/* brown boxes */}
-        <div className="flex flex-wrap gap-x-[21.6px] gap-y-[24px] px-[24px] max-xs:gap-x-[10px] items-center justify-center custom:gap-x-[24px] custom:gap-y-[24px] mb-[96px] custom:mb-[96px]">
+        <div className="flex flex-wrap gap-x-[21.6px] gap-y-[24px] px-[24px] max-xs:gap-x-[10px] md:p-0 md:w-[92%] items-center justify-center custom:gap-x-[24px] custom:gap-y-[24px] mb-[96px] custom:mb-[96px]">
           {/* First */}
-          <div className="w-[160.2px] h-[119.92px] bg-[#7E352517] pl-[16.24px] flex flex-col justify-center items-start gap-[11.24px] rounded-[7.49px] max-xs:w-[131px] custom:w-[432px] custom:h-[256px] custom:pl-[32px] custom:gap-[24px] custom:rounded-[16px]">
+          <div className="w-[160.2px] h-[119.92px] bg-[#7E352517] pl-[16.24px] flex flex-col justify-center items-start gap-[11.24px] rounded-[7.49px] max-xs:w-[131px] custom:w-[432px] custom:h-[256px] custom:pl-[32px] custom:gap-[24px] custom:rounded-[16px] md:w-[228px] md:h-[135px]">
             <Image
               src={Charger}
               alt="image"
-              className=" w-[27.48px] h-[14.99px] custom:w-[58px] custom:h-[32px]"
+              className=" w-[27.48px] h-[14.99px] custom:w-[58px] custom:h-[32px] md:w-[34px] md:h-[34px]"
             />
-            <p className="text-[#281D1B] font-sans font-normal text-[11.24px] leading-[14.99px] -tracking-[0.5px] w-[120px] custom:text-[24px] custom:leading-[32px] custom:w-[330px]  ">
+            <p className="text-[#281D1B] font-sans font-normal text-[11.24px] leading-[14.99px] -tracking-[0.5px] w-[120px] custom:text-[24px] custom:leading-[32px] md:w-[84%] md:text-[12px] md:leading-[16px] ">
               Gain industry insights from experienced mentors.
             </p>
           </div>
           {/* Second */}
-          <div className="w-[160.2px] h-[119.92px] bg-[#7E352517] pl-[16.24px] flex flex-col justify-center items-start gap-[11.24px] rounded-[7.49px] max-xs:w-[131px]  custom:w-[432px] custom:h-[256px] custom:pl-[32px] custom:gap-[24px] custom:rounded-[16px]">
+          <div className="w-[160.2px] h-[119.92px] bg-[#7E352517] pl-[16.24px] flex flex-col justify-center items-start gap-[11.24px] rounded-[7.49px] max-xs:w-[131px]  custom:w-[432px] custom:h-[256px] custom:pl-[32px] custom:gap-[24px] custom:rounded-[16px] md:w-[228px] md:h-[135px]">
             <Image
               src={Wifi}
               alt="image"
-              className=" w-[29.98px] h-[29.98px] custom:w-[64px] custom:h-[64px]"
+              className=" w-[29.98px] h-[29.98px] custom:w-[64px] custom:h-[64px] md:w-[34px] md:h-[34px]"
             />
-            <p className="text-[#281D1B] font-sans font-normal text-[11.24px] leading-[14.99px] -tracking-[0.5px] w-[120px] custom:text-[24px] custom:leading-[32px] custom:w-[330px] ">
+            <p className="text-[#281D1B] font-sans font-normal text-[11.24px] leading-[14.99px] -tracking-[0.5px] w-[120px] custom:text-[24px] custom:leading-[32px]  md:w-[84%] md:text-[12px] md:leading-[16px]  ">
               Gain industry insights from experienced mentors.
             </p>
           </div>
           {/* Third*/}
-          <div className="w-[160.2px] h-[119.92px] bg-[#7E352517] pl-[16.24px] flex flex-col justify-center items-start gap-[11.24px] rounded-[7.49px] max-xs:w-[131px]  custom:w-[432px] custom:h-[256px] custom:pl-[32px] custom:gap-[24px] custom:rounded-[16px]">
+          <div className="w-[160.2px] h-[119.92px] bg-[#7E352517] pl-[16.24px] flex flex-col justify-center items-start gap-[11.24px] rounded-[7.49px] max-xs:w-[131px]  custom:w-[432px] custom:h-[256px] custom:pl-[32px] custom:gap-[24px] custom:rounded-[16px] md:w-[228px] md:h-[135px]">
             <Image
               src={Circle}
               alt="image"
-              className=" w-[29.98px] h-[29.98px] custom:w-[64px] custom:h-[64px]"
+              className=" w-[29.98px] h-[29.98px] custom:w-[64px] custom:h-[64px] md:w-[34px] md:h-[34px]"
             />
-            <p className="text-[#281D1B] font-sans font-normal text-[11.24px] leading-[14.99px] -tracking-[0.5px] w-[120px] custom:text-[24px] custom:leading-[32px] custom:w-[330px] ">
+            <p className="text-[#281D1B] font-sans font-normal text-[11.24px] leading-[14.99px] -tracking-[0.5px] w-[120px] custom:text-[24px] custom:leading-[32px]  md:w-[84%] md:text-[12px] md:leading-[16px]   ">
               Gain industry insights from experienced mentors.
             </p>
           </div>
           {/* Forth */}
-          <div className="w-[160.2px] h-[119.92px] bg-[#7E352517] pl-[16.24px] flex flex-col justify-center items-start gap-[11.24px] rounded-[7.49px] max-xs:w-[131px]  custom:w-[432px] custom:h-[256px] custom:pl-[32px] custom:gap-[24px] custom:rounded-[16px]">
+          <div className="w-[160.2px] h-[119.92px] bg-[#7E352517] pl-[16.24px] flex flex-col justify-center items-start gap-[11.24px] rounded-[7.49px] max-xs:w-[131px]  custom:w-[432px] custom:h-[256px] custom:pl-[32px] custom:gap-[24px] custom:rounded-[16px] md:w-[228px] md:h-[135px]">
             <Image
               src={Wrench}
               alt="image"
-              className=" w-[29.98px] h-[29.98px] custom:w-[51px] custom:h-[51px]"
+              className=" w-[29.98px] h-[29.98px] custom:w-[51px] custom:h-[51px] md:w-[34px] md:h-[34px]"
             />
-            <p className="text-[#281D1B] font-sans font-normal text-[11.24px] leading-[14.99px] -tracking-[0.5px] w-[120px] custom:text-[24px] custom:leading-[32px] custom:w-[330px] ">
+            <p className="text-[#281D1B] font-sans font-normal text-[11.24px] leading-[14.99px] -tracking-[0.5px] w-[120px] custom:text-[24px] custom:leading-[32px] md:w-[84%] md:text-[12px] md:leading-[16px]  ">
               Gain industry insights from experienced mentors.
             </p>
           </div>
           {/* Fifth */}
-          <div className="w-[160.2px] h-[119.92px] bg-[#7E352517] pl-[16.24px] flex flex-col justify-center items-start gap-[11.24px] rounded-[7.49px] max-xs:w-[131px]  custom:w-[432px] custom:h-[256px] custom:pl-[32px] custom:gap-[24px] custom:rounded-[16px]">
+          <div className="w-[160.2px] h-[119.92px] bg-[#7E352517] pl-[16.24px] flex flex-col justify-center items-start gap-[11.24px] rounded-[7.49px] max-xs:w-[131px]  custom:w-[432px] custom:h-[256px] custom:pl-[32px] custom:gap-[24px] custom:rounded-[16px] md:w-[228px] md:h-[135px]">
             <Image
               src={Wrench}
               alt="image"
-              className="w-[29.98px] h-[29.98px] custom:w-[51px] custom:h-[51px]"
+              className="w-[29.98px] h-[29.98px] custom:w-[51px] custom:h-[51px] md:w-[34px] md:h-[34px]"
             />
-            <p className="text-[#281D1B] font-sans font-normal text-[11.24px] leading-[14.99px] -tracking-[0.5px] w-[120px] custom:text-[24px] custom:leading-[32px] custom:w-[330px] ">
+            <p className="text-[#281D1B] font-sans font-normal text-[11.24px] leading-[14.99px] -tracking-[0.5px] w-[120px] custom:text-[24px] custom:leading-[32px]  md:w-[84%] md:text-[12px] md:leading-[16px]   ">
               Gain industry insights from experienced mentors.
             </p>
           </div>
           {/* Sixth */}
-          <div className="w-[160.2px] h-[119.92px] bg-[#7E352517] pl-[16.24px] flex flex-col justify-center items-start gap-[11.24px] rounded-[7.49px] max-xs:w-[131px]  custom:w-[432px] custom:h-[256px] custom:pl-[32px] custom:gap-[24px] custom:rounded-[16px]">
+          <div className="w-[160.2px] h-[119.92px] bg-[#7E352517] pl-[16.24px] flex flex-col justify-center items-start gap-[11.24px] rounded-[7.49px] max-xs:w-[131px]  custom:w-[432px] custom:h-[256px] custom:pl-[32px] custom:gap-[24px] custom:rounded-[16px] md:w-[228px] md:h-[135px]">
             <Image
               src={Pin}
               alt="image"
-              className=" w-[29.98px] h-[29.98px] custom:w-[64px] custom:h-[64px]"
+              className=" w-[29.98px] h-[29.98px] custom:w-[64px] custom:h-[64px] md:w-[34px] md:h-[34px]"
             />
-            <p className="text-[#281D1B] font-sans font-normal text-[11.24px] leading-[14.99px] -tracking-[0.5px] w-[120px] custom:text-[24px] custom:leading-[32px] custom:w-[330px] ">
+            <p className="text-[#281D1B] font-sans font-normal text-[11.24px] leading-[14.99px] -tracking-[0.5px] w-[120px] custom:text-[24px] custom:leading-[32px]  md:w-[84%]  md:text-[12px] md:leading-[16px]  ">
               Gain industry insights from experienced mentors.
             </p>
           </div>
