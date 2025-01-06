@@ -1,13 +1,15 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import Logo from "@/assets/Hero/result.svg";
-import menu from "@/assets/Hero/menu.svg";
+// import menu from "@/assets/Hero/menu.svg";
 import searchIcon from "@/assets/Hero/searchIcon.svg";
 import Link from "next/link";
 import Image from "next/image";
 const NavBar = () => {
   return (
     <div className="w-full h-[77px] bg-[#FFF0EC] custom:h-[77px] md:h-[29.7px]">
-      <div className="w-full h-full px-[25px] flex justify-between items-center custom:px-[34px]  md:px-[17.6px]">
+      <div className="w-full h-full pl-[25px] flex justify-between items-center custom:px-[34px]  md:px-[17.6px]">
         {/* logo */}
         <div className="w-[150px] h-[50.12px] overflow-hidden relative custom:w-[150px] custom:h-[50.12px] md:w-[58.3px] md:h-[19.5px]">
           <Image
@@ -43,13 +45,14 @@ const NavBar = () => {
           </div>
         </div>
         {/* mubile hamburger menu button */}
-        <div className="w-[30px] h-[30px] overflow-hidden relative md:hidden">
-          <Image
+        <div className="  relative md:hidden z-20">
+          {/* <Image
             src={menu}
             alt="image"
             fill
             className="w-[30px] h-[30px] object-cover"
-          />
+          /> */}
+          <MobileMenu />
         </div>
       </div>
     </div>
@@ -57,3 +60,110 @@ const NavBar = () => {
 };
 
 export default NavBar;
+
+const MobileMenu = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
+  return (
+    <div className="relative z-50 lg:hidden ">
+      {/* Hamburger Button */}
+      <button
+        onClick={toggleMenu}
+        className="relative z-50 p-4 focus:outline-none"
+        aria-label="Toggle Menu"
+      >
+        <div className="flex flex-col justify-between w-6 h-5 ">
+          <span
+            className={`block h-0.5 w-full bg-black transform transition-all duration-300 ease-in-out ${
+              isOpen ? "rotate-45 translate-y-2.5" : ""
+            }`}
+          />
+          <span
+            className={`block h-0.5 w-full bg-black transition-all duration-300 ease-in-out ${
+              isOpen ? "opacity-0" : "opacity-100"
+            }`}
+          />
+          <span
+            className={`block h-0.5 w-full bg-black transform transition-all duration-300 ease-in-out ${
+              isOpen ? "-rotate-45 -translate-y-2" : ""
+            }`}
+          />
+        </div>
+      </button>
+
+      {/* Menu Content */}
+      <nav
+        className={`absolute top-[68px] right-0 bg-white shadow-lg transform transition-all duration-300 ease-in-out origin-top-right
+          md:w-64 w-screen z-10
+          ${
+            isOpen
+              ? "scale-100 opacity-100"
+              : "scale-95 opacity-0 pointer-events-none"
+          }`}
+      >
+        <div className="pt-[40px] pb-[44px] px-[56px] font-inter">
+          <ul>
+            <li className="">
+              <Link
+                href="/"
+                className=" block px-4 py-3 text-sm hover:text-[#E43D12] transition-colors"
+                onClick={toggleMenu}
+              >
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/about-us"
+                className="block px-4 py-3 text-sm hover:text-[#E43D12] transition-colors"
+                onClick={toggleMenu}
+              >
+                About Us
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/mentorship"
+                className="block px-4 py-3 text-sm hover:text-[#E43D12] transition-colors"
+                onClick={toggleMenu}
+              >
+                Mentorship Programme
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/"
+                className="block px-4 py-3 text-sm hover:text-[#E43D12] transition-colors"
+                onClick={toggleMenu}
+              >
+                Join Community
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/videos"
+                className="block px-4 py-3 text-sm hover:text-[#E43D12] transition-colors"
+                onClick={toggleMenu}
+              >
+                Videos
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/latestNews"
+                className="block px-4 py-3 text-sm hover:text-[#E43D12] transition-colors"
+                onClick={toggleMenu}
+              >
+                Latest News
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  );
+};
