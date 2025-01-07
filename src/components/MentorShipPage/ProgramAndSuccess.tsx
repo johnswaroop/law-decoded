@@ -46,7 +46,7 @@ const ProgramAndSuccess = () => {
               className=" w-[29.98px] h-[29.98px] custom:w-[64px] custom:h-[64px] md:w-[34px] md:h-[34px]"
             />
             <p className="text-[#281D1B] font-sans font-normal text-[11.24px] leading-[14.99px] -tracking-[0.5px] w-[120px] custom:text-[24px] custom:leading-[32px]  md:w-[84%] md:text-[12px] md:leading-[16px]  ">
-              Gain industry insights from experienced mentors.
+              Expand your professional network.
             </p>
           </div>
           {/* Third*/}
@@ -57,7 +57,7 @@ const ProgramAndSuccess = () => {
               className=" w-[29.98px] h-[29.98px] custom:w-[64px] custom:h-[64px] md:w-[34px] md:h-[34px]"
             />
             <p className="text-[#281D1B] font-sans font-normal text-[11.24px] leading-[14.99px] -tracking-[0.5px] w-[120px] custom:text-[24px] custom:leading-[32px]  md:w-[84%] md:text-[12px] md:leading-[16px]   ">
-              Gain industry insights from experienced mentors.
+              Receive personalized career guidance.
             </p>
           </div>
           {/* Forth */}
@@ -68,7 +68,7 @@ const ProgramAndSuccess = () => {
               className=" w-[29.98px] h-[29.98px] custom:w-[51px] custom:h-[51px] md:w-[34px] md:h-[34px]"
             />
             <p className="text-[#281D1B] font-sans font-normal text-[11.24px] leading-[14.99px] -tracking-[0.5px] w-[120px] custom:text-[24px] custom:leading-[32px] md:w-[84%] md:text-[12px] md:leading-[16px]  ">
-              Gain industry insights from experienced mentors.
+              Access to exclusive resources and events.
             </p>
           </div>
           {/* Fifth */}
@@ -79,7 +79,7 @@ const ProgramAndSuccess = () => {
               className="w-[29.98px] h-[29.98px] custom:w-[51px] custom:h-[51px] md:w-[34px] md:h-[34px]"
             />
             <p className="text-[#281D1B] font-sans font-normal text-[11.24px] leading-[14.99px] -tracking-[0.5px] w-[120px] custom:text-[24px] custom:leading-[32px]  md:w-[84%] md:text-[12px] md:leading-[16px]   ">
-              Gain industry insights from experienced mentors.
+              Improve your skills and knowledge.
             </p>
           </div>
           {/* Sixth */}
@@ -90,7 +90,7 @@ const ProgramAndSuccess = () => {
               className=" w-[29.98px] h-[29.98px] custom:w-[64px] custom:h-[64px] md:w-[34px] md:h-[34px]"
             />
             <p className="text-[#281D1B] font-sans font-normal text-[11.24px] leading-[14.99px] -tracking-[0.5px] w-[120px] custom:text-[24px] custom:leading-[32px]  md:w-[84%]  md:text-[12px] md:leading-[16px]  ">
-              Gain industry insights from experienced mentors.
+              Boost your confidence and motivation.
             </p>
           </div>
         </div>

@@ -37,26 +37,23 @@ const MentorshipForum = () => {
     <>
       {/* h = s */}
       <div
-        className={`w-full h-[1079px]  flex flex-col items-center custom:h-auto max-md:h-auto max-md:pb-[50px] md:h-auto ${
+        className={`w-full h-auto  flex flex-col items-center custom:h-auto max-md:h-auto max-md:pb-[50px] md:h-auto ${
           pathname.endsWith("mentorship") ? "bg-white" : "bg-[#FFF2CF]"
         }`}
       >
         {/* h = t + s + b */}
-        <p className="font-georgia font-bold text-[32px] leading-[50px] text-center mt-[60px] mb-[65px] custom:mt-[97px] custom:text-[40px] custom:leading-[50px] custom:mb-[22px] md:mt-[51.42px] md:mb-[11.66px] md:w-[309.57px] md:text-[21.2px] md:leading-[26.5px] md:-tracking-[0.53px] custom:w-[584px]">
-          Sagar Poovayya Mentorship
-          <br className="max-custom:hidden" /> Program
+        <p className="font-georgia font-bold text-[32px] leading-[50px] text-center mt-[60px] mb-[65px] custom:mt-[97px] custom:text-[40px] custom:leading-[50px]  md:mt-[51.42px] md:mb-[11.66px] md:w-[309.57px] md:text-[21.2px] md:leading-[26.5px] md:-tracking-[0.53px] custom:w-[584px] custom:mb-[34px] ">
+          Sajan Poovayya <br /> Mentorshiop Program for{" "}
+          <br className="max-custom:hidden" /> law Students
         </p>
 
-        <p className="font-inter font-normal text-[16px] leading-[28px] -tracking-[0.2px] text-justify w-[304.49px] mb-[52px] custom:text-[18px] custom:leading-[28px] custom:font-normal custom:w-[551px] custom:text-justify custom:mb-[51px] text-[#212424] md:text-[9.54px] md:leading-[14.84px] md:text-justify md:mb-[27.03px]">
-          Sajan Poovayya Mentorship program is designed to bridge the gap
-          between academic learning and real world legal practice. The number of
-          law students across the country has seen a sharp rise. Many sharp
-          minds often find lack of mentorship, opportunities and face a glass
-          ceiling. We have designed series of measures to bridge this gap. Our
-          efforts include weekly newsletters, opportunity for students to write
-          for our website and newsletters, special seminars and events designed
-          for law students, court internships and also a merit based
-          scholarship. We also host series of guest lectures and workshops.
+        <p className="font-inter font-normal text-[16px] leading-[28px] -tracking-[0.2px] text-justify w-[304.49px] mb-[52px] custom:text-[18px] custom:leading-[28px] custom:font-normal custom:w-[551px] custom:text-justify custom:mb-[51px] text-[#212424] md:text-[9.54px] md:leading-[14.84px] md:text-justify md:mb-[27.03px] ">
+          Join Our Community Step a realm where ambition meets opportunity! Our
+          mentorship program invites you to connect with a new world. Embrace
+          the chance to ignite your potential and broaden your horizons in a
+          supportive community that values growth and inclusivity. Ready to
+          embark on this exciting journey? Fill out the form below and
+          let&apos;s make waves together!
         </p>
 
         <form
