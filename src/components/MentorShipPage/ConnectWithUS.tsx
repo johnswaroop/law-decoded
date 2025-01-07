@@ -17,10 +17,10 @@ const ConnectWithUS = () => {
         {/* First  box */}
         <div className="flex flex-col md:flex-row custom:w-[1344px] h-auto  md:items-start md:justify-between custom:mb-[250px] md:mb-[154px]  md:w-[92%]">
           {" "}
-          <p className="font-georgia font-normal text-[28px] leading-[33.41px] -tracking-[2%] text-[#1B2128] mb-[24px]  text-start custom:text-[48px] custom:leading-[52px] custom:m-0 md:text-[25px] md:leading-[27px]">
+          <p className="font-georgia font-normal text-[28px] leading-[33.41px] -tracking-[2%] text-[#1B2128] mb-[24px]  text-start custom:text-[48px] custom:leading-[52px] custom:m-0 md:text-[25px] md:leading-[27px] max-md:text-center ">
             What is the Mentorship Programme?
           </p>
-          <div className="flex justify-start w-full px-[24px] md:p-0 mb-[114.48px] md:mb-0 custom:w-[624px] custom:p-0 md:w-[48%]">
+          <div className="flex justify-start w-full px-[24px] md:p-0 mb-[114.48px] md:mb-0 custom:w-[624px] custom:p-0 md:w-[48%] max-md:justify-center">
             <p className=" font-outfit font-normal text-[16px] leading-[20.56px] text-[#1B2128] w-[255px] custom:text-[24px] custom:leading-[32px] md:w-full custom:text-justify md:text-[12px] md:leading-[16px]">
               Gain invaluable insights, network with professionals, and receive
               personalized guidance to excel in your legal career. Gain
@@ -36,11 +36,11 @@ const ConnectWithUS = () => {
         {/* Secong Box */}
         <div className="flex flex-col mb-[114.48px] md:flex-row-reverse  custom:w-[1344px] custom:h-[288px]  md:items-start md:justify-between custom:mb-[146px] md:w-[92%]">
           {" "}
-          <p className="font-georgia font-normal text-[28px] leading-[33.41px] -tracking-[2%] text-[#1B2128] mb-[24px]  text-end custom:text-[48px] custom:leading-[52px] custom:m-0">
+          <p className="font-georgia font-normal text-[28px] leading-[33.41px] -tracking-[2%] text-[#1B2128] mb-[24px]  text-end custom:text-[48px] custom:leading-[52px] custom:m-0  max-md:text-center ">
             Why Choose this
             <br className="max-md:hidden" /> Programme?
           </p>
-          <div className="flex justify-end w-full px-[24px] md:w-[46%]  custom:w-[624px] custom:h-full md:p-0">
+          <div className="flex justify-end w-full px-[24px] md:w-[46%]  custom:w-[624px] custom:h-full md:p-0 max-md:justify-center">
             <p className=" font-outfit font-normal text-[16px] leading-[20.56px] text-[#1B2128] w-[255px]  custom:text-[24px] custom:leading-[32px] md:w-full custom:text-justify custom:h-full">
               Gain invaluable insights, network with professionals, and receive
               personalized guidance to excel in your legal career. Gain

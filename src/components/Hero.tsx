@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import OwlImage from "@/assets/Hero/Mask-group.png";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -30,11 +31,14 @@ const Hero = () => {
             </p>
           </div>
           {/* knowMore */}
-          <button className="bg-[#DD4826] w-[133px] h-[48px] flex justify-center items-center custom:h-[52px] md:w-[71px] md:h-[27.58px] custom:w-[133px] max-md:mb-[84px] ">
+          <Link
+            href={"/about-team"}
+            className="bg-[#DD4826] w-[133px] h-[48px] flex justify-center items-center custom:h-[52px] md:w-[71px] md:h-[27.58px] custom:w-[133px] max-md:mb-[84px] "
+          >
             <p className="text-white font-inter font-medium text-[16px] leading-[24px] -tracking-[0.16px] custom:text-[16px] custom:leading-[24px] md:text-[8.49px] md:leading-[12.73px]">
               Know More
             </p>
-          </button>
+          </Link>
         </div>
       </div>
     </>

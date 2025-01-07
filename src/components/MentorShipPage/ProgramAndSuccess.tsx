@@ -22,7 +22,7 @@ const ProgramAndSuccess = () => {
   return (
     <>
       <div className="flex flex-col items-center ">
-        <p className="mt-[64px] ml-[24px] mr-[24px] mb-[24px] font-georgia font-normal text-[28px] leading-[52px] -tracking-[-1%] text-[#281D1B] custom:mt-[64px]  md:w-[92%] custom:text-start md:mx-0 custom:text-[48px] custom:leading-[52px]">
+        <p className="mt-[64px] ml-[24px] mr-[24px] mb-[24px] font-georgia font-normal text-[28px] leading-[52px] -tracking-[-1%] text-[#281D1B] custom:mt-[64px]  md:w-[92%] custom:text-start md:mx-0 custom:text-[48px] custom:leading-[52px] ">
           Program Benefits
         </p>
         {/* brown boxes */}
