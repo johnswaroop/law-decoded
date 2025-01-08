@@ -36,15 +36,15 @@ export default function DisclaimerModal() {
         <div className="space-y-6 text-gray-600">
           <p className="leading-relaxed">
             The rules of the Bar Council of India prohibit law firms from
-            soliciting work or advertising in any manner. By clicking on 'I
-            AGREE', the user acknowledges that
+            soliciting work or advertising in any manner. By clicking on I
+            AGREE, the user acknowledges that
           </p>
           <p className="leading-relaxed">
             The user wishes to gain more information about Law Decoded, its
             practice areas and its attorneys, for his/her own information and
             use The information is made available/provided to the user only on
             his/her specific request and any information obtained or material
-            downloaded from this website is completely at the user's volition
+            downloaded from this website is completely at the user`s volition
             and any transmission, receipt or use of this site is not intended
             to, and will not, create any lawyer-client relationship and None of
             the information contained on the website is in the nature of a legal

@@ -22,7 +22,7 @@ const MentorshipForum = () => {
   const pathname = usePathname();
 
   const validate = () => {
-    let errors = { name: "", email: "", phone: "", message: "" };
+    const errors = { name: "", email: "", phone: "", message: "" };
     let isValid = true;
 
     if (!formData.name) {
@@ -89,6 +89,7 @@ const MentorshipForum = () => {
         throw new Error("Failed to submit the form.");
       }
     } catch (error) {
+      console.log(error);
       setErrorMessage("An error occurred while submitting the form.");
     } finally {
       setIsSubmitting(false);
