@@ -8,11 +8,13 @@ import LawDecoded from "@/components/LawDecoded";
 import MentorshipForum from "@/components/MentorshipForum";
 import ReviewsAndLinks from "@/components/ReviewsAndLinks";
 import WhiteBox from "@/components/WhiteBox";
+import DisclaimerModal from "@/components/Disclaimer";
 
 export default function Home() {
   return (
     //checking
     <>
+      <DisclaimerModal />
       <Hero />
       <AboutSection />
       <EfficientModel />
