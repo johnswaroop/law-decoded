@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import { Outfit, Inter, Domine } from "next/font/google";
 import NavBar from "@/components/NavBar";
+import ScaleProvider from "@/components/scaleProvider";
 
 import "./globals.css";
 
@@ -54,8 +55,10 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${outfit.variable} ${georgia.variable} ${inter.variable} ${domine.variable}  antialiased`}
       >
-        <NavBar />
-        {children}
+        <ScaleProvider>
+          <NavBar />
+          {children}
+        </ScaleProvider>
       </body>
     </html>
   );
