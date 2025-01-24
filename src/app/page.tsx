@@ -1,4 +1,4 @@
-import AboutSanjay from "@/components/AboutSanjay";
+// import AboutSanjay from "@/components/AboutSanjay";
 import AboutSection from "@/components/AboutSection";
 import EfficientModel from "@/components/EfficientModel";
 import Footer from "@/components/Footer";
