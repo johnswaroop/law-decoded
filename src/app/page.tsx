@@ -19,7 +19,7 @@ export default function Home() {
       <AboutSection />
       <EfficientModel />
       <LawDecoded />
-      <AboutSanjay />
+      {/* <AboutSanjay /> */}
       <WhiteBox />
       <ILinkeBeing />
       <ReviewsAndLinks />
