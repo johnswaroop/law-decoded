@@ -99,95 +99,106 @@ const MentorshipForum = () => {
   return (
     <>
       <div
-        id="contact"
-        className={`w-full h-auto flex flex-col items-center custom:h-auto max-md:h-auto max-md:pb-[50px] md:h-auto ${
-          pathname.endsWith("mentorship") ? "bg-white" : "bg-[#FFF2CF]"
-        }`}
+      id="contact"
+      className={`w-full min-h-screen flex flex-col items-center px-4 py-12 xs:py-16 mid:py-20 custom:py-24 ${
+        pathname.endsWith("mentorship") ? "bg-white" : "bg-[#FFF2CF]"
+      }`}
       >
-        <p className="font-georgia font-bold text-[32px] leading-[50px] text-center mt-[60px] mb-[65px] custom:mt-[97px] custom:text-[40px] custom:leading-[50px]  md:mt-[51.42px] md:mb-[11.66px] md:w-[309.57px] md:text-[21.2px] md:leading-[26.5px] md:-tracking-[0.53px] custom:w-[584px] custom:mb-[34px] ">
-          Sajan Poovayya <br /> Mentorship Program for{" "}
-          <br className="max-custom:hidden" /> law Students
-        </p>
+      <h1 className="font-georgia font-bold text-center mb-6 
+        text-2xl xs:text-[28px] mid:text-[32px] lg:text-[36px] custom:text-[40px]
+        leading-normal xs:leading-tight mid:leading-relaxed
+        w-full xs:w-[90%] mid:w-[80%] lg:w-[600px] custom:w-[584px]">
+        Sajan Poovayya <br /> Mentorship Program for{" "}
+        <br className="hidden custom:block" /> law Students
+      </h1>
 
-        <p className="font-inter font-normal text-[16px] leading-[28px] -tracking-[0.2px] text-justify w-[304.49px] mb-[52px] custom:text-[18px] custom:leading-[28px] custom:font-normal custom:w-[551px] custom:text-justify custom:mb-[51px] text-[#212424] md:text-[9.54px] md:leading-[14.84px] md:text-justify md:mb-[27.03px] ">
-          Join Our Community Step a realm where ambition meets opportunity! Our
-          mentorship program invites you to connect with a new world. Embrace
-          the chance to ignite your potential and broaden your horizons in a
-          supportive community that values growth and inclusivity. Ready to
-          embark on this exciting journey? Fill out the form below and
-          let&apos;s make waves together!
-        </p>
+      <p className="font-inter text-[#212424] text-center mb-8 
+        text-sm xs:text-[15px] mid:text-base lg:text-[17px] custom:text-[18px]
+        leading-relaxed
+        w-full xs:w-[90%] mid:w-[80%] lg:w-[500px] custom:w-[551px]">
+        Join Our Community Step a realm where ambition meets opportunity! Our
+        mentorship program invites you to connect with a new world. Embrace
+        the chance to ignite your potential and broaden your horizons in a
+        supportive community that values growth and inclusivity. Ready to
+        embark on this exciting journey? Fill out the form below and
+        let's make waves together!
+      </p>
 
-        {successMessage && <p className="text-green-500">{successMessage}</p>}
-        {errorMessage && <p className="text-red-500">{errorMessage}</p>}
+      {successMessage && <p className="text-green-500 mb-4">{successMessage}</p>}
+      {errorMessage && <p className="text-red-500 mb-4">{errorMessage}</p>}
 
+      <div className="w-full max-w-[1440px] px-4 xs:px-6 lg:px-8">
         <form
-          onSubmit={handleSubmit}
-          className="flex flex-col gap-[25px] items-center md:gap-[13.25px] custom:gap-[25px]"
+        onSubmit={handleSubmit}
+        className="flex flex-col gap-4 w-full max-w-[320px] xs:max-w-[400px] mid:max-w-[450px] lg:max-w-[500px] custom:max-w-[551px] mx-auto"
         >
-          <input
-            type="text"
-            name="name"
-            placeholder="Name*"
-            value={formData.name}
-            onChange={handleChange}
-            className={`border-2 ${
-              formErrors.name ? "border-red-500" : "border-gray-300"
-            } rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 w-[341px] max-xs:w-[300px] h-[55px] px-3 py-2 custom:w-[551px] custom:h-[55px] custom:rounded-[5px] md:w-[292.08px] md:h-[29.15px] md:rounded-[2.65px] md:placeholder:text-[9.54px] custom:placeholder:text-[18px]`}
-          />
-          {formErrors.name && (
-            <p className="text-red-500 text-xs">{formErrors.name}</p>
-          )}
+        <input
+          type="text"
+          name="name"
+          placeholder="Name*"
+          value={formData.name}
+          onChange={handleChange}
+          className={`w-full h-12 xs:h-[45px] mid:h-[50px] custom:h-[55px] px-4 rounded-md border-2 ${
+          formErrors.name ? "border-red-500" : "border-gray-300"
+          } focus:outline-none focus:ring-2 focus:ring-blue-500`}
+        />
+        {formErrors.name && (
+          <p className="text-red-500 text-xs mt-1">{formErrors.name}</p>
+        )}
 
-          <input
-            type="email"
-            name="email"
-            placeholder="Email*"
-            value={formData.email}
-            onChange={handleChange}
-            className={`border-2 ${
-              formErrors.email ? "border-red-500" : "border-gray-300"
-            } rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 w-[341px] max-xs:w-[300px] h-[55px] px-3 py-2 custom:w-[551px] custom:h-[55px] custom:rounded-[5px] md:w-[292.08px] md:h-[29.15px] md:rounded-[2.65px] md:placeholder:text-[9.54px] custom:placeholder:text-[18px]`}
-          />
-          {formErrors.email && (
-            <p className="text-red-500 text-xs">{formErrors.email}</p>
-          )}
+        <input
+          type="email"
+          name="email"
+          placeholder="Email*"
+          value={formData.email}
+          onChange={handleChange}
+          className={`w-full h-12 xs:h-[45px] mid:h-[50px] custom:h-[55px] px-4 rounded-md border-2 ${
+          formErrors.email ? "border-red-500" : "border-gray-300"
+          } focus:outline-none focus:ring-2 focus:ring-blue-500`}
+        />
+        {formErrors.email && (
+          <p className="text-red-500 text-xs mt-1">{formErrors.email}</p>
+        )}
 
-          <input
-            type="tel"
-            name="phone"
-            placeholder="Phone*"
-            value={formData.phone}
-            onChange={handleChange}
-            className={`border-2 ${
-              formErrors.phone ? "border-red-500" : "border-gray-300"
-            } rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 w-[341px] max-xs:w-[300px] h-[55px] px-3 py-2 custom:w-[551px] custom:h-[55px] custom:rounded-[5px] md:w-[292.08px] md:h-[29.15px] md:rounded-[2.65px] md:placeholder:text-[9.54px] custom:placeholder:text-[18px]`}
-          />
-          {formErrors.phone && (
-            <p className="text-red-500 text-xs">{formErrors.phone}</p>
-          )}
+        <input
+          type="tel"
+          name="phone"
+          placeholder="Phone*"
+          value={formData.phone}
+          onChange={handleChange}
+          className={`w-full h-12 xs:h-[45px] mid:h-[50px] custom:h-[55px] px-4 rounded-md border-2 ${
+          formErrors.phone ? "border-red-500" : "border-gray-300"
+          } focus:outline-none focus:ring-2 focus:ring-blue-500`}
+        />
+        {formErrors.phone && (
+          <p className="text-red-500 text-xs mt-1">{formErrors.phone}</p>
+        )}
 
-          <textarea
-            name="message"
-            placeholder="Message*"
-            value={formData.message}
-            onChange={handleChange}
-            className={`border-2 ${
-              formErrors.message ? "border-red-500" : "border-gray-300"
-            } rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 w-[341px] max-xs:w-[300px] h-[159px] px-3 py-2 custom:w-[551px] custom:h-[159px] custom:rounded-[5px] md:w-[292.08px] md:h-[84.28px] md:rounded-[2.65px] md:placeholder:text-[9.54px] custom:placeholder:text-[18px]`}
-          />
-          {formErrors.message && (
-            <p className="text-red-500 text-xs">{formErrors.message}</p>
-          )}
+        <textarea
+          name="message"
+          placeholder="Message*"
+          value={formData.message}
+          onChange={handleChange}
+          className={`w-full h-[100px] xs:h-[120px] mid:h-[140px] custom:h-[159px] px-4 py-3 rounded-md border-2 ${
+          formErrors.message ? "border-red-500" : "border-gray-300"
+          } focus:outline-none focus:ring-2 focus:ring-blue-500`}
+        />
+        {formErrors.message && (
+          <p className="text-red-500 text-xs mt-1">{formErrors.message}</p>
+        )}
 
-          <button
-            type="submit"
-            className="w-[341px] h-[64px] flex justify-center items-center rounded-[8px] bg-[#DD4826] hover:bg-[#5f271a] max-xs:w-[300px] custom:w-[551px] custom:h-[55px] custom:rounded-[5px]  md:placeholder:text-[9.54px] md:w-[292.08px] md:h-[33px] md:roudded-[4.24px] md:mb-[51.42px]"
-            disabled={isSubmitting}
-          >
-            {isSubmitting ? "Submitting..." : "Submit"}
-          </button>
+        <button
+          type="submit"
+          className="w-full h-12 xs:h-[45px] mid:h-[50px] custom:h-[55px] 
+          flex justify-center items-center rounded-md 
+          bg-[#DD4826] hover:bg-[#5f271a] transition-colors
+          text-white font-medium"
+          disabled={isSubmitting}
+        >
+          {isSubmitting ? "Submitting..." : "Submit"}
+        </button>
         </form>
+      </div>
       </div>
     </>
   );
