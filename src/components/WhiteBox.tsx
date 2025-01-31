@@ -4,69 +4,50 @@ import Image from "next/image";
 
 const WhiteBox = () => {
   return (
-    <>
-      {/* height= top + center + bottom */}
-      <div className="w-full h-[900.71px] flex flex-col items-center md:h-auto  custom:h-[1019px] max-md:pt-[50px] custom:pb-[133.71px] custom:pt-[141px]">
-        {/* h = t + s + b */}
-        {/* outer-box only visible > 1440px */}
-        <div className="max-md:hidden w-[944px] h-[765.29px] border-[1px] border-[#000000] mt-[141px] mb-[133px] flex flex-col items-center md:w-[545.99px] md:h-[395.19px] md:mt-[74.74px] md:mb-[70.23px] custom:w-[1030px] custom:h-auto custom:m-0 custom:pb-[40px]">
-          {/* inner box */}
-          <div className="mt-[151.21px] w-[320px] h-[234px] border-[1.69px] border-[#202020] mb-[43px] max-xs:w-[300px]    custom:mt-[40px] custom:mb-[28px] custom:w-[918px] custom:h-[276.29px] flex justify-center items-center md:mt-[21.2px] md:mb-[14.84px] md:w-[486.62px] md:h-[146.45px] md:border-[1.06px]">
-            <Image
-              src={ImageNews}
-              alt="image"
-              className="md:w-[486.62px] md:h-[146.45px] w-[320px] h-[234px]  custom:w-[918px] custom:h-[276.29px]"
-            />
+    <section className="w-full px-4 py-12 md:py-16 lg:py-24">
+      <div className="max-w-[1440px] mx-auto">
+        {/* Main container */}
+        <div className="w-full flex flex-col items-center">
+          {/* Box container with border */}
+          <div className="w-full max-w-[320px] md:max-w-[546px] lg:max-w-[944px] xl:max-w-[1030px] border border-black p-4 md:p-6 lg:p-8">
+            {/* Image container */}
+            <div className="relative w-full aspect-[4/3] md:aspect-[3/1] border border-[#202020] mb-6 md:mb-8">
+              <Image
+                src={ImageNews}
+                alt="News image"
+                fill
+                className="object-cover"
+                sizes="(max-width: 320px) 320px, (max-width: 546px) 546px, (max-width: 944px) 944px, 1030px"
+              />
+            </div>
+
+            {/* Content */}
+            <div className="space-y-4">
+              <h2 className="font-georgia text-2xl md:text-[21.2px] lg:text-3xl xl:text-4xl leading-tight text-center md:text-left">
+                Marital Rape
+              </h2>
+
+              <p className="font-inter font-medium text-[#121212] text-base md:text-sm lg:text-lg">
+                Sajan Poovayya
+              </p>
+
+              <div className="font-inter text-base md:text-sm lg:text-lg text-[#212424] text-justify md:text-left">
+                In Karnataka in 2022, a landmark decision unfolded as Justice M.
+                Nagaprasanna declared the marital rape exception in India&apos;s
+                legal system to be regressive and violative of the right to
+                equality. The case centered around a woman who accused her husband,
+                Hrishikesh Sahoo, of rape and other offenses—a bold move that
+                challenged...
+              </div>
+
+              <button className="w-full md:w-auto px-6 py-3 md:py-2 lg:py-4 bg-[#DD4826] text-white font-inter font-medium text-sm md:text-base rounded-lg hover:bg-opacity-90 transition-colors">
+                Continue reading
+              </button>
+            </div>
           </div>
-          {/* h = s + b */}
-          <div className="w-[329px] text-[28px] font-georgia font-normal leading-[36px] text-center mb-[12px]  max-xs:w-[300px] custom:text-[40px] custom:leading-[50px] custom:w-[918px] custom:h-[50px] custom:text-start custom:mb-[12px] md:text-[21.2px] md:leading-[26.5px] md:-tracking-[0.53px] md:w-[484.62px] md:text-start md:mb-[6.36px]">
-            Marital Rape
-          </div>
-          <p className="max-md:hidden mt-[12px] font-inter font-medium text-[#121212] w-[812px] text-[18px] leading-[28px] -tracking-[0.16px] mb-[32px] md:w-[484.62px] md:text-[9.54px] md:leading-[14.84px] md:mt-0 md:mb-[16.96px] custom:w-[918px] custom:text-[18px] custom:leading-[28px] custom:mb-[32px]">
-            Sajan Poovayya
-          </p>
-
-          {/* h = s + b */}
-          <div className="w-[320px] h-[280px] font-inter font-normal text-[18px] leading-[28px] text-[#212424] text-justify custom:text-left mb-[45px] max-xs:w-[300px]  custom:h-[129px] custom:mb-[45px] custom:text-[18px] custom:leading-[28px]  md:w-[484.62px] md:text-[9.54px] md:leading-[14.84px] md:mb-[23.85px] md:h-auto custom:w-[918px]">
-            In Karnataka in 2022, a landmark decision unfolded as Justice M.
-            Nagaprasanna declared the marital rape exception in India&lsquo;s
-            legal system to be regressive and violative of the right to
-            equality. The case centered around a woman who accused her husband,
-            Hrishikesh Sahoo, of rape and other offenses—a bold move that
-            challenged...
-          </div>
-
-          <button className="bg-[#DD4826] w-[129px] h-[48px] flex justify-center items-center text-white text-[16px] font-inter font-medium custom:h-[64px] custom:rounded-[8px]  md:w-[484.62px] md:h-[33.93px] md:rounded-[4.24px] custom:w-[918px]">
-            <p>Continue reading</p>
-          </button>
         </div>
-
-        {/* mobile box */}
-        <div className="mt-[100px] w-[317px] h-[107px]  mb-[43px] max-xs:w-[300px]    custom:mt-[40px] custom:mb-[28px] custom:w-[812px] custom:h-[276.29px] flex justify-center items-center md:hidden">
-          <Image src={ImageNews} alt="image" />
-        </div>
-        {/* h = s + b */}
-        <div className="w-[329px] text-[28px] font-georgia font-normal leading-[36px] text-center mb-[12px]  max-xs:w-[300px] custom:text-[40px] custom:leading-[50px] custom:w-[812px] custom:h-[100px] custom:text-start custom:mb-[43px] md:hidden">
-          Marital Rape
-        </div>
-        <p className="mb-[30px] font-inter font-medium text-[#121212] md:hidden ">
-          Sajan Poovayya
-        </p>
-
-        {/* h = s + b */}
-        <div className="w-[320px] h-[280px] font-inter font-normal text-[18px] leading-[28px] text-[#212424] text-justify mb-[45px] max-xs:w-[300px] custom:w-[812px] custom:h-[129px] custom:mb-[45px] custom:text-[22p md:hidden">
-          In Karnataka in 2022, a landmark decision unfolded as Justice M.
-          Nagaprasanna declared the marital rape exception in India&lsquo;s
-          legal system to be regressive and violative of the right to equality.
-          The case centered around a woman who accused her husband, Hrishikesh
-          Sahoo, of rape and other offenses—a bold move that challenged...
-        </div>
-
-        <button className="bg-[#DD4826] w-[139px] h-[48px] flex justify-center items-center text-white text-[14px] font-inter font-medium custom:w-[812px] custom:h-[64px] custom:rounded-[8px] md:hidden rounded-[7px] ">
-          <p>Continue Reading</p>
-        </button>
       </div>
-    </>
+    </section>
   );
 };
 

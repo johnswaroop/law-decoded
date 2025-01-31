@@ -1,49 +1,54 @@
 import React from "react";
-// import MountainIcon from "@/assets/AboutSection/Mountain.svg";
 import LawDecodedw from "@/assets/LawDecoded/ImageOwl.png";
 import Image from "next/image";
 
 const LawDecoded = () => {
   return (
-    <>
-      {/* height =  self + bottom */}
-      <div className="h-[774px] w-full flex flex-col items-center custom:h-auto  custom:mt-[63px] mt-[70px] md:mt-0 md:h-auto md:mb-[71.01px] custom:mb-[157px]">
-        {/* Mt icon */}
-        <div className="w-[442px] h-[121px] overflow-hidden relative mb-[135px] custom:mb-[60px] max-custom:w-[342px] max-custom:mb-[40px] max-xs:w-[300px] md:w-[235px] md:h-[78px] md:mb-[28.21px] custom:w-[443px] custom:h-[148px]">
-          <Image
-            src={LawDecodedw}
-            alt="mountain"
-            fill
-            className="object-fit w-[443px] h-[148px] custom:w-[443px] custom:h-[148px] max-custom:w-[342px] max-xs:w-[300px] md:w-[235px] md:h-[78px] "
-          />
-        </div>
-        {/* Text */}
-        <div className="w-full h-[95px] flex justify-center items-center max-custom:mb-[20px] md:h-[26.52px] md:mb-[15.38px] ">
-          <p className="font-georgia font-normal text-[32px] leading-[40px] -tracking-[1px] text-center custom:text-[40px] custom:leading-[50px] md:text-[21.22px] md:leading-[26.52px] md:-tracking-[0.53px] custom:mb-[29px]">
-            Law Decoded with
-            <br className="md:hidden" /> Sajan Poovayya
-          </p>
-        </div>
-
-        {/* small text + button */}
-        <div className="w-full h-[400px] flex flex-col  items-center custom:h-[300px] md:h-auto">
-          <p className="w-[336px] h-[315px] font-inter font-normal text-[16px] leading-[28px] -tracking-tighter-[0.2px] text-justify  max-xs:w-[300px] custom:text-[18px] custom:leading-[28px]  custom:h-[199px] text-[#212424] md:text-[9.55px] md:leading-[14.85px] md:-tracking-[0.11px] md:h-auto md:text-justify custom:-tracking-[0.2px] custom:w-[606px]">
-            Law Decoded is a platform dedicated to empowering the legal
-            community by bridging the gap between aspiring law students and
-            experienced lawyers. Through its mentorship program, Law Decoded
-            fosters meaningful connections, providing students with the guidance
-            they need to navigate their legal journey while offering lawyers an
-            opportunity to share their expertise and shape the next generation
-            of legal professionals.
-          </p>
-          <button className="w-[129px] h-[48px] flex justify-center items-center bg-[#DD4826] mt-[39.9px] md:mt-[21.2px] text-white custom:mt-[40px] custom:w-[466px] custom:h-[64px] md:w-[247.02px] md:h-[33.93px]">
-            <p className="font-inter font-medium text-[16px] md:text-[8.48px] md:leading-[12.72px] custom:text-[16px] custom:leading-[24px] custom:-tracking-[0.16px]">
-              Read More
-            </p>
-          </button>
-        </div>
+    <div className="w-full flex flex-col items-center px-4 my-8 xs:my-12 sm:my-16 mid:my-20 lg:my-24 custom:my-[157px]">
+      {/* Logo/Image container */}
+      <div className="relative w-[280px] h-[93px] xs:w-[320px] xs:h-[107px] sm:w-[342px] sm:h-[121px] mid:w-[380px] mid:h-[127px] lg:w-[400px] lg:h-[134px] custom:w-[443px] custom:h-[148px] mb-6 sm:mb-8 mid:mb-10 lg:mb-12 custom:mb-[60px]">
+        <Image
+          src={LawDecodedw}
+          alt="Law Decoded Logo"
+          fill
+          sizes="(max-width: 390px) 280px,
+                 (max-width: 640px) 320px,
+                 (max-width: 768px) 342px,
+                 (max-width: 1024px) 380px,
+                 (max-width: 1440px) 400px,
+                 443px"
+          className="object-contain"
+          priority
+        />
       </div>
-    </>
+
+      {/* Title */}
+      <div className="mb-4 sm:mb-6 mid:mb-8 lg:mb-10 custom:mb-[29px]">
+        <h1 className="font-georgia text-center text-[24px] leading-[32px] xs:text-[28px] xs:leading-[36px] sm:text-[32px] sm:leading-[40px] mid:text-[34px] mid:leading-[42px] lg:text-[36px] lg:leading-[45px] custom:text-[40px] custom:leading-[50px] tracking-[-0.5px]">
+          <span>Law Decoded with</span>
+          <span className="sm:hidden"><br /></span>
+          <span className="sm:ml-2"> Sajan Poovayya</span>
+        </h1>
+      </div>
+
+      {/* Description and CTA */}
+      <div className="flex flex-col items-center max-w-[280px] xs:max-w-[320px] sm:max-w-[400px] mid:max-w-[480px] lg:max-w-[500px] custom:max-w-[606px]">
+        <p className="text-[#212424] text-justify font-inter text-[13px] leading-[22px] xs:text-[14px] xs:leading-[24px] sm:text-[15px] sm:leading-[26px] mid:text-[16px] mid:leading-[28px] lg:text-[17px] lg:leading-[29px] custom:text-[18px] custom:leading-[30px] tracking-[-0.2px] mb-6 sm:mb-8 mid:mb-10 custom:mb-[32px]">
+          Law Decoded is a platform dedicated to empowering the legal community by
+          bridging the gap between aspiring law students and experienced lawyers.
+          Through its mentorship program, Law Decoded fosters meaningful
+          connections, providing students with the guidance they need to navigate
+          their legal journey while offering lawyers an opportunity to share their
+          expertise and shape the next generation of legal professionals.
+        </p>
+
+        <button className="bg-[#DD4826] text-white font-inter w-full xs:w-[320px] sm:w-[400px] mid:w-[350px] lg:w-[400px] custom:w-[466px] h-[40px] xs:h-[44px] sm:h-[48px] mid:h-[52px] lg:h-[58px] custom:h-[64px] transition-all duration-300 hover:bg-[#c13d1f]">
+          <span className="font-medium text-[13px] xs:text-[14px] sm:text-[15px] mid:text-[15px] lg:text-[16px] custom:text-[16px] leading-normal">
+            Read More
+          </span>
+        </button>
+      </div>
+    </div>
   );
 };
 
