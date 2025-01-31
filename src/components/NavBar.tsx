@@ -22,6 +22,7 @@ const NavBar = () => {
         {/* middle buttons - hidden on mobile */}
         <div className="hidden mid:flex items-center">
           <div className="font-outfit font-medium text-[13px] lg:text-[14px] custom:text-[15px] flex items-center gap-3 lg:gap-4 custom:gap-[16px] text-[#281D1B]">
+          <Link href={"/"}>Home</Link>
             <Link href={"/about-us"}>About Us</Link>
             <Link href={"/mentorship"}>Mentorship Programme</Link>
             <Link href={"/"}>Join Community</Link>

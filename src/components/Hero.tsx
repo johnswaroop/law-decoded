@@ -1,29 +1,28 @@
-import React from "react";
 import Image from "next/image";
 import OwlImage from "@/assets/Hero/Mask-group.png";
 import Link from "next/link";
 
 const Hero = () => {
   return (
-    <div className="w-full min-h-[400px] xs:min-h-[450px] sm:min-h-[500px] mid:min-h-[550px] lg:min-h-[580px] custom:h-[603px] mb-6 sm:mb-8 mid:mb-[30px] custom:mb-[50px]">
+    <div className="w-full mb-[3.42%] sm:mb-[4.275%] mid:mb-[5.13%] custom:mb-[5.985%] max-w-[1920px] mx-auto">
       {/* Owl Image */}
-      <div className="relative flex justify-center items-end h-[140px] xs:h-[160px] sm:h-[180px] mid:h-[200px] lg:h-[210px] custom:h-[240px] mt-4 sm:mt-8 custom:mt-[60px] mb-4 custom:mb-[20px]">
-        <div className="relative w-[100px] h-[112px] xs:w-[120px] xs:h-[135px] sm:w-[130px] sm:h-[146px] mid:w-[140px] mid:h-[157px] lg:w-[150px] lg:h-[168px] custom:w-[159.38px] custom:h-[179.58px]">
-          <Image src={OwlImage} alt="Owl" fill className="object-cover" />
+      <div className="relative flex justify-center items-end min-h-[250px] h-[40vh] xs:h-[30vh] sm:h-[22vh] mid:h-[23vh] lg:h-[24vh] custom:h-[26vh] mt-0 sm:mt-[1%] custom:mt-[2%] mb-[1.71%]">
+        <div className="relative w-[100px] xs:w-[140px] sm:w-[150px] mid:w-[160px] lg:w-[180px] custom:w-[200px] h-[133px] xs:h-[186px] sm:h-[200px] mid:h-[213px] lg:h-[240px] custom:h-[266px]">
+          <Image src={OwlImage} alt="Owl" fill className="object-contain" priority sizes="(max-width: 640px) 100vw, 50vw" />
         </div>
       </div>
 
       {/* Content Container */}
-      <div className="flex flex-col items-center px-4 xs:px-6 sm:px-8 mid:px-12 lg:px-16 custom:px-0">
-        <div className="max-w-[1000px] mx-auto flex flex-col gap-4 sm:gap-6 mid:gap-7 custom:gap-[40px]">
+      <div className="flex flex-col items-center w-[90%] xs:w-[85%] sm:w-[80%] mid:w-[75%] lg:w-[70%] mx-auto">
+        <div className="max-w-[80%] mx-auto flex flex-col gap-[5.5%] sm:gap-[6.5%] mid:gap-[7.5%] custom:gap-[25px]">
           {/* Heading */}
-          <h1 className="font-georgia text-center text-[32px] xs:text-[36px] sm:text-[42px] mid:text-[48px] lg:text-[60px] custom:text-[80px] leading-[1.1] -tracking-[2px] sm:-tracking-[3px] custom:-tracking-[4px]">
+          <h1 className="font-georgia text-center text-[2rem] xs:text-[2.25rem] sm:text-[2.625rem] mid:text-[3rem] lg:text-[3.75rem] custom:text-[5rem] leading-[1.035] -tracking-[0.125rem] sm:-tracking-[0.1875rem] custom:-tracking-[0.25rem]">
             Declutter the Maze of Law{" "}
             <br className="hidden sm:block" /> with Sajan Poovayya
           </h1>
 
           {/* Quote */}
-          <p className="font-inter italic text-center text-[12px] xs:text-[13px] sm:text-[14px] mid:text-[15px] lg:text-[16px] custom:text-[18px] leading-[1.6] -tracking-[0.1px] custom:-tracking-[0.2px] text-[#000000BF]">
+          <p className="font-inter italic text-center text-[0.75rem] xs:text-[0.8125rem] sm:text-[0.875rem] mid:text-[0.9375rem] lg:text-[1rem] custom:text-[1.125rem] leading-[1.6] -tracking-[0.00625rem] custom:-tracking-[0.0125rem] text-[#000000BF]">
             &quot;Law as a subject or law as a profession is not just for the
             privileged. We dejargonise law,
             <br className="hidden lg:block" /> make legal studies accessible,
@@ -34,9 +33,9 @@ const Hero = () => {
         {/* CTA Button */}
         <Link
           href="/about-team"
-          className="mt-6 sm:mt-8 mid:mt-10 custom:mt-[28px] bg-[#DD4826] text-white font-inter font-medium px-6 py-3 xs:px-7 xs:py-3.5 mid:px-8 mid:py-4 hover:bg-[#c13816] transition-colors"
+          className="mt-[1%] sm:mt-[2%] mid:mt-[3%] custom:mt-[4%] bg-[#DD4826] text-white font-inter font-medium px-7 py-2.5 xs:py-3 mid:py-3.5 text-center hover:bg-[#c13816] transition-colors inline-block"
         >
-          <span className="text-[14px] xs:text-[15px] sm:text-[16px] leading-normal">
+          <span className="text-[0.875rem] xs:text-[0.9375rem] sm:text-[1rem] whitespace-nowrap">
             Know More
           </span>
         </Link>

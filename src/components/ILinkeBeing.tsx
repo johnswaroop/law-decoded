@@ -6,7 +6,7 @@ import Image from "next/image";
 const ILinkeBeing = () => {
   return (
     <div className="w-full bg-[#FFA89A4D]">
-      <div className="container mx-auto flex flex-col items-center justify-center gap-8 px-4 py-8 xs:px-6 sm:py-12 mid:flex-row mid:gap-9 lg:py-16 custom:gap-16 custom:py-[115px]">
+      <div className="container mx-auto flex flex-col items-center justify-center gap-8 px-4 pt-8 pb-4 xs:px-6 sm:pt-12 sm:pb-6 mid:flex-row mid:gap-9 lg:pt-16 lg:pb-8 custom:gap-16 custom:pt-[115px] custom:pb-[60px]">
         {/* Text Content */}
         <div className="flex w-full max-w-[304px] flex-col gap-5 xs:max-w-[350px] sm:max-w-[420px] mid:max-w-[325px] lg:max-w-[450px] custom:max-w-[614px]">
           {/* Quote */}

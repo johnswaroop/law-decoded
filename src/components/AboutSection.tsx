@@ -4,8 +4,8 @@ import LawyerImage from "@/assets/AboutSection/LawyerImage.png";
 
 const AboutSection = () => {
   return (
-    <div className="w-full px-4 py-8 xs:px-6 sm:px-8 md:px-10 lg:px-12 custom:px-16">
-      <div className="flex flex-col md:flex-row items-center justify-center md:gap-8 lg:gap-16 custom:gap-[139px]">
+    <div className="w-full px-4 py-8 xs:px-6 sm:px-8 md:px-10 lg:px-12 custom:px-16 mb-[6%] max-w-[1920px] mx-auto">
+      <div className="flex flex-col md:flex-row items-center justify-center md:gap-8 lg:gap-16 custom:gap-[139px] max-w-[1440px] mx-auto">
         {/* Image Section - Hidden on mobile, visible from md breakpoint */}
         <div className="hidden md:block md:w-[300px] lg:w-[450px] custom:w-[591px]">
           <div className="relative w-full aspect-[591/550]">
