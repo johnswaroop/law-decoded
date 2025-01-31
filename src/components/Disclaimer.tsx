@@ -26,8 +26,7 @@ export default function DisclaimerModal() {
 
   return (
     <Dialog open={showDisclaimer} onOpenChange={setShowDisclaimer}>
-      <DialogContent className="mx-4 xs:mx-6 sm:mx-0 max-w-[90%] xs:max-w-[95%] sm:max-w-xl mid:max-w-2xl p-4 xs:p-5 sm:p-6 bg-white rounded-lg">
-        <DialogHeader>
+        <DialogContent className="mx-4 xs:mx-6 sm:mx-0 max-w-[90%] xs:max-w-[95%] sm:max-w-xl mid:max-w-2xl custom:max-w-3xl p-4 xs:p-5 sm:p-6 bg-white rounded-lg">        <DialogHeader>
           <DialogTitle className="text-xl xs:text-2xl sm:text-3xl font-semibold text-center mb-4 xs:mb-5 sm:mb-6">
             Disclaimer - Law Decoded
           </DialogTitle>
