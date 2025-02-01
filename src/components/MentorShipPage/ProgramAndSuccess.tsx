@@ -15,7 +15,7 @@ const ProgramAndSuccess = () => {
   return (
     <div className="container mx-auto px-4">
       <div className="flex flex-col items-center">
-        <h2 className="text-[28px] xs:text-[32px] mid:text-[40px] custom:text-[48px] font-georgia leading-tight text-[#281D1B] mt-16 mb-8">
+        <h2 className="text-[28px] xs:text-[32px] mid:text-[40px] custom:text-[48px] font-georgia leading-tight text-[#281D1B] mt-2 mb-8">
           Program Benefits
         </h2>
 
@@ -37,7 +37,7 @@ const ProgramAndSuccess = () => {
           ))}
         </div>
 
-        <h2 className="font-georgia font-bold text-2xl md:text-3xl custom:text-[48px] mt-16 mb-8">
+        <h2 className="font-georgia font-bold text-2xl md:text-3xl custom:text-[48px] mt-24 mb-8">
           Success Stories
         </h2>
 
@@ -72,12 +72,12 @@ const ProgramAndSuccess = () => {
           ))}
         </div>
 
-        <p className="font-georgia text-xl sm:text-2xl md:text-3xl lg:text-4xl custom:text-[64px] text-center leading-normal sm:leading-relaxed md:leading-relaxed lg:leading-relaxed custom:leading-[78px] mb-6 md:mb-8 custom:mb-12 max-w-[90%] sm:max-w-[85%] md:max-w-[80%] lg:max-w-[1200px] custom:max-w-[1317px] 2xl:max-w-[1440px] mx-auto">
+        <p className="font-georgia mt-20 text-xl sm:text-2xl md:text-3xl lg:text-4xl custom:text-[64px] text-center leading-normal sm:leading-relaxed md:leading-relaxed lg:leading-relaxed custom:leading-[78px] mb-6 md:mb-8 custom:mb-12 max-w-[90%] sm:max-w-[85%] md:max-w-[80%] lg:max-w-[1200px] custom:max-w-[1317px] 2xl:max-w-[1440px] mx-auto">
           Mentorship bridges the gap between theory and practice, providing
           real-world insights that textbooks can&apos;t offer.
         </p>
 
-        <div className="flex items-center gap-4 mb-12">
+        <div className="flex items-center gap-4 mb-20">
           <Image
             src={SeniorLawyer}
             alt="Senior Lawyer"

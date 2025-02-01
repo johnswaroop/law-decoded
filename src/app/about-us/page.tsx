@@ -2,13 +2,12 @@ import React from "react";
 import Image from "next/image";
 import Pic from "@/assets/MentorPage/Second.png";
 import ProfilePic from "@/assets/MentorPage/MentorPage.png";
-import Footer from "@/components/Footer";
-import AboutSanjay from "@/components/AboutSanjay";
+import AboutSajan from "@/components/AboutSajan";
 
 const Page = () => {
   return (
     <>
-      <div className="flex flex-col items-center mt-[134px] lg:mt-[134px] mid:mt-[72px] sm:mt-[34px] xs:mt-[34px]">
+      <div className="flex flex-col items-center mt-[134px] lg:mt-[134px] mid:mt-[72px] sm:mt-[34px] xs:mt-[34px] mb-14">
         {/* Hero Section */}
         <div className="w-[92%] xs:w-[85%] h-[574px] mid:h-[400px] sm:h-[303px] xs:h-[303px] rounded-[23.94px] border-[1.28px] border-[#00000000] bg-[#00000033]" />
         
@@ -104,8 +103,7 @@ const Page = () => {
           className="w-[88%] mid:w-[60%] lg:w-[45%] h-auto mt-[48px] mid:mt-[70px] lg:mt-[90px] mb-[21px] mid:mb-[30px] lg:mb-[40px]"
         />
 
-        <AboutSanjay />
-        <Footer />
+        <AboutSajan />
       </div>
     </>
   );

@@ -3,7 +3,7 @@ import localFont from "next/font/local";
 import { Outfit, Inter, Domine } from "next/font/google";
 import NavBar from "@/components/NavBar";
 import ScaleProvider from "@/components/scaleProvider";
-
+import Footer from '@/components/Footer';
 import "./globals.css";
 
 const geistSans = localFont({
@@ -58,6 +58,7 @@ export default function RootLayout({
         <ScaleProvider>
           <NavBar />
           {children}
+          <Footer/>
         </ScaleProvider>
       </body>
     </html>

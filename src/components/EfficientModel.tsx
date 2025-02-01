@@ -20,12 +20,12 @@ const EfficientModel = () => {
     <div className="w-full px-4 py-8 xs:px-6 sm:px-8 mid:px-10 lg:px-12 custom:px-16">
       <div className="max-w-[1440px] mx-auto">
         {/* Title */}
-        <h1 className="text-2xl xs:text-3xl sm:text-4xl mid:text-5xl lg:text-6xl custom:text-[48px] font-georgia font-normal leading-tight -tracking-[1.2px] text-center mb-4 sm:mb-6 mid:mb-8 lg:mb-10 custom:mb-[24px]">
+        <h1 className="text-2xl xs:text-3xl sm:text-4xl mid:text-5xl lg:text-6xl custom:text-5xl font-georgia font-normal leading-tight -tracking-[1.2px] text-center mb-4 sm:mb-6 mid:mb-8 lg:mb-10 custom:mb-[24px]">
           Sajan Poovayya Mentorship Programme
         </h1>
 
         {/* Description */}
-        <p className="max-w-[300px] xs:max-w-[338px] sm:max-w-[500px] mid:max-w-[600px] lg:max-w-[700px] custom:max-w-[844px] mx-auto text-sm xs:text-base sm:text-lg mid:text-xl lg:text-2xl custom:text-[17.66px] font-inter text-[#000000BF] leading-relaxed text-center mb-6 sm:mb-8 mid:mb-10 lg:mb-12 custom:mb-[56px]">
+        <p className="max-w-[300px] xs:max-w-[338px] sm:max-w-[500px] mid:max-w-[600px] lg:max-w-[700px] custom:max-w-[844px] mx-auto text-sm xs:text-base sm:text-lg mid:text-xl lg:text-2xl custom:text-[17.66px] font-inter text-[#000000BF] leading-relaxed text-left  mb-6 sm:mb-8 mid:mb-10 lg:mb-12 custom:mb-[56px]">
           A unique mentorship programme that offers law students and young lawyers an opportunity to engage with real time litigation. We also host special seminars and conversations that help young lawyers make strides in the profession of law.
         </p>
 

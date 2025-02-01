@@ -4,7 +4,7 @@ import Logo from "@/assets/About-team/IconLogo.png";
 import SuitPic from "@/assets/MentorPage/Second.png";
 import AboutSection from "@/components/AboutSection";
 import Footer from "@/components/Footer";
-import AboutSanjay from "@/components/AboutSanjay";
+import AboutSajan from "@/components/AboutSajan";
 
 const pageText = [
   "Gain industry insights from experienced mentors.",
@@ -93,7 +93,7 @@ const page = () => {
             <BoxCard key={text} text={text} />
           ))}
         </div>
-        <AboutSanjay />
+        <AboutSajan />
         <Footer />
       </div>
     </>

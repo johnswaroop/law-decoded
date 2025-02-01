@@ -109,7 +109,7 @@ const MentorshipForum = () => {
         leading-normal xs:leading-tight mid:leading-relaxed
         w-full xs:w-[90%] mid:w-[80%] lg:w-[600px] custom:w-[584px]">
         Sajan Poovayya <br /> Mentorship Program for{" "}
-        <br className="hidden custom:block" /> Lawyers
+        <br className="hidden custom:block" /> law students
       </h1>
 
       <p className="font-inter text-[#212424] text-center mb-8 
