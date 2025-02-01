@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState } from "react";
-import { usePathname } from "next/navigation";
 
 const MentorshipForum = () => {
     const [formData, setFormData] = useState({
@@ -19,7 +18,6 @@ const MentorshipForum = () => {
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [successMessage, setSuccessMessage] = useState("");
     const [errorMessage, setErrorMessage] = useState("");
-    const pathname = usePathname();
 
     const validate = () => {
         const errors = { name: "", email: "", phone: "", message: "" };
