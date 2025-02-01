@@ -2,12 +2,27 @@
 
 import YouIcon from "@/assets/ReviewAndLinks/youtube.svg";
 import WhatIacon from "@/assets/ReviewAndLinks/whatsapp.svg";
-import VideoImg1 from "@/assets/ReviewAndLinks/videoImage1.png";
-import VideoImg2 from "@/assets/ReviewAndLinks/videoImage2.png";
-import VideoImg3 from "@/assets/ReviewAndLinks/VideoImage3.png";
 import Image from "next/image";
 
 const ReviewsAndLinks = () => {
+  const selectedVideos = [
+    {
+      title: "Understanding Constitutional Rights",
+      url: "https://www.youtube.com/embed/gI-6Xtkh1Qw",
+      duration: "15:24"
+    },
+    {
+      title: "Criminal Procedure Explained",
+      url: "https://www.youtube.com/embed/uXZSjs3K26c",
+      duration: "22:10"
+    },
+    {
+      title: "Is India ready for One Nation, One Election?",
+      url: "https://www.youtube.com/embed/wE-5cZianYo",
+      duration: "10:52"
+    }
+  ];
+
   return (
     <div className="w-full min-h-screen px-4 sm:px-5 lg:px-7 pt-24 lg:pt-32 pb-14 lg:pb-16">
       <div className="max-w-7xl mx-auto space-y-16 lg:space-y-24">
@@ -17,32 +32,28 @@ const ReviewsAndLinks = () => {
             Videos
           </h2>
 
-            {/* Video Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-            {[
-              { img: VideoImg1, title: "Why marital rape is still not a crime in India", duration: "12 Mins" },
-              { img: VideoImg2, title: "Juniors deserve better", duration: "12 Mins" },
-              { img: VideoImg3, title: "Alcohol ban in India?", duration: "14 Mins" },
-            ].map((video, index) => (
+          {/* Video Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+            {selectedVideos.map((video, index) => (
               <div key={index} className="flex flex-col space-y-2">
-              <div className="relative w-full" style={{ paddingTop: '56.25%' }}> {/* 16:9 aspect ratio */}
-              <Image
-              src={video.img}
-              alt={video.title}
-              fill
-              className="object-cover rounded-lg"
-              sizes="(max-width: 640px) 90vw, (max-width: 768px) 45vw, (max-width: 1024px) 30vw"
-              />
-              </div>
-              <h3 className="font-georgia text-sm xs:text-base sm:text-lg text-[#281D1B] mt-1.5">
-              {video.title}
-              </h3>
-              <p className="font-inter font-semibold text-xs xs:text-sm text-[#DD4826] -mt-1">
-              {video.duration}
-              </p>
+                <div className="relative w-full" style={{ paddingTop: '56.25%' }}> {/* 16:9 aspect ratio */}
+                  <iframe
+                    src={video.url}
+                    title={video.title}
+                    className="absolute top-0 left-0 w-full h-full rounded-lg"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
+                </div>
+                <h3 className="font-georgia text-sm xs:text-base sm:text-lg text-[#281D1B] mt-1.5">
+                  {video.title}
+                </h3>
+                <p className="font-inter font-semibold text-xs xs:text-sm text-[#DD4826] -mt-1">
+                  {video.duration}
+                </p>
               </div>
             ))}
-            </div>
+          </div>
         </div>
 
         {/* Community Section */}
