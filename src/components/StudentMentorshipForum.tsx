@@ -102,8 +102,7 @@ const MentorshipForum = () => {
             >
             <h1 className="font-georgia font-bold text-center mb-8 
                 text-2xl xs:text-[28px] mid:text-[32px] lg:text-[36px] custom:text-[40px]
-                whitespace-nowrap
-                w-full xs:w-[90%] mid:w-[80%] lg:w-[500px] custom:w-[551px]">
+                max-w-[320px] xs:max-w-[400px] mid:max-w-[450px] lg:max-w-[500px] custom:max-w-[551px]">
                 Join the Mentorship Programme
             </h1>
 
