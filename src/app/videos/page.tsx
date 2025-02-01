@@ -65,7 +65,7 @@ const page = () => {
   ];
 
   const formatDuration = (duration: string) => {
-    const [minutes, seconds] = duration.split(":");
+    const [minutes] = duration.split(":");
     return (
       <span className="text-orange-500 font-inter text-xs">
         {minutes} mins
