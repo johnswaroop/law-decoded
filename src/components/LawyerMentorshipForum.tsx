@@ -104,25 +104,32 @@ const MentorshipForum = () => {
         pathname.endsWith("mentorship") ? "bg-white" : "bg-[#FFF2CF]"
       }`}
       >
-      <h1 className="font-georgia font-bold text-center mb-6 
+      <h1 className="font-georgia font-bold text-center mb-8 
         text-2xl xs:text-[28px] mid:text-[32px] lg:text-[36px] custom:text-[40px]
         leading-normal xs:leading-tight mid:leading-relaxed
-        w-full xs:w-[90%] mid:w-[80%] lg:w-[600px] custom:w-[584px]">
-        Sajan Poovayya <br /> Mentorship Program
+        w-full xs:w-[90%] mid:w-[80%] lg:w-[500px] custom:w-[551px]">
+        Join Our Mentorship Program for Young Lawyers
       </h1>
 
-      <p className="font-inter text-[#212424] text-center mb-8 
-        text-sm xs:text-[15px] mid:text-base lg:text-[17px] custom:text-[18px]
-        leading-relaxed
-        w-full xs:w-[90%] mid:w-[80%] lg:w-[500px] custom:w-[551px]">
-        Join Our Community Step a realm where ambition meets opportunity! Our
-        mentorship program invites you to connect with a new world. Embrace
-        the chance to ignite your potential and broaden your horizons in a
-        supportive community that values growth and inclusivity. Ready to
-        embark on this exciting journey? Fill out the form below and
-        let's make waves together!
-      </p>
+      <div className="flex flex-col gap-6 mb-10 max-w-[320px] xs:max-w-[400px] mid:max-w-[450px] lg:max-w-[500px] custom:max-w-[551px]">
+        <p className="font-inter text-[#212424] text-center
+          text-sm xs:text-[15px] mid:text-base lg:text-[17px] custom:text-[18px]
+          leading-relaxed">
+          Our Mentorship Program provides essential support and guidance for lawyers navigating their early career stages. Through informative videos and specialized sessions, you'll gain valuable insights into various aspects of legal practice.
+        </p>
 
+        <p className="font-inter text-[#212424] text-center
+          text-sm xs:text-[15px] mid:text-base lg:text-[17px] custom:text-[18px]
+          leading-relaxed">
+          Engage in meaningful dialogue with experienced mentors and peers in our collaborative environment. Learn from diverse guest speakers who share their unique perspectives and experiences in different legal domains.
+        </p>
+
+        <p className="font-inter text-[#212424] text-center
+          text-sm xs:text-[15px] mid:text-base lg:text-[17px] custom:text-[18px]
+          leading-relaxed">
+          Ready to enhance your legal career? Fill out the form below to join our Mentorship Program and take the next step in your professional journey.
+        </p>
+      </div>
       {successMessage && <p className="text-green-500 mb-4">{successMessage}</p>}
       {errorMessage && <p className="text-red-500 mb-4">{errorMessage}</p>}
 

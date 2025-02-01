@@ -59,6 +59,7 @@ export default {
         domine: ["var(--font-domine)"],
       },
       screens: {
+        'xxs': '250px',
         'xs': '390px',
         'sm': '640px',
         'mid': '768px',

@@ -21,7 +21,6 @@ const NavBar = () => {
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
 
-  // Close dropdown when route changes
   useEffect(() => {
     setShowMentorshipDropdown(false);
   }, []);
@@ -41,7 +40,7 @@ const NavBar = () => {
 
         {/* middle buttons - hidden on mobile */}
         <div className="hidden mid:flex items-center">
-          <div className="font-outfit font-medium text-[13px] lg:text-[14px] custom:text-[15px] flex items-center gap-3 lg:gap-4 custom:gap-[16px] text-[#281D1B]">
+          <div className="font-outfit font-medium text-[15px] flex items-center gap-[16px] text-[#281D1B]">
             <Link href={"/"}>Home</Link>
             <Link href={"/about-us"}>About Us</Link>
             <div className="relative" ref={dropdownRef}>
@@ -78,8 +77,8 @@ const NavBar = () => {
         </div>
 
         {/* Subscribe ContactUS */}
-        <div className="font-outfit font-medium text-[13px] xs:text-[14px] sm:text-[15px] leading-[20px] text-[#F72C00] hidden mid:flex justify-center gap-[32px]">
-          <div className="flex justify-center items-center gap-[24px]">
+        <div className="font-outfit font-medium text-[15px] leading-[20px] text-[#F72C00] hidden mid:flex justify-center gap-[32px]">
+          <div className="flex justify-center items-center">
             <Link href={"/#contact"}>Contact Us</Link>
           </div>
         </div>
@@ -193,7 +192,7 @@ const MobileMenu = () => {
                         For Students
                       </Link>
                       <Link
-                        href="/mentorship/lawyers"
+                        href="/mentorship"
                         className="block text-lg font-medium hover:text-[#E43D12] transition-colors"
                         onClick={toggleMenu}
                       >

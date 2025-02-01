@@ -5,7 +5,7 @@ import PersonImage from "@/assets/MentorPage/MentorPage.png";
 const ConnectWithUS = () => {
   return (
     <div className="flex flex-col items-center px-4 xs:px-[2%]">
-      <h1 className="mt-16 xs:mt-[72px] mid:mt-[156px] custom:mt-[121.25px] 
+      <h1 className="mt-[10.14px] xs:mt-[45.64px] mid:mt-[48.59px] lg:mt-[60.88px] custom:mt-[106.4px] 
          mb-4 xs:mb-[16px] mid:mb-[22px] custom:mb-[40px] 
          font-georgia font-normal 
          text-[32px] xs:text-[40px] custom:text-[100px] 
