@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import PersonImage from "@/assets/MentorPage/MentorPage.png";
+import PersonImage from "@/assets/About-team/sajanpoovayya.jpeg";
 
 const StudentConnectWithUS = () => {
   return (
@@ -15,12 +15,14 @@ const StudentConnectWithUS = () => {
       Find the right mentorship to advance your legal journey
     </h1>
 
-      <Image
+    <Image
         src={PersonImage}
-        alt="image"
+        alt="Sajan Poovayya with people"
         className="w-full xs:w-[342px] mid:w-[606px] custom:w-[1149px] 
-           h-auto xs:h-[179.45px] mid:h-[304px] custom:h-[574.5px] 
-           mb-16 xs:mb-[114.48px] custom:mb-[146px]"
+          h-auto xs:h-[179.45px] mid:h-[304px] custom:h-[650px] 
+          mb-16 xs:mb-[114.48px] custom:mb-[146px]
+          object-cover object-[50%_52%] 
+          rounded-[20px] shadow-md"
       />
 
       <div className="flex flex-col mid:flex-row w-full mid:w-[92%] custom:w-[1344px] 
