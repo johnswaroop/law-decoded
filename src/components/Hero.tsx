@@ -6,9 +6,17 @@ const Hero = () => {
   return (
     <div className="w-full mb-[3.5%] sm:mb-[4.275%] mid:mb-[5.13%] custom:mb-[6.6%] max-w-[1920px] mx-auto">
       {/* Owl Image */}
-      <div className="relative flex justify-center items-end min-h-[250px] h-[40vh] xs:h-[30vh] sm:h-[22vh] mid:h-[23vh] lg:h-[24vh] custom:h-[26vh] mt-0 sm:mt-[-15%] mid:mt-[-5%] custom:mt-[2%] 2xl:mt-[2%] xs:mt-[-20%] xxs:mt-[-35%] mb-[-1.62%]">
-        <div className="relative w-[100px] xs:w-[140px] sm:w-[150px] mid:w-[160px] lg:w-[180px] custom:w-[200px] h-[133px] xs:h-[186px] sm:h-[200px] mid:h-[213px] lg:h-[240px] custom:h-[266px]">
-          <Image src={OwlImage} alt="Owl" fill className="object-contain" priority sizes="(max-width: 640px) 100vw, 50vw" />
+      <div className="relative flex justify-center items-end min-h-[250px] h-[40vh] xs:h-[30vh] sm:h-[22vh] mid:h-[23vh] lg:h-[24vh] custom:h-[26vh] mt-0 sm:mt-[-15%] mid:mt-[-5%] custom:mt-[2%] 2xl:mt-[2%] xs:mt-[-20%] xxs:mt-[-35%] mb-[-1.62%] pointer-events-none">
+        <div className="relative w-[100px] xs:w-[140px] sm:w-[150px] mid:w-[160px] lg:w-[180px] custom:w-[200px] h-[133px] xs:h-[186px] sm:h-[200px] mid:h-[213px] lg:h-[240px] custom:h-[266px] select-none">
+          <Image
+            src={OwlImage}
+            alt="Owl"
+            fill
+            className="object-contain select-none"
+            priority
+            sizes="(max-width: 640px) 100vw, 50vw"
+            draggable="false"
+          />
         </div>
       </div>
 
@@ -32,7 +40,7 @@ const Hero = () => {
 
         {/* CTA Button */}
         <Link
-          href="/about-team"
+          href="/about-us"
           className="mt-[1%] sm:mt-[2%] mid:mt-[3%] custom:mt-[4%] bg-[#DD4826] text-white font-inter font-medium px-6 py-2.5 xs:py-3 mid:py-3.5 text-center hover:bg-[#c13816] transition-colors inline-block"
         >
           <span className="text-[0.875rem] xs:text-[0.9375rem] sm:text-[1rem] whitespace-nowrap">
