@@ -5,15 +5,15 @@ import PersonImage from "@/assets/About-team/sajanpoovayya.jpeg";
 const StudentConnectWithUS = () => {
   return (
     <div className="flex flex-col items-center px-4 xs:px-[2%]">
-    <h1 className="mt-[10.14px] xs:mt-[45.64px] mid:mt-[48.59px] lg:mt-[60.88px] custom:mt-[106.4px] 
+      <h1 className="mt-[10.14px] xs:mt-[45.64px] mid:mt-[48.59px] lg:mt-[60.88px] custom:mt-[106.4px] 
          mb-4 xs:mb-[16px] mid:mb-[22px] custom:mb-[40px] 
          font-georgia font-normal 
          text-[32px] xs:text-[40px] custom:text-[100px] 
          leading-tight xs:leading-[48px] custom:leading-[120px] 
          -tracking-[2%] text-center text-[#1B2128] 
          w-full mid:w-[92%]">
-      Find the right mentorship to advance your legal journey
-    </h1>
+        Find the right mentorship<br/> to advance your legal journey
+      </h1>
 
     <Image
         src={PersonImage}
