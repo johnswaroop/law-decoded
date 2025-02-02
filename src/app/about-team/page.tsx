@@ -3,7 +3,6 @@ import Image from "next/image";
 import Logo from "@/assets/About-team/IconLogo.png";
 import SuitPic from "@/assets/MentorPage/Second.png";
 import AboutSection from "@/components/AboutSection";
-import Footer from "@/components/Footer";
 import AboutSajan from "@/components/AboutSajan";
 
 const pageText = [
@@ -94,7 +93,6 @@ const page = () => {
           ))}
         </div>
         <AboutSajan />
-        <Footer />
       </div>
     </>
   );
