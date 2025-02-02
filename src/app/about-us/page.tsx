@@ -3,14 +3,19 @@ import Image from "next/image";
 import Pic from "@/assets/MentorPage/Second.png";
 import ProfilePic from "@/assets/MentorPage/MentorPage.png";
 import AboutSajan from "@/components/AboutSajan";
+import LawyerPic from '@/assets/EfficientModel/lawyerPic.png'
 
 const Page = () => {
   return (
     <>
-      <div className="flex flex-col items-center mt-[134px] lg:mt-[134px] mid:mt-[72px] sm:mt-[34px] xs:mt-[34px] mb-14">
+      <div className="flex flex-col items-center mt-[92px] lg:mt-[92px] mid:mt-[50px] sm:mt-[24px] xs:mt-[24px] mb-14">
         {/* Hero Section */}
-        <div className="w-[92%] xs:w-[85%] h-[574px] mid:h-[400px] sm:h-[303px] xs:h-[303px] rounded-[23.94px] border-[1.28px] border-[#00000000] bg-[#00000033]" />
-        
+        <Image
+          src={LawyerPic}
+          alt="Hero image"
+          className="w-[92%] xs:w-[85%] h-[700px] mid:h-[600px] sm:h-[303px] xs:h-[303px] rounded-[23.94px] object-cover object-[center_90%]"
+        />
+
         {/* Name */}
         <h1 className="font-georgia font-normal text-[40px] xs:text-[40px] sm:text-[52px] mid:text-[72px] lg:text-[100px] leading-[48px] xs:leading-[48px] sm:leading-[63px] mid:leading-[86px] lg:leading-[120px] -tracking-[0.02em] mt-[16px] sm:mt-[20px] mid:mt-[30px] lg:mt-[40px]">
           Sajan Poovayya

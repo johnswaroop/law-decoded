@@ -38,7 +38,7 @@ const Footer = () => {
             <div className="flex flex-col gap-[8px] text-base mid:text-[10px] lg:text-[12px] custom:text-[16px] font-inter font-medium mid:w-[106.02px] lg:w-[150px] custom:w-[200px]">
               <p className="text-[#281D1B]">About Us</p>
               <Link href="/about-us/#sajan-poovayya" className="text-[#2E19149E] hover:text-[#281D1B]">Sajan Poovayya</Link>
-              <Link href="/about-us" className="text-[#2E19149E] hover:text-[#281D1B]">Law Decoded<br />with Us</Link>
+              <Link href="/law-decoded" className="text-[#2E19149E] hover:text-[#281D1B]">Law Decoded<br />with Us</Link>
               <Link href="/about-team" className="text-[#2E19149E] hover:text-[#281D1B]">Our team</Link>
             </div>
             <div className="flex flex-col gap-[8px] text-base mid:text-[10px] lg:text-[12px] custom:text-[16px] font-inter font-medium w-[100px] items-start mid:w-[106.02px] lg:w-[150px] custom:w-[200px]">
