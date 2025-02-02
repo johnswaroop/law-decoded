@@ -6,12 +6,12 @@ import AboutSection from "@/components/AboutSection";
 import AboutSajan from "@/components/AboutSajan";
 
 const pageText = [
-  "Gain industry insights from experienced mentors.",
-  "Expand your professional network.",
-  "Gain industry insights from experienced mentors.",
-  "Expand your professional network.",
-  "Gain industry insights from experienced mentors.",
-  "Expand your professional network.",
+  { id: 1, text: "Gain industry insights from experienced mentors." },
+  { id: 2, text: "Expand your professional network." },
+  { id: 3, text: "Access exclusive legal resources and materials." },
+  { id: 4, text: "Participate in interactive learning sessions." },
+  { id: 5, text: "Get personalized career guidance." },
+  { id: 6, text: "Join a community of legal professionals." },
 ];
 
 const page = () => {
@@ -87,9 +87,9 @@ const page = () => {
           {" "}
           Program Benefits
         </p>
-        <div className="w-[86%] mt-[24px] md:w-full  flex flex-wrap gap-x-[20px] gap-y-[24px] justify-center mb-[60px] md:gap-x-[12.66px] md:gap-y-[21.1px] custom:mt-[40px] custom:gap-x-[24px] custom:gap-y-[40px]">
-          {pageText.map((text) => (
-            <BoxCard key={text} text={text} />
+        <div className="w-[86%] mt-[24px] md:w-full flex flex-wrap gap-x-[20px] gap-y-[24px] justify-center mb-[60px] md:gap-x-[12.66px] md:gap-y-[21.1px] custom:mt-[40px] custom:gap-x-[24px] custom:gap-y-[40px]">
+          {pageText.map((item) => (
+            <BoxCard key={item.id} text={item.text} number={item.id} />
           ))}
         </div>
         <AboutSajan />
@@ -100,13 +100,13 @@ const page = () => {
 
 export default page;
 
-const BoxCard = ({ text }: { text: string }) => {
+const BoxCard = ({ text, number }: { text: string; number: number }) => {
   return (
     <>
       <div className="w-[160px] h-[120px] bg-[#7E352517] flex flex-col px-[15px] md:w-[227px] md:h-[135px] md:px-[16px] rounded-[7.5px] md:rounded-[8.5px] custom:w-[432px] custom:h-[256px] custom:px-[32px]">
         <div className="w-[24px] h-[24px] rounded-full flex justify-center items-center bg-[#711400] mt-[14.99px] md:mt-[16px] md:w-[34px] md:h-[34px] custom:mt-[32px] custom:w-[64px] custom:h-[64px]">
           <p className="text-[#EFEAEA] font-inter font-semibold text-[12px] leading-[16px] -tracking-[0.5%] md:text-[16.7px] md:leading-[22px] custom:text-[32px] custom:leading-[42px]">
-            1
+            {number}
           </p>
         </div>
         <p className="mt-[11.24px] font-sans font-normal text-[11.24px] leading-[14.99px] -tracking-[0.5%] text-[#281D1B] md:mt-[12.66px] md:text-[12.66px] md:leading-[16.8px] custom:mt-[32px] custom:text-[24px] custom:leading-[32px]">
