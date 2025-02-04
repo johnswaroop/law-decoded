@@ -5,50 +5,57 @@ import Image from "next/image";
 
 const ILinkeBeing = () => {
   return (
-    <>
-      {/* h = self */}
-      <div className="flex flex-col items-center bg-[#FFA89A4D] justify-center gap-[63.01px] w-full h-auto md:flex-row custom:gap-0  md:h-[428.31px] md:pt-[60.96px] md:pb-[34.84px] md:gap-[35.52px] custom:h-auto custom:pt-[115px] custom:pb-[68.81px]">
-        <div className="w-[304.87px] h-auto pr-[20.87px] flex flex-col max-md:mt-[33.69px] justify-between max-md:justify-center gap-[20px] custom:w-[614px] custom:h-[624.14px] custom:gap-[24px] md:w-[325.47px] md:px-0 md:gap-[12.72px] md:justify-center ">
-          <div className="w-[284px] h-[292px] font-georgia font-normal text-[17.19px] leading-[27.42px] -tracking-[1.17px] custom:text-[32px] custom:leading-[47px] custom:w-[614px] custom:h-[470px] custom:-tracking-[2px] md:text-[16.96px] md:leading-[24.91px] md:-tracking-[1.06px] md:text-justify italic md:w-[325.47px] md:h-auto text-justify ">
-            &quot;When only a privileged few have access to legal knowledge, it
-            creates barriers that prevent fair representation and the full
-            participation of marginalized communities in legal and civic
-            processes. For true equality in the justice system, we need lawyers,
-            policymakers, and advocates from all walks of life. This diversity
-            can lead to a more compassionate and effective legal system, as
-            those within it better reflect the society they serve.&quot;
+    <div className="w-full bg-[#FFA89A4D]">
+      <div className="container mx-auto flex flex-col items-center justify-center gap-8 px-4 pt-8 pb-4 xs:px-6 sm:pt-12 sm:pb-6 mid:flex-row mid:gap-9 lg:pt-16 lg:pb-8 custom:gap-16 custom:pt-[115px] custom:pb-[60px]">
+        {/* Text Content */}
+        <div className="flex w-full max-w-[304px] flex-col gap-5 xs:max-w-[350px] sm:max-w-[420px] mid:max-w-[325px] lg:max-w-[450px] custom:max-w-[614px]">
+          {/* Quote */}
+          <div className="font-georgia italic text-justify">
+            <p className="text-base leading-relaxed tracking-tight xs:text-lg sm:text-xl mid:text-[17px] mid:leading-[25px] lg:text-2xl lg:leading-[1.6] custom:text-[32px] custom:leading-[47px] custom:-tracking-[2px]">
+              &quot;When only a privileged few have access to legal knowledge, it
+              creates barriers that prevent fair representation and the full
+              participation of marginalized communities in legal and civic
+              processes. For true equality in the justice system, we need lawyers,
+              policymakers, and advocates from all walks of life. This diversity
+              can lead to a more compassionate and effective legal system, as
+              those within it better reflect the society they serve.&quot;
+            </p>
           </div>
-          <div className="flex flex-col justify-center items-start gap-[4.67px] w-[284px] custom:gap-[8px]">
-            <p className="font-inter font-medium  text-[16.64px] leading-[16.34px] -tracking-[0.09px] text-[#121212] custom:text-[18px] custom:leading-[28px] custom:-tracking-[0.16px]">
+
+          {/* Author Info */}
+          <div className="flex flex-col gap-1 sm:gap-2">
+            <p className="font-inter font-medium text-[#121212] text-base leading-tight xs:text-lg custom:text-[18px] custom:leading-[28px]">
               Sajan Poovayya
             </p>
-            <p className="font-inter font-normal  text-[11.1px] leading-[12.84px] -tracking-[0.09px] text-[#121212] custom:text-[14px] custom:leading-[22px]">
+            <p className="font-inter text-[#121212] text-xs leading-tight xs:text-sm custom:text-[14px] custom:leading-[22px]">
               Founder Law Decoded
             </p>
           </div>
-          {/* button */}
-          <button className="w-[115.89px] h-[28.11px] bg-[#000000] rounded-[8px] flex justify-center gap-[7px] items-center custom:w-[156px] custom:h-[48.19px]">
-            <p className="font-inter font-medium text-[9.33px] leading-[14px] -tracking-[0.09px] text-white custom:text-[16px]">
+
+          {/* Button */}
+          <button className="flex w-[116px] items-center justify-center gap-2 rounded-lg bg-black py-2 xs:w-[130px] sm:w-[140px] custom:w-[156px] custom:h-[48px]">
+            <span className="font-inter font-medium text-white text-xs xs:text-sm custom:text-base">
               View more
-            </p>
+            </span>
             <Image
-              alt="image"
+              alt="arrow"
               src={Arrow}
-              className="w-[8.82px] h-[9.88px] custom:w-[16px] custom:h-[16px]"
+              className="h-2.5 w-2.5 xs:h-3 xs:w-3 custom:h-4 custom:w-4"
             />
           </button>
         </div>
-        {/* image */}
-        <div className="w-[304.87px] h-[361.9px] overflow-hidden relative custom:w-[509px] custom:h-[624px] custom:ml-[67px]  md:w-[269.81px] md:h-[330.77px] md:rounded-[5.85px] max-md:mb-[33.65px]">
+
+        {/* Image */}
+        <div className="relative aspect-[0.84] w-full max-w-[304px] overflow-hidden rounded-lg xs:max-w-[350px] sm:max-w-[420px] mid:max-w-[270px] lg:max-w-[350px] custom:max-w-[509px]">
           <Image
             src={LaawyerImage}
-            alt="image"
+            alt="Lawyer"
             fill
-            className="object-fit w-[304.87px] h-[361.9px] custom:w-[509px] custom:h-[624px] md:w-[269.81px] md:h-[330.77px] md:rounded-[5.85px]"
+            className="object-cover"
           />
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

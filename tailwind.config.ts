@@ -59,9 +59,14 @@ export default {
         domine: ["var(--font-domine)"],
       },
       screens: {
-        mid: "764px",
-        custom: "1440px",
-        xs: "390px",
+        'xxs': '250px',
+        'xs': '390px',
+        'sm': '640px',
+        'mid': '768px',
+        'lg': '1024px',
+        'custom': '1440px',
+        'xl': '1280px',
+        '2xl': '1536px',
       },
       borderRadius: {
         lg: "var(--radius)",

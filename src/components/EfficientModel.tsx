@@ -4,10 +4,10 @@ import Image from "next/image";
 import LaywerImage from "@/assets/EfficientModel/lawyerPic.png";
 
 const EfficientModel = () => {
-  const [expand, setExpande] = useState(0);
+  const [expand, setExpand] = useState(0);
 
   const handleClick = (num: number): void => {
-    setExpande((prevExpand) => {
+    setExpand((prevExpand) => {
       if (num === prevExpand) {
         return prevExpand === 2 ? 0 : prevExpand + 1;
       } else {
@@ -15,140 +15,70 @@ const EfficientModel = () => {
       }
     });
   };
+
   return (
-    <>
-      {/* only height */}
-      <div className="h-auto w-full custom:h-[870px] md:h-[479.8px] flex flex-col items-center  ">
-        <p className="text-[48px] custom:text-[48px] md:text-[25px] font-georgia font-normal leading-[52px] -tracking-[2.4px] text-center mb-[40px] custom:mb-[24px] md:mb-[12px] md:leading-[27px] custom:leading-[52px]">
+    <div className="w-full px-4 py-8 xs:px-6 sm:px-8 mid:px-10 lg:px-12 custom:px-16">
+      <div className="max-w-[1440px] mx-auto">
+        {/* Title */}
+        <h1 className="text-2xl xs:text-3xl sm:text-4xl mid:text-5xl lg:text-6xl custom:text-5xl font-georgia font-normal leading-tight -tracking-[1.2px] text-center mb-4 sm:mb-6 mid:mb-8 lg:mb-10 custom:mb-[24px]">
           Sajan Poovayya Mentorship Programme
+        </h1>
+
+        {/* Description */}
+        <p className="max-w-[300px] xs:max-w-[338px] sm:max-w-[500px] mid:max-w-[600px] lg:max-w-[700px] custom:max-w-[844px] mx-auto text-sm xs:text-base sm:text-lg mid:text-xl lg:text-2xl custom:text-[17.66px] font-inter text-[#000000BF] leading-relaxed text-left  mb-6 sm:mb-8 mid:mb-10 lg:mb-12 custom:mb-[56px]">
+          A unique mentorship programme that offers law students and young lawyers an opportunity to engage with real time litigation. We also host special seminars and conversations that help young lawyers make strides in the profession of law.
         </p>
-        <p
-          className=" w-[844px]  font-inter font-normal text-[17.66px] leading-[28px] -tracking-[0.2px]  px-[70px] mb-[56px] text-[#000000BF]
-        custom:mb-[56px] md:mb-[29px] max-xs:px-0 max-custom:text-[16px] md:text-[9px] max-custom:w-[338px] md:w-[447px] max-custom:px-0 md:px-0 max-md:w-[300px] md:leading-[14.85px] custom:text-[17.66px] custom:leading-[28px] custom:-tracking-[0.2px] custom:w-[844px] text-justify"
-        >
-          A unique mentorship programme that offers law students and young
-          lawyers an opportunity to engage with real time litigation. We also
-          host special seminars and conversations that help young lawyers make
-          strides in the profession of law.
-        </p>
-        <div className="flex flex-col items-center  px-[24px] max-xs:px-0 custom:flex-row md:flex-row custom:w-[1232px] md:w-auto custom:h-[550px] md:h-[291.55px] custom:justify-center md:justify-center custom:gap-[41px] md:gap-[21.73px]">
-          {/* Image screen */}
-          <div className="w-[342px] h-[270px] rounded-[12px] mb-[30px] custom:h-full md:h-[291.55px] custom:w-[695px] md:w-[368.41px] custom:mb-0 md:mb-0 max-xs:w-[300px]">
-            <Image src={LaywerImage} alt="image" />
+
+        {/* Main Content Container */}
+        <div className="flex flex-col mid:flex-row items-center justify-center gap-6 mid:gap-8 lg:gap-10 custom:gap-[41px]">
+          {/* Image Container */}
+          <div className="w-full max-w-[342px] xs:max-w-[368px] sm:max-w-[450px] mid:max-w-[500px] lg:max-w-[600px] custom:max-w-[695px] rounded-xl overflow-hidden">
+            <Image 
+              src={LaywerImage} 
+              alt="Lawyer" 
+              className="w-full h-auto"
+              priority
+            />
           </div>
-          <div className="flex flex-col items-center custom:h-full md:h-full custom:w-[456px] md:w-[284px] custom:justify-center md:justify-center gap-[18px] md:gap-[12px] custom:gap-[24px] max-md:mt-[50px]">
-            {/* First box */}
-            <div
-              className={`w-[342px]  rounded-[9px]  px-[30px] py-[24px] flex flex-col justify-between max-xs:w-[300px] bg-white md:w-[243px]  md:px-[21.2px] md:py-[16.96px] custom:w-[458px]  custom:px-[40px] custom:py-[32px] transition-all duration-300 ease-in-out cursor-pointer hover:border-[0.75px] hover:border-[#FC5A5A]
-                ${
-                  expand === 0
-                    ? "h-[124px] border-t-[0.75px] border-[#FC5A5A] md:h-[86px] custom:h-[164px]"
-                    : "h-[78px] md:h-[55.13px] custom:h-[104px]"
-                }`}
-              style={{ boxShadow: "9px 9px 37.5px 0px #00000014" }}
-              onClick={() => handleClick(0)}
-            >
-              {/* Circle and text */}
+
+          {/* Cards Container */}
+          <div className="w-full max-w-[342px] xs:max-w-[368px] sm:max-w-[450px] mid:max-w-[284px] lg:max-w-[400px] custom:max-w-[458px] space-y-4 mid:space-y-3 lg:space-y-5 custom:space-y-6">
+            {[1, 2, 3].map((num, index) => (
               <div
-                className="w-full h-[30px] flex justify-start items-center gap-[9.75px] md:h-[21.2px] md:gap-[6.89px]
-              custom:h-[40px] custom:gap-[13px]"
-              >
-                <div className="rounded-full w-[30px] h-full bg-[#FFF2CF] border-[0.75px] border-[#000000] flex justify-center items-center md:w-[21.2px] md:border-[0.53px] custom:w-[40px] custom:border-[1px]">
-                  <p className="font-inter font-semibold text-[15.75px] leading-[21px] -tracking-[0.18px] text-[#000000] md:text-[11.13px] md:leading-[14.84px] md:-tracking-[0.13px] custom:text-[21px] custom:leading-[28px] custom:-tracking-[0.24px]">
-                    1
-                  </p>
-                </div>
-                <p className="font-inter font-semibold text-[15.75px] -tracking-[0.18px] md:text-[11.13px] md:leading-[14.84px] md:-tracking-[0.13px] custom:text-[21px] custom:leading-[28px] custom:-tracking-[0.24px]">
-                  Engage
-                </p>
-              </div>
-
-              {/* Text */}
-              <p
-                className={`font-inter font-normal text-[10.5px] leading-[16.5px] text-[#000000BF] md:text-[7.42px] md:leading-[11.66px] custom:text-[14px] custom:leading-[22px] transition-all duration-300 ease-in-out ${
-                  expand === 0
-                    ? "opacity-100 max-h-[33px] delay-300 "
-                    : "opacity-0 max-h-0"
+                key={num}
+                onClick={() => handleClick(index)}
+                className={`rounded-[9px] px-4 sm:px-6 mid:px-6 lg:px-8 custom:px-[40px] py-4 sm:py-6 mid:py-5 lg:py-6 custom:py-[32px] bg-white shadow-lg cursor-pointer transition-all duration-300 hover:border-[0.75px] hover:border-[#FC5A5A] ${
+                  expand === index
+                    ? "border-t-[0.75px] border-[#FC5A5A]"
+                    : ""
                 }`}
               >
-                Subscribe to us to say updated- hyperlink (takes you to the
-                social media pages)
-              </p>
-            </div>
-
-            {/* second box */}
-            <div
-              className={`w-[342px] rounded-[9px]  px-[30px] py-[24px] flex flex-col justify-between bg-white max-xs:w-[300px] md:w-[243px]  md:px-[21.2px] md:py-[16.96px] custom:w-[458px]  custom:px-[40px] custom:py-[32px] transition-all duration-300 ease-in-out cursor-pointer hover:border-[0.75px] hover:border-[#FC5A5A] ${
-                expand === 1
-                  ? "h-[124px] border-t-[0.75px] border-[#FC5A5A] md:h-[86px] custom:h-[164px]"
-                  : "h-[78px] md:h-[55.13px] custom:h-[104px]"
-              }`}
-              style={{ boxShadow: "9px 9px 37.5px 0px #00000014" }}
-              onClick={() => handleClick(1)}
-            >
-              {/* Circle and text */}
-              <div className="w-full h-[30px] flex justify-start items-center gap-[9.75px]  md:h-[21.2px] md:gap-[6.89px] custom:h-[40px] custom:gap-[13px]">
-                <div className="rounded-full w-[30px] h-full bg-white border-[0.75px] border-[#000000] flex justify-center items-center md:w-[21.2px] md:border-[0.53px] custom:w-[40px] custom:border-[1px]">
-                  <p className="font-inter font-semibold text-[15.75px] leading-[21px] -tracking-[0.18px] text-[#000000] md:text-[11.13px] md:leading-[14.84px] md:-tracking-[0.13px] custom:text-[21px] custom:leading-[28px] custom:-tracking-[0.24px]">
-                    2
-                  </p>
+                <div className="flex items-center gap-2 sm:gap-3 mid:gap-3 lg:gap-4 custom:gap-[13px]">
+                  <div className={`rounded-full w-[30px] h-[30px] sm:w-[35px] sm:h-[35px] mid:w-[32px] mid:h-[32px] lg:w-[36px] lg:h-[36px] custom:w-[40px] custom:h-[40px] ${
+                    index === 0 ? "bg-[#FFF2CF]" : "bg-white"
+                  } border-[0.75px] border-black flex items-center justify-center`}>
+                    <span className="font-inter font-semibold text-sm sm:text-base mid:text-base lg:text-lg custom:text-[21px]">
+                      {num}
+                    </span>
+                  </div>
+                  <span className="font-inter font-semibold text-sm sm:text-base mid:text-base lg:text-lg custom:text-[21px]">
+                    {index === 0 ? "Engage" : index === 1 ? "Ideate" : "Join Us"}
+                  </span>
                 </div>
-                <p className="font-inter font-semibold text-[15.75px] -tracking-[0.18px] md:text-[11.13px] md:leading-[14.84px] md:-tracking-[0.13px] custom:text-[21px] custom:leading-[28px] custom:-tracking-[0.24px]">
-                  Ideate
+
+                <p className={`mt-2 font-inter text-xs sm:text-sm mid:text-sm lg:text-base custom:text-[14px] text-[#000000BF] transition-all duration-300 ${
+                  expand === index
+                    ? "opacity-100 max-h-20"
+                    : "opacity-0 max-h-0 overflow-hidden"
+                }`}>
+                  Subscribe to us to say updated- hyperlink (takes you to the social media pages)
                 </p>
               </div>
-
-              {/* Text */}
-              <p
-                className={`font-inter font-normal text-[10.5px] leading-[16.5px] text-[#000000BF] md:text-[7.42px] md:leading-[11.66px] custom:text-[14px] custom:leading-[22px] transition-all duration-300 ease-in-out ${
-                  expand === 1
-                    ? "opacity-100 max-h-[33px] delay-300"
-                    : "opacity-0 max-h-0"
-                }`}
-              >
-                Subscribe to us to say updated- hyperlink (takes you to the
-                social media pages)
-              </p>
-            </div>
-
-            {/* Third box */}
-            <div
-              className={`w-[342px] rounded-[9px] px-[30px] py-[24px] flex flex-col justify-between bg-white max-xs:w-[300px]  custom:w-[458px] custom:h-[104px] custom:px-[40px] custom:py-[32px] md:w-[243px] md:h-[55.13px] md:px-[21.2px] md:py-[16.96px] max-md:mb-[44px] transition-all duration-300 ease-in-out cursor-pointer hover:border-[0.75px] hover:border-[#FC5A5A] ${
-                expand === 2
-                  ? "h-[124px] border-t-[0.75px] border-[#FC5A5A] md:h-[86px] custom:h-[164px]"
-                  : "h-[78px] md:h-[55.13px] custom:h-[104px]"
-              }`}
-              style={{ boxShadow: "9px 9px 37.5px 0px #00000014" }}
-              onClick={() => handleClick(2)}
-            >
-              {/* Circle and text */}
-              <div className="w-full h-[30px] flex justify-start items-center gap-[9.75px]  md:h-[21.2px] md:gap-[6.89px] custom:h-[40px] custom:gap-[13px]">
-                <div className="rounded-full w-[30px] h-full bg-white border-[0.75px] border-[#000000] flex justify-center items-center md:w-[21.2px] md:border-[0.53px] custom:w-[40px] custom:border-[1px]">
-                  <p className="font-inter font-semibold text-[15.75px] leading-[21px] -tracking-[0.18px] text-[#000000] md:text-[11.13px] md:leading-[14.84px] md:-tracking-[0.13px] custom:text-[21px] custom:leading-[28px] custom:-tracking-[0.24px]">
-                    3
-                  </p>
-                </div>
-                <p className="font-inter font-semibold text-[15.75px] -tracking-[0.18px] md:text-[11.13px] md:leading-[14.84px] md:-tracking-[0.13px] custom:text-[21px] custom:leading-[28px] custom:-tracking-[0.24px]">
-                  Join Us
-                </p>
-              </div>
-
-              {/* Text */}
-              <p
-                className={`font-inter font-normal text-[10.5px] leading-[16.5px] text-[#000000BF] md:text-[7.42px] md:leading-[11.66px] custom:text-[14px] custom:leading-[22px] transition-all duration-300 ease-in-out ${
-                  expand === 2
-                    ? "opacity-100 max-h-[33px] delay-300"
-                    : "opacity-0 max-h-0"
-                }`}
-              >
-                Subscribe to us to say updated- hyperlink (takes you to the
-                social media pages)
-              </p>
-            </div>
+            ))}
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
