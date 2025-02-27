@@ -1,6 +1,5 @@
 import React from "react";
 import LaawyerImage from "@/assets/ILike/sittingImage.png";
-import Arrow from "@/assets/ILike/Arrow.svg";
 import Image from "next/image";
 
 const ILinkeBeing = () => {
