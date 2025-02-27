@@ -30,12 +30,14 @@ const NavBar = () => {
       <div className="w-full h-full px-4 xs:px-5 sm:px-6 mid:px-8 lg:px-[25px] custom:px-[34px] flex justify-between items-center">
         {/* logo */}
         <div className="relative w-[100px] h-[33px] xs:w-[120px] xs:h-[40px] sm:w-[130px] sm:h-[43px] mid:w-[140px] mid:h-[47px] lg:w-[150px] lg:h-[50.12px]">
-          <Image
-            src={Logo}
-            alt="Law Decoded Logo"
-            fill
-            className="object-contain"
-          />
+          <Link href="/">
+            <Image
+              src={Logo}
+              alt="Law Decoded Logo"
+              fill
+              className="object-contain"
+            />
+          </Link>
         </div>
 
         {/* middle buttons - hidden on mobile */}
