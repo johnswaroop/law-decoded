@@ -70,7 +70,7 @@ const NavBar = () => {
                 </div>
               )}
             </div>
-            <Link href={"/mentorship"}>Join Community</Link>
+            <Link href="/#community">Join Community</Link>
             <Link href={"/videos"}>Videos</Link>
             <Link href={"https://blog.sajanpoovayya.com/"}>Latest News</Link>
           </div>
@@ -204,7 +204,7 @@ const MobileMenu = () => {
               </li>
               <li>
                 <Link
-                  href="/mentorship"
+                  href="/#community"
                   className="block text-lg xs:text-xl font-medium hover:text-[#E43D12] transition-colors"
                   onClick={toggleMenu}
                 >

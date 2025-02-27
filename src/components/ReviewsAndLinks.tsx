@@ -57,7 +57,7 @@ const ReviewsAndLinks = () => {
         </div>
 
         {/* Community Section */}
-        <div className="space-y-12 lg:space-y-16 pt-12">
+        <div id='community' className="space-y-12 lg:space-y-16 pt-12">
           <h2 className="text-center font-georgia text-3xl sm:text-4xl lg:text-5xl mb-12">
             Join our community
           </h2>

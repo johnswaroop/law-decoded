@@ -43,7 +43,7 @@ const LawDecoded = () => {
           expertise and shape the next generation of legal professionals.
         </p>
 
-        <Link href="/law-decoded">
+        <Link href="/about-team">
         <button className="bg-[#DD4826] text-white font-inter w-[280px] xs:w-[320px] sm:w-[400px] mid:w-[480px] lg:w-[500px] custom:w-[466px] h-[40px] xs:h-[44px] sm:h-[48px] mid:h-[52px] lg:h-[58px] custom:h-[64px] transition-all duration-300 hover:bg-[#c13d1f]">
           <span className="font-medium text-[13px] xs:text-[14px] sm:text-[15px] mid:text-[15px] lg:text-[16px] custom:text-[16px] leading-normal">
             Read More
