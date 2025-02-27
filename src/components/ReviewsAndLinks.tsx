@@ -64,7 +64,7 @@ const ReviewsAndLinks = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-[10%] max-w-4xl mx-auto">
             {/* YouTube Box */}
-            <div className="flex flex-col items-center p-10 lg:p-12 rounded-lg bg-white shadow-sm space-y-6">
+            <a href="https://www.youtube.com/@LawDecodedwithSP" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center p-10 lg:p-12 rounded-lg bg-white shadow-sm space-y-6">
               <Image
                 src={YouIcon}
                 alt="YouTube"
@@ -80,10 +80,10 @@ const ReviewsAndLinks = () => {
                 <br />
                 watch more videos.
               </p>
-            </div>
+            </a>
 
             {/* WhatsApp Box */}
-            <div className="flex flex-col items-center p-10 lg:p-12 rounded-lg bg-white shadow-sm space-y-6">
+            <a href="#" className="flex flex-col items-center p-10 lg:p-12 rounded-lg bg-white shadow-sm space-y-6">
               <Image
                 src={WhatIacon}
                 alt="WhatsApp"
@@ -99,7 +99,7 @@ const ReviewsAndLinks = () => {
                 <br />
                 updates.
               </p>
-            </div>
+            </a>
           </div>
         </div>
       </div>

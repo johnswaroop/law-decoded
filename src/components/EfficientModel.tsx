@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import LaywerImage from "@/assets/EfficientModel/lawyerPic.png";
+import Link from "next/link";
 
 const EfficientModel = () => {
   const [expand, setExpand] = useState(0);
@@ -71,7 +72,26 @@ const EfficientModel = () => {
                     ? "opacity-100 max-h-20"
                     : "opacity-0 max-h-0 overflow-hidden"
                 }`}>
-                  Subscribe to us to say updated- hyperlink (takes you to the social media pages)
+                  {index === 0 
+                    ? "Gain hands-on experience in litigation by working on real cases under the guidance of Sajan Poovayya, a distinguished Senior Advocate."
+                    : index === 1 
+                    ? "Participate in specialized seminars and workshops designed to enhance your legal knowledge and practical skills."
+                    : "Become part of an exclusive community of aspiring lawyers mentored by one of India's leading legal professionals."
+                  }
+                  <br />
+                  <Link
+                    href={index === 0 ? "https://www.linkedin.com/in/poovayya/" : index === 1 ? "https://instagram.com/lawdecodedwithsp" : "https://x.com/poovayya"}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[#FC5A5A] hover:underline mt-2 inline-block"
+                  >
+                    {index === 0 
+                      ? "Learn more on LinkedIn →" 
+                      : index === 1 
+                      ? "Follow our updates on Instagram →" 
+                      : "Join our community on Twitter →"
+                    }
+                  </Link>
                 </p>
               </div>
             ))}

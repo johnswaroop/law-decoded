@@ -70,7 +70,7 @@ const NavBar = () => {
                 </div>
               )}
             </div>
-            <Link href={"/"}>Join Community</Link>
+            <Link href={"/mentorship"}>Join Community</Link>
             <Link href={"/videos"}>Videos</Link>
             <Link href={"https://blog.sajanpoovayya.com/"}>Latest News</Link>
           </div>
