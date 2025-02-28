@@ -14,15 +14,20 @@ const ConnectWithUS = () => {
          w-full mid:w-[92%]">
         Connect with Mentors to Advance Your Legal Journey
       </h1>
-      <Image
-        src={PersonImage}
-        alt="Sajan Poovayya with people"
-        className="w-full xs:w-[342px] mid:w-[506px] custom:w-[949px] 
+      <div className="w-full xs:w-[342px] mid:w-[506px] custom:w-[949px] 
           h-auto xs:h-[179.45px] mid:h-[264px] custom:h-[550px] 
-          mb-12 xs:mb-[90px] custom:mb-[120px]
-          object-cover object-[50%_52%] 
-          rounded-[20px] shadow-md"
-      />
+          mb-12 xs:mb-[90px] custom:mb-[120px]">
+        <iframe
+          width="100%"
+          height="100%"
+          src="https://www.youtube.com/embed/tzr2FBIDkX4"
+          title="YouTube video player"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+          className="rounded-[20px] shadow-md"
+        ></iframe>
+      </div>
       {/* First box */}
       <div className="flex flex-col mid:flex-row w-full mid:w-[92%] custom:w-[1144px] 
           mb-12 mid:mb-[120px] custom:mb-[200px] 
