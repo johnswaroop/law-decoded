@@ -1,6 +1,4 @@
 import React from "react";
-import Image from "next/image";
-import PersonImage from "@/assets/About-team/sajanpoovayya.jpeg";
 
 const StudentConnectWithUS = () => {
   return (
@@ -29,7 +27,7 @@ const StudentConnectWithUS = () => {
           className="rounded-[20px] shadow-md"
         ></iframe>
       </div>
-      
+
       <div className="flex flex-col mid:flex-row w-full mid:w-[92%] custom:w-[1144px] 
           mb-12 mid:mb-[120px] custom:mb-[200px] 
           gap-6 mid:gap-8 custom:gap-12 
