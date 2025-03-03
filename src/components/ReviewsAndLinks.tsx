@@ -83,7 +83,7 @@ const ReviewsAndLinks = () => {
             </a>
 
             {/* WhatsApp Box */}
-            <a href="https://chat.whatsapp.com/Fep7RlpEo6M8FgGLrVdAuY" className="flex flex-col items-center p-10 lg:p-12 rounded-lg bg-white shadow-sm space-y-6">
+            <a href="https://chat.whatsapp.com/Fep7RIpEo6M8FgGLrVdAuY" className="flex flex-col items-center p-10 lg:p-12 rounded-lg bg-white shadow-sm space-y-6">
               <Image
                 src={WhatIacon}
                 alt="WhatsApp"
