@@ -33,7 +33,7 @@ const AboutSajan: React.FC = () => {
       <div className="w-full min-h-[600px] flex justify-center items-center bg-background">
         <div className="flex flex-col items-center">
           <div className="animate-spin rounded-full h-12 w-12 border-t-4 border-primary border-solid"></div>
-          <p className="mt-4 text-muted-foreground font-outfit text-lg">
+          <p className="mt-4 text-muted-foreground font-inter text-lg">
             Loading social media links...
           </p>
         </div>

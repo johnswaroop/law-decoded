@@ -40,7 +40,7 @@ const StudentProgramAndSuccess = () => {
               <h3 className="font-georgia text-sm md:text-base custom:text-lg text-[#281D1B] font-semibold">
                 {box.title}
               </h3>
-              <p className="text-[#281D1B] font-outfit text-xs md:text-sm leading-relaxed">
+              <p className="text-[#281D1B] font-inter text-xs md:text-sm leading-relaxed">
                 {box.description}
               </p>
             </div>
@@ -66,7 +66,7 @@ const StudentProgramAndSuccess = () => {
               <h3 className="font-georgia text-sm md:text-base custom:text-lg text-[#281D1B] font-semibold">
                 {feature.title}
               </h3>
-              <p className="text-[#281D1B] font-outfit text-xs md:text-sm leading-relaxed">
+              <p className="text-[#281D1B] font-inter text-xs md:text-sm leading-relaxed">
                 {feature.description}
               </p>
             </div>
@@ -84,14 +84,14 @@ const StudentProgramAndSuccess = () => {
           <div className="flex flex-col md:flex-row items-center justify-center gap-3 md:gap-6">
             <div className="flex items-center">
               <span className="w-1.5 h-1.5 bg-[#DD4826] rounded-full mr-2"></span>
-              <p className="font-outfit text-sm md:text-base text-[#281D1B]">
+              <p className="font-inter text-sm md:text-base text-[#281D1B]">
                 <span className="font-semibold">Law Universities</span> based in India
               </p>
             </div>
 
             <div className="flex items-center">
               <span className="w-1.5 h-1.5 bg-[#DD4826] rounded-full mr-2"></span>
-              <p className="font-outfit text-sm md:text-base text-[#281D1B]">
+              <p className="font-inter text-sm md:text-base text-[#281D1B]">
                 <span className="font-semibold">Registered Student Bodies</span> looking for strategic partnerships
               </p>
             </div>
@@ -166,10 +166,10 @@ const StudentProgramAndSuccess = () => {
             className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 rounded-full"
           />
           <div>
-            <p className="font-outfit font-semibold text-xs sm:text-sm text-[#1B2128]">
+            <p className="font-inter font-semibold text-xs sm:text-sm text-[#1B2128]">
               Sajan Poovayya
             </p>
-            <p className="font-outfit text-[10px] sm:text-xs text-[#14202E9E]">
+            <p className="font-inter text-[10px] sm:text-xs text-[#14202E9E]">
               Mentor
             </p>
           </div>

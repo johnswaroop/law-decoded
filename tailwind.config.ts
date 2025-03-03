@@ -1,4 +1,4 @@
-import { Outfit } from "next/font/google";
+import { Inter } from "next/font/google";
 import type { Config } from "tailwindcss";
 
 export default {
@@ -53,9 +53,8 @@ export default {
         },
       },
       fontFamily: {
-        outfit: ["var(--font-outfit)"],
-        georgia: ["var(--font-georgia)"],
         inter: ["var(--font-inter)"],
+        georgia: ["var(--font-georgia)"],
         domine: ["var(--font-domine)"],
       },
       screens: {

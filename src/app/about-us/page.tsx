@@ -22,11 +22,11 @@ const Page = () => {
         </h1>
 
         {/* Introduction Section */}
-        <h2 className="font-domine font-bold text-[28px] xs:text-[28px] sm:text-[25px] mid:text-[36px] lg:text-[48px] leading-[34px] xs:leading-[34px] sm:leading-[27px] mid:leading-[40px] lg:leading-[52px] -tracking-[0.02em] mt-[38px] sm:mt-[64px] mid:mt-[100px] lg:mt-[147.5px]">
+        <h2 className="font-georgia font-bold text-[28px] xs:text-[28px] sm:text-[25px] mid:text-[36px] lg:text-[48px] leading-[34px] xs:leading-[34px] sm:leading-[27px] mid:leading-[40px] lg:leading-[52px] -tracking-[0.02em] mt-[38px] sm:mt-[64px] mid:mt-[100px] lg:mt-[147.5px]">
           Introduction
         </h2>
 
-        <p className="font-outfit font-normal text-[16px] xs:text-[16px] sm:text-[12.7px] mid:text-[18px] lg:text-[24px] leading-[20px] xs:leading-[20px] sm:leading-[16px] mid:leading-[24px] lg:leading-[32px] text-justify text-[#1B2128] w-[88%] mid:w-[75%] lg:w-[58%] mt-[24px] sm:mt-[20px] mid:mt-[32px] lg:mt-[44px]">
+        <p className="font-inter font-normal text-[16px] xs:text-[16px] sm:text-[12.7px] mid:text-[18px] lg:text-[24px] leading-[20px] xs:leading-[20px] sm:leading-[16px] mid:leading-[24px] lg:leading-[32px] text-justify text-[#1B2128] w-[88%] mid:w-[75%] lg:w-[58%] mt-[24px] sm:mt-[20px] mid:mt-[32px] lg:mt-[44px]">
           In the vibrant corridors of India&apos;s legal community, Sajan
           Poovayya&apos;s name is synonymous with immense respect. Today, he is
           regarded as one of the nation&apos;s most esteemed Senior Advocates,
@@ -46,7 +46,7 @@ const Page = () => {
         {/* Legacy and Journey Section */}
         <div className="flex flex-col mid:flex-row w-[88%] mid:w-[92%] mt-[64px] mid:mt-[120px] lg:mt-[193.5px] px-[3%] justify-between mb-[68px] mid:mb-[80px] lg:mb-[92px] gap-8 mid:gap-12">
           <div className="w-full mid:w-[50%] flex flex-col">
-            <h2 className="font-domine font-bold text-[28px] xs:text-[28px] sm:text-[25px] mid:text-[36px] lg:text-[48px] leading-[34px] xs:leading-[34px] sm:leading-[27px] mid:leading-[40px] lg:leading-[52px] -tracking-[0.02em] text-[#1B2128] text-center mid:text-left">
+            <h2 className="font-georgia font-bold text-[28px] xs:text-[28px] sm:text-[25px] mid:text-[36px] lg:text-[48px] leading-[34px] xs:leading-[34px] sm:leading-[27px] mid:leading-[40px] lg:leading-[52px] -tracking-[0.02em] text-[#1B2128] text-center mid:text-left">
               Legacy and Journey
             </h2>
 
@@ -58,7 +58,7 @@ const Page = () => {
               />
             </div>
 
-            <p className="font-outfit font-normal text-[16px] xs:text-[16px] sm:text-[12.7px] mid:text-[18px] lg:text-[24px] leading-[20px] xs:leading-[20px] sm:leading-[16px] mid:leading-[24px] lg:leading-[32px] text-justify text-[#1B2128] mt-[20px] mid:mt-[36px]">
+            <p className="font-inter font-normal text-[16px] xs:text-[16px] sm:text-[12.7px] mid:text-[18px] lg:text-[24px] leading-[20px] xs:leading-[20px] sm:leading-[16px] mid:leading-[24px] lg:leading-[32px] text-justify text-[#1B2128] mt-[20px] mid:mt-[36px]">
               One pivotal day, his father saw the potential in him and proposed
               an alternative path. He encouraged Sajan to attend the National
               Law School of India University (NLSIU) and pursue a legal career.
@@ -84,11 +84,11 @@ const Page = () => {
         </div>
 
         {/* Innovations Section */}
-        <h2 className="font-domine font-bold text-[28px] xs:text-[28px] sm:text-[25px] mid:text-[36px] lg:text-[48px] leading-[34px] xs:leading-[34px] sm:leading-[27px] mid:leading-[40px] lg:leading-[52px] -tracking-[0.02em] w-[88%] mid:w-auto text-center">
+        <h2 className="font-georgia font-bold text-[28px] xs:text-[28px] sm:text-[25px] mid:text-[36px] lg:text-[48px] leading-[34px] xs:leading-[34px] sm:leading-[27px] mid:leading-[40px] lg:leading-[52px] -tracking-[0.02em] w-[88%] mid:w-auto text-center">
           Innovations in Legal Practice
         </h2>
 
-        <p className="font-outfit font-normal text-[16px] xs:text-[16px] sm:text-[12.7px] mid:text-[18px] lg:text-[24px] leading-[20px] xs:leading-[20px] sm:leading-[16px] mid:leading-[24px] lg:leading-[32px] text-justify text-[#1B2128] w-[88%] mid:w-[75%] lg:w-[64%] mt-[24px] sm:mt-[20px] mid:mt-[28px] lg:mt-[36px]">
+        <p className="font-inter font-normal text-[16px] xs:text-[16px] sm:text-[12.7px] mid:text-[18px] lg:text-[24px] leading-[20px] xs:leading-[20px] sm:leading-[16px] mid:leading-[24px] lg:leading-[32px] text-justify text-[#1B2128] w-[88%] mid:w-[75%] lg:w-[64%] mt-[24px] sm:mt-[20px] mid:mt-[28px] lg:mt-[36px]">
           Upon graduating in 1996, Sajan made a bold decision. Unlike many of
           his classmates who joined established law firms, he opted to forge his
           own path and established Poovayya & Co. Under his leadership, the firm

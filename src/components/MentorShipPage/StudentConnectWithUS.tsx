@@ -26,52 +26,55 @@ const StudentConnectWithUS = () => {
           allowFullScreen
           className="rounded-[20px] shadow-md"
         ></iframe>
-      </div>
+        </div>
 
+      {/* First box */}
       <div className="flex flex-col mid:flex-row w-full mid:w-[92%] custom:w-[1144px] 
           mb-12 mid:mb-[120px] custom:mb-[200px] 
           gap-6 mid:gap-8 custom:gap-12 
-          mid:items-start mid:justify-between">
+          mid:items-center mid:justify-between">
         <h2 className="font-georgia font-normal 
           text-[20px] xs:text-[24px] mid:text-[32px] custom:text-[40px] 
           leading-tight xs:leading-[28px] mid:leading-[40px] custom:leading-[44px] 
           -tracking-[2%] text-[#1B2128] 
-          text-center mid:text-start">
+          text-center self-center">
           What is Mentorship Programme
         </h2>
         
         <div className="px-4 mid:p-0 w-full mid:w-[48%] custom:w-[524px]">
-          <p className="font-outfit font-normal 
+          <p className="font-inter font-normal 
            text-[12px] xs:text-[14px] mid:text-[16px] custom:text-[20px] 
            leading-[18px] xs:leading-[21px] mid:leading-[24px] custom:leading-[28px] 
-           text-[#1B2128] 
-           w-full">
-            The Sajan Poovayya Mentorship Programme for Law Students is an initiative aimed at providing aspiring legal professionals with practical insights and real-world experience. Led by distinguished Supreme Court lawyer Sajan Poovayya, the programme offers students the chance to observe and learn from a leading figure in the legal field. Participants will engage in internships where they can assist in case preparation and attend various court proceedings. This hands-on experience is designed to enhance their understanding of legal practice and courtroom procedures.
+           text-gray-600 
+           w-full text-left">
+        The Sajan Poovayya Mentorship Programme for Law Students is an initiative aimed at providing aspiring legal professionals with practical insights and real-world experience. Led by distinguished Supreme Court lawyer Sajan Poovayya, the programme offers students the chance to observe and learn from a leading figure in the legal field. Participants will engage in internships where they can assist in case preparation and attend various court proceedings. This hands-on experience is designed to enhance their understanding of legal practice and courtroom procedures.
           </p>
         </div>
       </div>
 
-    <div className="flex flex-col mid:flex-row-reverse w-full mid:w-[92%] custom:w-[1144px] 
+      {/* Second box */}
+      <div className="flex flex-col mid:flex-row-reverse w-full mid:w-[92%] custom:w-[1144px] 
           mb-12 mid:mb-[120px] custom:mb-[120px] 
           gap-6 mid:gap-8 custom:gap-12 
-          mid:items-start mid:justify-between">
-      <h2 className="font-georgia font-normal 
+          mid:items-center mid:justify-between">
+        <h2 className="font-georgia font-normal 
           text-[20px] xs:text-[24px] mid:text-[32px] custom:text-[40px] 
           leading-tight xs:leading-[28px] mid:leading-[40px] custom:leading-[44px] 
           -tracking-[2%] text-[#1B2128] 
-          text-center mid:text-end">
-        We aim to create the lawyers of tomorrow
-      </h2>
+          text-center self-center 
+          mb-4 mid:mb-0">
+          We aim to create<br/> the lawyers of tomorrow
+        </h2>
       
-      <div className="px-4 mid:p-0 w-full mid:w-[48%] custom:w-[524px]">
-        <p className="font-outfit font-normal 
+        <div className="px-4 mid:p-0 w-full mid:w-[48%] custom:w-[524px]">
+          <p className="font-inter font-normal 
            text-[12px] xs:text-[14px] mid:text-[16px] custom:text-[20px] 
            leading-[18px] xs:leading-[21px] mid:leading-[24px] custom:leading-[28px] 
-           text-[#1B2128] 
-           w-full">
+           text-gray-600 
+           w-full text-justify">
         In addition to practical work, students will benefit from mentorship sessions, receiving personalized guidance on their career development and academic journeys. The programme fosters a collaborative learning environment, encouraging students to ask questions and seek advice on navigating the complexities of the legal profession. Networking opportunities with legal experts and peers are a vital component, allowing students to build valuable connections for their future careers. Overall, the Sajan Poovayya Mentorship Programme serves as a crucial stepping stone for law students, equipping them with the skills and knowledge necessary for success in the legal field.
-        </p>
-      </div>
+          </p>
+        </div>
       </div>
     </div>
   );

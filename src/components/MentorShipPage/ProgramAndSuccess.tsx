@@ -22,7 +22,7 @@ const ProgramAndSuccess = () => {
               <h3 className="font-georgia text-sm md:text-base custom:text-lg text-[#281D1B] font-semibold">
                 {feature.title}
               </h3>
-              <p className="text-[#281D1B] font-outfit text-xs md:text-sm custom:text-base leading-relaxed">
+              <p className="text-[#281D1B] font-inter text-xs md:text-sm custom:text-base leading-relaxed">
                 {feature.description}
               </p>
             </div>

@@ -42,7 +42,7 @@ const NavBar = () => {
 
         {/* middle buttons - hidden on mobile */}
         <div className="hidden mid:flex items-center">
-          <div className="font-outfit font-medium text-[15px] flex items-center gap-[16px] text-[#281D1B]">
+          <div className="font-inter font-medium text-[15px] flex items-center gap-[16px] text-[#281D1B]">
             <Link href={"/"}>Home</Link>
             <Link href={"/about-us"}>About Us</Link>
             <div className="relative" ref={dropdownRef}>
@@ -79,7 +79,7 @@ const NavBar = () => {
         </div>
 
         {/* Subscribe ContactUS */}
-        <div className="font-outfit font-medium text-[15px] leading-[20px] text-[#F72C00] hidden mid:flex justify-center gap-[32px]">
+        <div className="font-inter font-medium text-[15px] leading-[20px] text-[#F72C00] hidden mid:flex justify-center gap-[32px]">
           <div className="flex justify-center items-center">
             <Link href={"/#contact"}>Contact Us</Link>
           </div>

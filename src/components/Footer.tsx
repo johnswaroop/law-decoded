@@ -51,7 +51,7 @@ const Footer = () => {
           <div className="w-[340px] flex justify-between max-xs:w-[250px] mid:justify-center mid:gap-[25.44px] mid:w-auto lg:gap-[36px] custom:gap-[48px]">
             <div className="flex flex-col gap-[8px] text-base mid:text-[10px] lg:text-[12px] custom:text-[16px] font-inter font-medium mid:w-[106.02px] lg:w-[150px] custom:w-[200px]">
               <p className="text-[#281D1B]">Follow Us</p>
-              <Link href="https://wa.me/yourwhatsappnumber" className="text-[#2E19149E] hover:text-[#281D1B]" target="_blank" rel="noopener noreferrer">Whatsapp</Link>
+              <Link href="https://wa.me/+919220949124" className="text-[#2E19149E] hover:text-[#281D1B]" target="_blank" rel="noopener noreferrer">Whatsapp</Link>
               <Link href="https://x.com/poovayya" className="text-[#2E19149E] hover:text-[#281D1B]" target="_blank" rel="noopener noreferrer">Twitter/X</Link>
               <Link href="https://instagram.com/lawdecodedwithsp" className="text-[#2E19149E] hover:text-[#281D1B]" target="_blank" rel="noopener noreferrer">Instagram</Link>
               <Link href="https://www.linkedin.com/in/poovayya/" className="text-[#2E19149E] hover:text-[#281D1B]" target="_blank" rel="noopener noreferrer">LinkedIn</Link>
