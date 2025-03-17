@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import LawyerImage from "@/assets/AboutSection/LawyerImage.png";
+import Link from "next/link";
 
 const AboutSection = () => {
   return (
@@ -59,8 +60,8 @@ const AboutSection = () => {
               {/* Mobile Text */}
               <span className="md:hidden">Read More</span>
               {/* Desktop Text */}
-              <span className="hidden md:block">Book 30 minutes consultation</span>
-            </span>
+              <Link href="/about-us" className="hidden md:block">Know More about Sajan</Link>
+            </span>          
           </button>
         </div>
       </div>

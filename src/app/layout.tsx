@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import { Outfit, Inter, Domine } from "next/font/google";
+import { Inter } from "next/font/google";
 import NavBar from "@/components/NavBar";
 import ScaleProvider from "@/components/scaleProvider";
 import Footer from '@/components/Footer';
@@ -22,11 +22,6 @@ const georgia = localFont({
   variable: "--font-georgia",
 });
 
-const outfit = Outfit({
-  subsets: ["latin"],
-  weight: ["100", "400", "500"],
-  variable: "--font-outfit",
-});
 
 const inter = Inter({
   subsets: ["latin"],
@@ -34,11 +29,6 @@ const inter = Inter({
   variable: "--font-inter",
 });
 
-const domine = Domine({
-  subsets: ["latin"],
-  weight: ["500", "400", "700"],
-  variable: "--font-domine",
-});
 
 export const metadata: Metadata = {
   title: "Law Decoded",
@@ -53,7 +43,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${outfit.variable} ${georgia.variable} ${inter.variable} ${domine.variable}  antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${georgia.variable} ${inter.variable}  antialiased`}
       >
         <ScaleProvider>
           <NavBar />

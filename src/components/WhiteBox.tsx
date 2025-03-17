@@ -1,6 +1,7 @@
 import React from "react";
 import ImageNews from "@/assets/WhiteBox/Placeholder.png";
 import Image from "next/image";
+import Link from "next/link";
 
 const WhiteBox = () => {
   return (
@@ -40,10 +41,10 @@ const WhiteBox = () => {
                 challenged...
               </div>
 
-              <button className="w-full px-4 xs:px-6 py-2.5 xs:py-3 mid:py-2 lg:py-4 bg-[#DD4826] text-white font-inter font-medium text-sm mid:text-base rounded-lg hover:bg-opacity-90 transition-colors">
+              <Link href="https://blog.sajanpoovayya.com/" className="block w-full px-4 xs:px-6 py-2.5 xs:py-3 mid:py-2 lg:py-4 bg-[#DD4826] text-white font-inter font-medium text-sm mid:text-base rounded-lg hover:bg-opacity-90 transition-colors text-center">
                 Continue reading
-              </button>
-            </div>
+              </Link>            
+              </div>
           </div>
         </div>
       </div>

@@ -34,7 +34,7 @@ const page = () => {
           <p className=" font-georgia font-normal text-[28px] leading-[34px] -tracking-[2%] md:text-[25px] md:leading-[27px] custom:text-[48px] custom:leading-[52px] ">
             Making law simpler
           </p>
-          <p className="w-[86%] font-outfit font-normal text-[16px] leading-[20px] text-justify mt-[28px] md:w-[58%] md:text-[12px] md:leading-[16px] custom:text-[24px] custom:leading-[32px] custom:mt-[44px]">
+          <p className="w-[86%] font-inter font-normal text-[16px] leading-[20px] text-justify mt-[28px] md:w-[58%] md:text-[12px] md:leading-[16px] custom:text-[24px] custom:leading-[32px] custom:mt-[44px]">
             At its core, &quot;Law Decoded&quot; is an initiative designed for
             raising legal awareness by making obscure legal concepts accessible
             to the layperson. We strive to break down intricate legal jargon

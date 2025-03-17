@@ -30,17 +30,19 @@ const NavBar = () => {
       <div className="w-full h-full px-4 xs:px-5 sm:px-6 mid:px-8 lg:px-[25px] custom:px-[34px] flex justify-between items-center">
         {/* logo */}
         <div className="relative w-[100px] h-[33px] xs:w-[120px] xs:h-[40px] sm:w-[130px] sm:h-[43px] mid:w-[140px] mid:h-[47px] lg:w-[150px] lg:h-[50.12px]">
-          <Image
-            src={Logo}
-            alt="Law Decoded Logo"
-            fill
-            className="object-contain"
-          />
+          <Link href="/">
+            <Image
+              src={Logo}
+              alt="Law Decoded Logo"
+              fill
+              className="object-contain"
+            />
+          </Link>
         </div>
 
         {/* middle buttons - hidden on mobile */}
         <div className="hidden mid:flex items-center">
-          <div className="font-outfit font-medium text-[15px] flex items-center gap-[16px] text-[#281D1B]">
+          <div className="font-inter font-medium text-[15px] flex items-center gap-[16px] text-[#281D1B]">
             <Link href={"/"}>Home</Link>
             <Link href={"/about-us"}>About Us</Link>
             <div className="relative" ref={dropdownRef}>
@@ -70,14 +72,14 @@ const NavBar = () => {
                 </div>
               )}
             </div>
-            <Link href={"/"}>Join Community</Link>
+            <Link href="/#community">Join Community</Link>
             <Link href={"/videos"}>Videos</Link>
             <Link href={"https://blog.sajanpoovayya.com/"}>Latest News</Link>
           </div>
         </div>
 
         {/* Subscribe ContactUS */}
-        <div className="font-outfit font-medium text-[15px] leading-[20px] text-[#F72C00] hidden mid:flex justify-center gap-[32px]">
+        <div className="font-inter font-medium text-[15px] leading-[20px] text-[#F72C00] hidden mid:flex justify-center gap-[32px]">
           <div className="flex justify-center items-center">
             <Link href={"/#contact"}>Contact Us</Link>
           </div>
@@ -204,7 +206,7 @@ const MobileMenu = () => {
               </li>
               <li>
                 <Link
-                  href="/"
+                  href="/#community"
                   className="block text-lg xs:text-xl font-medium hover:text-[#E43D12] transition-colors"
                   onClick={toggleMenu}
                 >

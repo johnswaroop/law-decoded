@@ -1,6 +1,5 @@
 import React from "react";
 import LaawyerImage from "@/assets/ILike/sittingImage.png";
-import Arrow from "@/assets/ILike/Arrow.svg";
 import Image from "next/image";
 
 const ILinkeBeing = () => {
@@ -32,17 +31,6 @@ const ILinkeBeing = () => {
             </p>
           </div>
 
-          {/* Button */}
-          <button className="flex w-[116px] items-center justify-center gap-2 rounded-lg bg-black py-2 xs:w-[130px] sm:w-[140px] custom:w-[156px] custom:h-[48px]">
-            <span className="font-inter font-medium text-white text-xs xs:text-sm custom:text-base">
-              View more
-            </span>
-            <Image
-              alt="arrow"
-              src={Arrow}
-              className="h-2.5 w-2.5 xs:h-3 xs:w-3 custom:h-4 custom:w-4"
-            />
-          </button>
         </div>
 
         {/* Image */}
