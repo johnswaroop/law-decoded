@@ -3,7 +3,7 @@ import localFont from "next/font/local";
 import { Inter } from "next/font/google";
 import NavBar from "@/components/NavBar";
 import ScaleProvider from "@/components/scaleProvider";
-import Footer from '@/components/Footer';
+import Footer from "@/components/Footer";
 import "./globals.css";
 
 const geistSans = localFont({
@@ -22,13 +22,11 @@ const georgia = localFont({
   variable: "--font-georgia",
 });
 
-
 const inter = Inter({
   subsets: ["latin"],
   weight: ["100", "400", "500"],
   variable: "--font-inter",
 });
-
 
 export const metadata: Metadata = {
   title: "Law Decoded",
@@ -45,11 +43,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${georgia.variable} ${inter.variable}  antialiased`}
       >
-        <ScaleProvider>
-          <NavBar />
-          {children}
-          <Footer/>
-        </ScaleProvider>
+        <NavBar />
+        {children}
+        <Footer />
       </body>
     </html>
   );
