@@ -58,7 +58,9 @@ const AboutSection = () => {
           <button className="mt-6 md:mt-4 lg:mt-7 custom:mt-[28px] w-[129px] md:w-full h-12 md:h-[34px] lg:h-[48px] custom:h-[64px] bg-[#DD4826] hover:bg-[#c13f21] transition-colors">
             <span className="text-white font-inter font-medium md:text-[8.49px] lg:text-base">
               {/* Mobile Text */}
-              <span className="md:hidden">Read More</span>
+              <Link href="/about-us" className="md:hidden">
+                Read More
+              </Link>
               {/* Desktop Text */}
               <Link href="/about-us" className="hidden md:block">
                 Know More about Sajan
