@@ -4,9 +4,9 @@ import Link from "next/link";
 
 const Hero = () => {
   return (
-    <div className="w-full mb-[3.5%] sm:mb-[4.275%] mid:mb-[5.13%] custom:mb-[6.6%] max-w-[1920px] mx-auto">
+    <div className=" w-full min-[1000px]:pt-6 min-[500px]:pt-8 pt-0 mb-[3.5%] sm:mb-[4.275%] mid:mb-[5.13%] custom:mb-[6.6%] max-w-[1920px] mx-auto">
       {/* Owl Image */}
-      <div className="relative flex justify-center items-end min-h-[250px] h-[40vh] xs:h-[30vh] sm:h-[22vh] mid:h-[23vh] lg:h-[24vh] custom:h-[26vh] mt-0 sm:mt-[-15%] mid:mt-[-5%] custom:mt-[2%] 2xl:mt-[2%] xs:mt-[-20%] xxs:mt-[-35%] mb-[-1.62%] pointer-events-none">
+      <div className="relative flex justify-center items-end min-h-[250px] h-[40vh] xs:h-[30vh] sm:h-[22vh] mid:h-[23vh] lg:h-[24vh] custom:h-[26vh]  sm:mt-[-15%] mid:mt-[-5%] custom:mt-[2%] 2xl:mt-[2%] xs:mt-[-20%] xxs:mt-[-35%] mb-[-1.62%] pointer-events-none">
         <div className="relative w-[100px] xs:w-[140px] sm:w-[150px] mid:w-[160px] lg:w-[180px] custom:w-[200px] h-[133px] xs:h-[186px] sm:h-[200px] mid:h-[213px] lg:h-[240px] custom:h-[266px] select-none">
           <Image
             src={OwlImage}
@@ -29,7 +29,7 @@ const Hero = () => {
           </h1>
 
           {/* Quote */}
-          <p className=" my-3 font-inter italic text-center text-[0.75rem] xs:text-[0.8125rem] sm:text-[0.875rem] mid:text-[0.9375rem] lg:text-[1rem] custom:text-[1.125rem] leading-[1.6] -tracking-[0.00625rem] custom:-tracking-[0.0125rem] text-[#000000BF]">
+          <p className=" my-3 mt-4 font-inter italic text-center text-[0.75rem] xs:text-[0.8125rem] sm:text-[0.875rem] mid:text-[0.9375rem] lg:text-[1rem] custom:text-[1.125rem] leading-[1.6] -tracking-[0.00625rem] custom:-tracking-[0.0125rem] text-[#000000BF]">
             &quot;Law as a subject or law as a profession is not just for the
             privileged. We dejargonise law,
             <br className="hidden lg:block" /> make legal studies accessible,

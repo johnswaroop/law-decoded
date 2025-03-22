@@ -99,112 +99,130 @@ const MentorshipForum = () => {
   return (
     <>
       <div
-      id="contact"
-      className={`w-full min-h-screen flex flex-col items-center px-4 py-12 xs:py-16 mid:py-20 custom:py-24 ${
-        pathname.endsWith("mentorship") ? "bg-white" : "bg-[#FFF2CF]"
-      }`}
+        id="contact"
+        className={`w-full max-w-[1920px] mx-auto min-h-screen flex flex-col items-center px-4 py-12 xs:py-16 mid:py-20 custom:py-24 ${
+          pathname.endsWith("mentorship") ? "bg-white" : "bg-[#FFF2CF]"
+        }`}
       >
-      <h1 className="font-georgia font-bold text-center mb-8 
+        <h1
+          className="font-georgia font-bold text-center mb-8 
         text-2xl xs:text-[28px] mid:text-[32px] lg:text-[36px] custom:text-[40px]
         leading-normal xs:leading-tight mid:leading-relaxed
-        w-full xs:w-[90%] mid:w-[80%] lg:w-[500px] custom:w-[551px]">
-        Join Our Mentorship Program for Young Lawyers
-      </h1>
-
-      <div className="flex flex-col gap-6 mb-10 max-w-[320px] xs:max-w-[400px] mid:max-w-[450px] lg:max-w-[500px] custom:max-w-[551px]">
-        <p className="font-inter text-[#212424] text-center
-          text-sm xs:text-[15px] mid:text-base lg:text-[17px] custom:text-[18px]
-          leading-relaxed">
-          Our Mentorship Program provides essential support and guidance for lawyers navigating their early career stages. Through informative videos and specialized sessions, you'll gain valuable insights into various aspects of legal practice.
-        </p>
-
-        <p className="font-inter text-[#212424] text-center
-          text-sm xs:text-[15px] mid:text-base lg:text-[17px] custom:text-[18px]
-          leading-relaxed">
-          Engage in meaningful dialogue with experienced mentors and peers in our collaborative environment. Learn from diverse guest speakers who share their unique perspectives and experiences in different legal domains.
-        </p>
-
-        <p className="font-inter text-[#212424] text-center
-          text-sm xs:text-[15px] mid:text-base lg:text-[17px] custom:text-[18px]
-          leading-relaxed">
-          Ready to enhance your legal career? Fill out the form below to join our Mentorship Program and take the next step in your professional journey.
-        </p>
-      </div>
-      {successMessage && <p className="text-green-500 mb-4">{successMessage}</p>}
-      {errorMessage && <p className="text-red-500 mb-4">{errorMessage}</p>}
-
-      <div className="w-full max-w-[1440px] px-4 xs:px-6 lg:px-8">
-        <form
-        onSubmit={handleSubmit}
-        className="flex flex-col gap-4 w-full max-w-[320px] xs:max-w-[400px] mid:max-w-[450px] lg:max-w-[500px] custom:max-w-[551px] mx-auto"
+        w-full xs:w-[90%] mid:w-[80%] lg:w-[500px] custom:w-[551px]"
         >
-        <input
-          type="text"
-          name="name"
-          placeholder="Name*"
-          value={formData.name}
-          onChange={handleChange}
-          className={`w-full h-12 xs:h-[45px] mid:h-[50px] custom:h-[55px] px-4 rounded-md border-2 ${
-          formErrors.name ? "border-red-500" : "border-gray-300"
-          } focus:outline-none focus:ring-2 focus:ring-blue-500`}
-        />
-        {formErrors.name && (
-          <p className="text-red-500 text-xs mt-1">{formErrors.name}</p>
-        )}
+          Join Our Mentorship Program for Young Lawyers
+        </h1>
 
-        <input
-          type="email"
-          name="email"
-          placeholder="Email*"
-          value={formData.email}
-          onChange={handleChange}
-          className={`w-full h-12 xs:h-[45px] mid:h-[50px] custom:h-[55px] px-4 rounded-md border-2 ${
-          formErrors.email ? "border-red-500" : "border-gray-300"
-          } focus:outline-none focus:ring-2 focus:ring-blue-500`}
-        />
-        {formErrors.email && (
-          <p className="text-red-500 text-xs mt-1">{formErrors.email}</p>
-        )}
+        <div className="flex flex-col gap-6 mb-10 max-w-[320px] xs:max-w-[400px] mid:max-w-[450px] lg:max-w-[500px] custom:max-w-[551px]">
+          <p
+            className="font-inter text-[#212424] text-center
+          text-sm xs:text-[15px] mid:text-base lg:text-[17px] custom:text-[18px]
+          leading-relaxed"
+          >
+            Our Mentorship Program provides essential support and guidance for
+            lawyers navigating their early career stages. Through informative
+            videos and specialized sessions, you'll gain valuable insights into
+            various aspects of legal practice.
+          </p>
 
-        <input
-          type="tel"
-          name="phone"
-          placeholder="Phone*"
-          value={formData.phone}
-          onChange={handleChange}
-          className={`w-full h-12 xs:h-[45px] mid:h-[50px] custom:h-[55px] px-4 rounded-md border-2 ${
-          formErrors.phone ? "border-red-500" : "border-gray-300"
-          } focus:outline-none focus:ring-2 focus:ring-blue-500`}
-        />
-        {formErrors.phone && (
-          <p className="text-red-500 text-xs mt-1">{formErrors.phone}</p>
-        )}
+          <p
+            className="font-inter text-[#212424] text-center
+          text-sm xs:text-[15px] mid:text-base lg:text-[17px] custom:text-[18px]
+          leading-relaxed"
+          >
+            Engage in meaningful dialogue with experienced mentors and peers in
+            our collaborative environment. Learn from diverse guest speakers who
+            share their unique perspectives and experiences in different legal
+            domains.
+          </p>
 
-        <textarea
-          name="message"
-          placeholder="Message*"
-          value={formData.message}
-          onChange={handleChange}
-          className={`w-full h-[100px] xs:h-[120px] mid:h-[140px] custom:h-[159px] px-4 py-3 rounded-md border-2 ${
-          formErrors.message ? "border-red-500" : "border-gray-300"
-          } focus:outline-none focus:ring-2 focus:ring-blue-500`}
-        />
-        {formErrors.message && (
-          <p className="text-red-500 text-xs mt-1">{formErrors.message}</p>
+          <p
+            className="font-inter text-[#212424] text-center
+          text-sm xs:text-[15px] mid:text-base lg:text-[17px] custom:text-[18px]
+          leading-relaxed"
+          >
+            Ready to enhance your legal career? Fill out the form below to join
+            our Mentorship Program and take the next step in your professional
+            journey.
+          </p>
+        </div>
+        {successMessage && (
+          <p className="text-green-500 mb-4">{successMessage}</p>
         )}
+        {errorMessage && <p className="text-red-500 mb-4">{errorMessage}</p>}
 
-        <button
-          type="submit"
-          className="w-full h-12 xs:h-[45px] mid:h-[50px] custom:h-[55px] 
+        <div className="w-full max-w-[1440px] px-4 xs:px-6 lg:px-8">
+          <form
+            onSubmit={handleSubmit}
+            className="flex flex-col gap-4 w-full max-w-[320px] xs:max-w-[400px] mid:max-w-[450px] lg:max-w-[500px] custom:max-w-[551px] mx-auto"
+          >
+            <input
+              type="text"
+              name="name"
+              placeholder="Name*"
+              value={formData.name}
+              onChange={handleChange}
+              className={`w-full h-12 xs:h-[45px] mid:h-[50px] custom:h-[55px] px-4 rounded-md border-2 ${
+                formErrors.name ? "border-red-500" : "border-gray-300"
+              } focus:outline-none focus:ring-2 focus:ring-blue-500`}
+            />
+            {formErrors.name && (
+              <p className="text-red-500 text-xs mt-1">{formErrors.name}</p>
+            )}
+
+            <input
+              type="email"
+              name="email"
+              placeholder="Email*"
+              value={formData.email}
+              onChange={handleChange}
+              className={`w-full h-12 xs:h-[45px] mid:h-[50px] custom:h-[55px] px-4 rounded-md border-2 ${
+                formErrors.email ? "border-red-500" : "border-gray-300"
+              } focus:outline-none focus:ring-2 focus:ring-blue-500`}
+            />
+            {formErrors.email && (
+              <p className="text-red-500 text-xs mt-1">{formErrors.email}</p>
+            )}
+
+            <input
+              type="tel"
+              name="phone"
+              placeholder="Phone*"
+              value={formData.phone}
+              onChange={handleChange}
+              className={`w-full h-12 xs:h-[45px] mid:h-[50px] custom:h-[55px] px-4 rounded-md border-2 ${
+                formErrors.phone ? "border-red-500" : "border-gray-300"
+              } focus:outline-none focus:ring-2 focus:ring-blue-500`}
+            />
+            {formErrors.phone && (
+              <p className="text-red-500 text-xs mt-1">{formErrors.phone}</p>
+            )}
+
+            <textarea
+              name="message"
+              placeholder="Message*"
+              value={formData.message}
+              onChange={handleChange}
+              className={`w-full h-[100px] xs:h-[120px] mid:h-[140px] custom:h-[159px] px-4 py-3 rounded-md border-2 ${
+                formErrors.message ? "border-red-500" : "border-gray-300"
+              } focus:outline-none focus:ring-2 focus:ring-blue-500`}
+            />
+            {formErrors.message && (
+              <p className="text-red-500 text-xs mt-1">{formErrors.message}</p>
+            )}
+
+            <button
+              type="submit"
+              className="w-full h-12 xs:h-[45px] mid:h-[50px] custom:h-[55px] 
           flex justify-center items-center rounded-md 
           bg-[#DD4826] hover:bg-[#5f271a] transition-colors
           text-white font-medium"
-          disabled={isSubmitting}
-        >
-          {isSubmitting ? "Submitting..." : "Submit"}
-        </button>
-        </form>
-      </div>
+              disabled={isSubmitting}
+            >
+              {isSubmitting ? "Submitting..." : "Submit"}
+            </button>
+          </form>
+        </div>
       </div>
     </>
   );
