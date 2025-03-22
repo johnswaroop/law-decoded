@@ -45,7 +45,7 @@ const StudentConnectWithUS = () => {
           text-[20px] xs:text-[24px] mid:text-[32px] custom:text-[40px] 
           leading-tight xs:leading-[28px] mid:leading-[40px] custom:leading-[44px] 
           -tracking-[2%] text-[#1B2128] 
-          text-center self-center"
+          text-center self-center mx-auto"
         >
           What is the Mentorship<br></br>Programme?
         </h2>
@@ -56,7 +56,7 @@ const StudentConnectWithUS = () => {
            text-[12px] xs:text-[14px] mid:text-[16px] custom:text-[20px] 
            leading-[18px] xs:leading-[21px] mid:leading-[24px] custom:leading-[28px] 
            text-gray-600 
-           w-full text-left"
+           w-full text-justify"
           >
             The Sajan Poovayya Mentorship Programme for Law Students is an
             initiative aimed at providing aspiring legal professionals with
@@ -84,7 +84,7 @@ const StudentConnectWithUS = () => {
           leading-tight xs:leading-[28px] mid:leading-[40px] custom:leading-[44px] 
           -tracking-[2%] text-[#1B2128] 
           text-center self-center 
-          mb-4 mid:mb-0"
+          mb-4 mid:mb-0 mx-auto"
         >
           We aim to create
           <br /> the lawyers of tomorrow

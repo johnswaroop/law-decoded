@@ -91,7 +91,7 @@ const ConnectWithUS = () => {
           mid:items-start mid:justify-between"
       >
         <h2
-          className="font-georgia font-normal 
+          className="font-georgia font-normal mx-auto
           text-[20px] xs:text-[24px] mid:text-[32px] custom:text-[40px] 
           leading-tight xs:leading-[28px] mid:leading-[40px] custom:leading-[44px] 
           -tracking-[2%] text-[#1B2128] 
