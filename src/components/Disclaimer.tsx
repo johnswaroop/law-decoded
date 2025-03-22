@@ -26,18 +26,19 @@ export default function DisclaimerModal() {
 
   return (
     <Dialog open={showDisclaimer} onOpenChange={setShowDisclaimer}>
-        <DialogContent className="mx-4 xs:mx-6 sm:mx-0 max-w-[90%] xs:max-w-[95%] sm:max-w-xl mid:max-w-2xl custom:max-w-3xl p-4 xs:p-5 sm:p-6 bg-white rounded-lg">        <DialogHeader>
-          <DialogTitle className="text-xl xs:text-2xl sm:text-3xl font-semibold text-center mb-4 xs:mb-5 sm:mb-6">
+      <DialogContent className="fixed left-[50%] top-[50%] z-50 grid w-full max-w-[90%] xs:max-w-[95%] sm:max-w-lg mid:max-w-xl lg:max-w-2xl custom:max-w-[800px] translate-x-[-50%] translate-y-[-50%] gap-4 border bg-white p-4 xs:p-5 sm:p-6 shadow-lg duration-200 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[state=closed]:slide-out-to-left-1/2 data-[state=closed]:slide-out-to-top-[48%] data-[state=open]:slide-in-from-left-1/2 data-[state=open]:slide-in-from-top-[48%] rounded-lg max-h-[85vh] flex flex-col">
+        <DialogHeader className="flex-none">
+          <DialogTitle className="font-georgia text-center text-xl xs:text-2xl sm:text-2xl mid:text-3xl font-semibold mb-3 xs:mb-4 sm:mb-5 text-[#212424]">
             Disclaimer - Law Decoded
           </DialogTitle>
         </DialogHeader>
-        <div className="space-y-4 xs:space-y-5 sm:space-y-6 text-gray-600">
-          <p className="text-sm xs:text-base sm:text-lg leading-relaxed">
+        <div className="flex-1 overflow-y-auto space-y-3 xs:space-y-4 sm:space-y-5 pr-2">
+          <p className="font-inter text-[#212424] text-sm xs:text-base sm:text-base mid:text-lg leading-relaxed">
             The rules of the Bar Council of India prohibit law firms from
             soliciting work or advertising in any manner. By clicking on I
             AGREE, the user acknowledges that
           </p>
-          <p className="text-sm xs:text-base sm:text-lg leading-relaxed">
+          <p className="font-inter text-[#212424] text-sm xs:text-base sm:text-base mid:text-lg leading-relaxed">
             The user wishes to gain more information about Law Decoded, its
             practice areas and its attorneys, for his/her own information and
             use The information is made available/provided to the user only on
@@ -51,7 +52,7 @@ export default function DisclaimerModal() {
         </div>
         <Button
           onClick={handleAccept}
-          className="w-full mt-4 xs:mt-5 sm:mt-6 bg-[#C84C35] hover:bg-[#B43D27] text-white py-3 xs:py-3.5 sm:py-4 text-sm xs:text-base sm:text-lg rounded"
+          className="w-full mt-3 xs:mt-4 sm:mt-5 bg-[#DD4826] hover:bg-[#c13d1f] text-white font-inter font-medium h-8 xs:h-9 sm:h-10 mid:h-11 lg:h-12 text-xs xs:text-sm sm:text-sm mid:text-base rounded-md transition-colors flex-none"
         >
           I agree
         </Button>
