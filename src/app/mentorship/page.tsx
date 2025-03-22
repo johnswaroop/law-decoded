@@ -5,7 +5,7 @@ import MentorshipForum from "@/components/LawyerMentorshipForum";
 
 const page = () => {
   return (
-    <div className="w-full  mx-auto">
+    <div className="max-w-[1000px]  mx-auto">
       <ConnectWithUS />
       <ProgramAndSuccess />
       <MentorshipForum />
