@@ -5,11 +5,11 @@ import MentorshipForum from "@/components/LawyerMentorshipForum";
 
 const page = () => {
   return (
-    <>
+    <div className="w-full  mx-auto">
       <ConnectWithUS />
       <ProgramAndSuccess />
       <MentorshipForum />
-    </>
+    </div>
   );
 };
 

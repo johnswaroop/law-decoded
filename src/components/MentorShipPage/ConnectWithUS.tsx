@@ -5,12 +5,12 @@ const ConnectWithUS = () => {
     <div className="flex flex-col items-center px-4 xs:px-[2%] max-w-[1920px] mx-auto">
       <h1
         className="mt-[10.14px] xs:mt-[45.64px] mid:mt-[48.59px] lg:mt-[60.88px] custom:mt-[80px] 
-         mb-4 xs:mb-[16px] mid:mb-[22px] custom:mb-[32px] 
+         mb-6 xs:mb-[16px] mid:mb-[22px] custom:mb-[32px] 
          font-georgia font-normal 
          text-[24px] xs:text-[32px] mid:text-[48px] custom:text-[72px] 
-         leading-tight xs:leading-[40px] custom:leading-[86px] 
+         leading-[1.1] 
          -tracking-[2%] text-center text-[#1B2128] 
-         w-full mid:w-[92%]"
+         w-full mid:w-[92%] "
       >
         Connect with Mentors to Advance Your Legal Journey
       </h1>
