@@ -47,7 +47,7 @@ const StudentConnectWithUS = () => {
           -tracking-[2%] text-[#1B2128] 
           text-center self-center"
         >
-          What is <br></br> Mentorship Programme?
+          What is the Mentorship<br></br>Programme?
         </h2>
 
         <div className="px-4 mid:p-0 w-full mid:w-[48%] custom:w-[524px]">
