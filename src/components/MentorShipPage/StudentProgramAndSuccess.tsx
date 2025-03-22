@@ -1,15 +1,14 @@
 import React from "react";
 import Image from "next/image";
-import SeniorLawyer from "@/assets/MentorPage/seniorImage.png";
-import {
-  BiVideo,
-  BiGroup,
-  BiMessageRoundedDetail
-} from "react-icons/bi";
+import SeniorLawyer from "@/assets/AboutSection/LawyerImage.png";
+import YouIcon from "@/assets/ReviewAndLinks/youtube.svg";
+import Link from "next/link";
+
+import { BiVideo, BiGroup, BiMessageRoundedDetail } from "react-icons/bi";
 import {
   MdOutlineMic,
   MdOutlinePeople,
-  MdOutlineMenuBook
+  MdOutlineMenuBook,
 } from "react-icons/md";
 
 interface BenefitBox {
@@ -21,7 +20,6 @@ interface BenefitBox {
 const StudentProgramAndSuccess = () => {
   return (
     <div className="container mx-auto px-4">
-
       {/* Key Features Section */}
       <div className="flex flex-col items-center mb-12">
         <h2 className="text-[20px] xs:text-[24px] mid:text-[32px] custom:text-[36px] font-georgia leading-tight text-[#281D1B] mt-2 mb-4">
@@ -34,9 +32,7 @@ const StudentProgramAndSuccess = () => {
               key={index}
               className="bg-[#7E352517] rounded-[8px] md:rounded-[10px] custom:rounded-[12px] p-3 md:p-4 custom:p-6 flex flex-col gap-2 md:gap-3 custom:gap-4"
             >
-              <div className="text-[#DD4826]">
-                {box.icon}
-              </div>
+              <div className="text-[#DD4826]">{box.icon}</div>
               <h3 className="font-georgia text-sm md:text-base custom:text-lg text-[#281D1B] font-semibold">
                 {box.title}
               </h3>
@@ -60,9 +56,7 @@ const StudentProgramAndSuccess = () => {
               key={index}
               className="bg-[#7E352517] rounded-[8px] md:rounded-[10px] custom:rounded-[12px] p-3 md:p-4 custom:p-6 flex flex-col gap-2 md:gap-3 custom:gap-4"
             >
-              <div className="text-[#DD4826]">
-                {feature.icon}
-              </div>
+              <div className="text-[#DD4826]">{feature.icon}</div>
               <h3 className="font-georgia text-sm md:text-base custom:text-lg text-[#281D1B] font-semibold">
                 {feature.title}
               </h3>
@@ -85,14 +79,16 @@ const StudentProgramAndSuccess = () => {
             <div className="flex items-center">
               <span className="w-1.5 h-1.5 bg-[#DD4826] rounded-full mr-2"></span>
               <p className="font-inter text-sm md:text-base text-[#281D1B]">
-                <span className="font-semibold">Law Universities</span> based in India
+                <span className="font-semibold">Law Universities</span> based in
+                India
               </p>
             </div>
 
             <div className="flex items-center">
               <span className="w-1.5 h-1.5 bg-[#DD4826] rounded-full mr-2"></span>
               <p className="font-inter text-sm md:text-base text-[#281D1B]">
-                <span className="font-semibold">Registered Student Bodies</span> looking for strategic partnerships
+                <span className="font-semibold">Registered Student Bodies</span>{" "}
+                looking for strategic partnerships
               </p>
             </div>
           </div>
@@ -116,8 +112,19 @@ const StudentProgramAndSuccess = () => {
               />
             </div>
             <div className="p-3">
-              <h3 className="font-georgia text-sm font-semibold text-[#281D1B] mb-1">Criminal Procedure Explained</h3>
+              <h3 className="font-georgia text-sm font-semibold text-[#281D1B] mb-1">
+                Criminal Procedure Explained
+              </h3>
               <span className="text-[#DD4826] text-xs">22 mins</span>
+              <a
+                href="https://www.youtube.com/watch?v=uXZSjs3K26c"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-[#281D1B] hover:text-[#DD4826] transition-colors mt-2"
+              >
+                <Image src={YouIcon} alt="YouTube" width={20} height={20} />
+                <span className="font-inter text-sm">View on YouTube</span>
+              </a>
             </div>
           </div>
           <div className="rounded-lg border bg-[#7E352517] overflow-hidden">
@@ -131,8 +138,19 @@ const StudentProgramAndSuccess = () => {
               />
             </div>
             <div className="p-3">
-              <h3 className="font-georgia text-sm font-semibold text-[#281D1B] mb-1">Understanding Constitutional Rights</h3>
+              <h3 className="font-georgia text-sm font-semibold text-[#281D1B] mb-1">
+                Understanding Constitutional Rights
+              </h3>
               <span className="text-[#DD4826] text-xs">15 mins</span>
+              <a
+                href="https://www.youtube.com/watch?v=gI-6Xtkh1Qw"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-[#281D1B] hover:text-[#DD4826] transition-colors mt-2"
+              >
+                <Image src={YouIcon} alt="YouTube" width={20} height={20} />
+                <span className="font-inter text-sm">View on YouTube</span>
+              </a>
             </div>
           </div>
           <div className="rounded-lg border bg-[#7E352517] overflow-hidden">
@@ -146,17 +164,38 @@ const StudentProgramAndSuccess = () => {
               />
             </div>
             <div className="p-3">
-              <h3 className="font-georgia text-sm font-semibold text-[#281D1B] mb-1">Civil Rights and Procedures</h3>
+              <h3 className="font-georgia text-sm font-semibold text-[#281D1B] mb-1">
+                Civil Rights and Procedures
+              </h3>
               <span className="text-[#DD4826] text-xs">16 mins</span>
+              <a
+                href="https://www.youtube.com/watch?v=AXSaOUGauhI"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-[#281D1B] hover:text-[#DD4826] transition-colors mt-2"
+              >
+                <Image src={YouIcon} alt="YouTube" width={20} height={20} />
+                <span className="font-inter text-sm">View on YouTube</span>
+              </a>
             </div>
           </div>
+          {/* View More Button */}
+        </div>
+        <div className="flex justify-center mt-8 mx-auto">
+          <Link
+            href="/videos"
+            className=" mx-auto px-6 py-3 bg-[#DD4826] hover:bg-[#B33D1F] transition-colors  text-white font-inter font-medium text-base"
+          >
+            View More Videos
+          </Link>
         </div>
       </div>
 
       {/* Testimonial Section */}
       <div className="mt-16 mb-12 text-center max-w-[90%] sm:max-w-[85%] md:max-w-[80%] lg:max-w-[1000px] mx-auto">
         <p className="font-georgia text-base sm:text-lg md:text-xl lg:text-2xl custom:text-[36px] leading-normal sm:leading-relaxed md:leading-relaxed lg:leading-relaxed custom:leading-[48px] mb-6">
-          "Mentorship is critical for students of law. It plays a decisive role in creating lawyers of the next generation."
+          "Mentorship is critical for students of law. It plays a decisive role
+          in creating lawyers of the next generation."
         </p>
 
         <div className="flex items-center justify-center gap-3">
@@ -183,66 +222,78 @@ const benefitBoxes: BenefitBox[] = [
   {
     icon: <BiGroup size={24} />,
     title: "Internship Experience",
-    description: "Shadow Mr. Poovayya in real cases, participate in case preparation and attend court sessions to gain firsthand experience in legal practice."
+    description:
+      "Shadow Mr. Poovayya in real cases, participate in case preparation and attend court sessions to gain firsthand experience in legal practice.",
   },
   {
     icon: <MdOutlineMenuBook size={24} />,
     title: "Mentorship Sessions",
-    description: "Engage in dedicated sessions where you can seek advice, discuss legal concepts, and gain valuable insights from experienced professionals."
+    description:
+      "Engage in dedicated sessions where you can seek advice, discuss legal concepts, and gain valuable insights from experienced professionals.",
   },
   {
     icon: <BiMessageRoundedDetail size={24} />,
     title: "Practical Training",
-    description: "Get hands-on experience with high-level legal work, developing essential skills through direct involvement in real cases."
+    description:
+      "Get hands-on experience with high-level legal work, developing essential skills through direct involvement in real cases.",
   },
   {
     icon: <MdOutlinePeople size={24} />,
     title: "Professional Networking",
-    description: "Build valuable connections with legal professionals and peers, creating a strong foundation for your future career."
+    description:
+      "Build valuable connections with legal professionals and peers, creating a strong foundation for your future career.",
   },
   {
     icon: <BiVideo size={24} />,
     title: "Career Guidance",
-    description: "Receive personalized guidance in navigating your academic journey and planning your career path in the legal profession."
+    description:
+      "Receive personalized guidance in navigating your academic journey and planning your career path in the legal profession.",
   },
   {
     icon: <MdOutlineMic size={24} />,
     title: "Skills Enhancement",
-    description: "Develop crucial legal skills and gain practical knowledge that will give you a competitive edge in your career."
-  }
+    description:
+      "Develop crucial legal skills and gain practical knowledge that will give you a competitive edge in your career.",
+  },
 ];
 
 const additionalFeatures: BenefitBox[] = [
   {
     icon: <BiGroup size={24} />,
     title: "Comprehensive Mentorship",
-    description: "Access a diverse range of mentorship opportunities tailored to different aspects of legal practice."
+    description:
+      "Access a diverse range of mentorship opportunities tailored to different aspects of legal practice.",
   },
   {
     icon: <MdOutlineMenuBook size={24} />,
     title: "Financial Support",
-    description: "First-year law students can benefit from full tuition fee coverage, making quality legal education more accessible."
+    description:
+      "First-year law students can benefit from full tuition fee coverage, making quality legal education more accessible.",
   },
   {
     icon: <BiMessageRoundedDetail size={24} />,
     title: "Advanced Internships",
-    description: "Exclusive internship opportunities for 3rd and 4th year students to gain specialized practical experience."
+    description:
+      "Exclusive internship opportunities for 3rd and 4th year students to gain specialized practical experience.",
   },
   {
     icon: <MdOutlinePeople size={24} />,
     title: "Senior Advocacy Program",
-    description: "Final year students get the unique opportunity to shadow Senior Advocate Sajan Poovayya for a month."
+    description:
+      "Final year students get the unique opportunity to shadow Senior Advocate Sajan Poovayya for a month.",
   },
   {
     icon: <BiVideo size={24} />,
     title: "Publication Opportunity",
-    description: "Contribute to 'Law Decoded' and get your work published, building your professional portfolio."
+    description:
+      "Contribute to 'Law Decoded' and get your work published, building your professional portfolio.",
   },
   {
     icon: <MdOutlineMic size={24} />,
     title: "Expert Workshops",
-    description: "Attend specialized lectures and workshops conducted by industry experts to enhance your knowledge."
-  }
+    description:
+      "Attend specialized lectures and workshops conducted by industry experts to enhance your knowledge.",
+  },
 ];
 
 export default StudentProgramAndSuccess;

@@ -5,6 +5,9 @@ import {
   MdOutlinePeople,
   MdOutlineMenuBook,
 } from "react-icons/md";
+import Image from "next/image";
+import YouIcon from "@/assets/ReviewAndLinks/youtube.svg";
+import Link from "next/link";
 
 const ProgramAndSuccess = () => {
   return (
@@ -32,7 +35,7 @@ const ProgramAndSuccess = () => {
         </div>
 
         <div className="mt-12 w-full max-w-[1200px]">
-          <h2 className="text-[20px] xs:text-[24px] font-georgia leading-tight text-[#281D1B] mb-4">
+          <h2 className="mx-auto w-fit text-[20px] xs:text-[24px] mid:text-[28px] custom:text-[32px] font-georgia leading-tight text-[#281D1B] mt-2 mb-12">
             Featured Legal Education Videos
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
@@ -53,6 +56,15 @@ const ProgramAndSuccess = () => {
                 <span className="text-orange-500 font-inter text-[10px] font-medium">
                   16 mins
                 </span>
+                <a
+                  href="https://www.youtube.com/watch?v=jnR0OMVFIpA"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-[#281D1B] hover:text-[#DD4826] transition-colors mt-2"
+                >
+                  <Image src={YouIcon} alt="YouTube" width={20} height={20} />
+                  <span className="font-inter text-sm">View on YouTube</span>
+                </a>
               </div>
             </div>
             <div className="rounded-lg border bg-card shadow-sm overflow-hidden">
@@ -72,6 +84,15 @@ const ProgramAndSuccess = () => {
                 <span className="text-orange-500 font-inter text-[10px] font-medium">
                   15 mins
                 </span>
+                <a
+                  href="https://www.youtube.com/watch?v=gI-6Xtkh1Qw"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-[#281D1B] hover:text-[#DD4826] transition-colors mt-2"
+                >
+                  <Image src={YouIcon} alt="YouTube" width={20} height={20} />
+                  <span className="font-inter text-sm">View on YouTube</span>
+                </a>
               </div>
             </div>
             <div className="rounded-lg border bg-card shadow-sm overflow-hidden">
@@ -91,8 +112,26 @@ const ProgramAndSuccess = () => {
                 <span className="text-orange-500 font-inter text-[10px] font-medium">
                   18 mins
                 </span>
+                <a
+                  href="https://www.youtube.com/watch?v=8LLgnVAFqx4"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-[#281D1B] hover:text-[#DD4826] transition-colors mt-2"
+                >
+                  <Image src={YouIcon} alt="YouTube" width={20} height={20} />
+                  <span className="font-inter text-sm">View on YouTube</span>
+                </a>
               </div>
             </div>
+          </div>
+          {/* View More Button */}
+          <div className="flex justify-center mt-6 mx-auto">
+            <Link
+              href="/videos"
+              className="inline-flex items-center px-6 py-3 bg-[#DD4826] hover:bg-[#B33D1F] transition-colors text-white font-inter font-medium text-base"
+            >
+              View More Videos
+            </Link>
           </div>
         </div>
       </div>

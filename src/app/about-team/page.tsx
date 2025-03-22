@@ -2,8 +2,8 @@ import React from "react";
 import Image from "next/image";
 import Logo from "@/assets/About-team/IconLogo.png";
 import SuitPic from "@/assets/MentorPage/Second.png";
-import AboutSection from "@/components/AboutSection";
 import AboutSajan from "@/components/AboutSajan";
+import AboutSection from "@/components/AboutSection";
 
 const pageText = [
   { id: 1, text: "Gain industry insights from experienced mentors." },
@@ -14,105 +14,118 @@ const pageText = [
   { id: 6, text: "Join a community of legal professionals." },
 ];
 
-const page = () => {
+const Page = () => {
   return (
     <>
-      <div className="w-full flex flex-col items-center px-[3.5%]">
-        <div className="w-[80%] h-[108px] mt-[72px] md-[65px] md:w-[550px] md:h-[150px] custom:mt-[117px]  custom:w-[1044px] custom:h-[286px]">
-          <Image
-            src={Logo}
-            alt="image"
-            className="object-contain w-full h-full"
-          />
-        </div>
-        <p className="font-georgia font-normal text-[40px] leading-[48px] -tracking-[2%] mt-[16px] md:mt-[20px] md:text-[52px] md:leading-[64px] md:-tracking-[2%] custom:text-[100px] custom:leading-[120px] custom:mt-[40px]">
-          {" "}
-          Law Decoded
-        </p>
-        <div className="w-full flex flex-col items-center md:py-[56px] py-[38px] bg-[#FBFCFE] mt-[21px] custom:mt-[40px] custom:py-[96px]">
-          {" "}
-          <p className=" font-georgia font-normal text-[28px] leading-[34px] -tracking-[2%] md:text-[25px] md:leading-[27px] custom:text-[48px] custom:leading-[52px] ">
-            Making law simpler
-          </p>
-          <p className="w-[86%] font-inter font-normal text-[16px] leading-[20px] text-justify mt-[28px] md:w-[58%] md:text-[12px] md:leading-[16px] custom:text-[24px] custom:leading-[32px] custom:mt-[44px]">
-            At its core, &quot;Law Decoded&quot; is an initiative designed for
-            raising legal awareness by making obscure legal concepts accessible
-            to the layperson. We strive to break down intricate legal jargon
-            into understandable language, which is essential for empowering
-            individuals who may feel intimidated by the law. This accessibility
-            is vital in a society where legal literacy can significantly impact
-            one&quot;s ability to navigate daily life, from understanding
-            contracts to knowing rights in various legal situations.
-          </p>
-        </div>
-
-        <div className="flex flex-col md:flex-row bg-[#FBFCFE] md:mt-[21px] md:justify-between md:px-[22px] md:py-[22px] custom:mt-[40px]   custom:px-[46px] mt-[21px] py-[20px] max-md:mb-[32px]">
-          <div className="md:w-[53%] md:pr-[22px] flex flex-col items-center">
-            {" "}
-            <p className=" font-georgia font-normal text-[28px] leading-[34px] -tracking-[2%] custom:text-[48px] custom:leading-[52px] ">
-              Our Journey{" "}
-            </p>
+      <div className="flex flex-col items-center mt-16 lg:mt-20 mid:mt-12 sm:mt-8 xs:mt-6 mb-10">
+        <div className="w-full px-4 sm:px-6 flex flex-col items-center">
+          <div className="w-full max-w-[800px]">
             <Image
-              src={SuitPic}
-              alt="image"
-              className="w-[180px] h-[180px] mt-[40px] md:hidden"
+              src={Logo}
+              alt="Law Decoded Logo"
+              className="object-contain w-full h-auto"
             />
-            <p className="w-[86%] font-inter font-normal text-[16px] leading-[20px] text-justify mt-[28px] md:text-[12px] md:leading-[16px] custom:text-[24px] custom:leading-[32px] custom:mt-[36px] ">
-              The idea to push legal awareness and create specialised content
-              stemmed from the pursuit of using technology to bridge gaps that
-              exist within the legal world. Whether its video explainers, our
-              unique mentorship programme or other initiatives, our journey is
-              about increasingly using technology to make law accessible to
-              everyone.
-              <br />
-              <br />
-              We started with a small team of dedicated legal researchers,
-              innovative production team and creative heads who could generate
-              legal content that has not been created before. We are a
-              non-profit initiative and we tie up with Universities and
-              educational institutes across India to reach out to students and
-              aspiring lawyers.
+          </div>
+
+          <h1 className="max-w-[1000px] font-georgia font-normal text-[32px] xs:text-[36px] sm:text-[42px] mid:text-[52px] lg:text-[72px] leading-[1.2] -tracking-[0.02em] mt-6 sm:mt-8">
+            Law Decoded
+          </h1>
+
+          <div className=" max-w-[1000px] w-full flex flex-col items-center mt-12 sm:mt-16 py-12 sm:py-14 lg:py-16">
+            <h2 className="font-georgia font-bold text-[24px] xs:text-[24px] sm:text-[28px] mid:text-[32px] lg:text-[36px] leading-[1.2] -tracking-[0.02em] text-[#1B2128] text-center mid:text-left">
+              Making law simpler
+            </h2>
+
+            <p className="font-inter font-normal text-[14px] xs:text-[14px] sm:text-[15px] mid:text-[16px] lg:text-[18px] leading-[1.6] text-justify text-[#1B2128] w-full max-w-[800px] mt-6">
+              At its core, &quot;Law Decoded&quot; is an initiative designed for
+              raising legal awareness by making obscure legal concepts
+              accessible to the layperson. We strive to break down intricate
+              legal jargon into understandable language, which is essential for
+              empowering individuals who may feel intimidated by the law. This
+              accessibility is vital in a society where legal literacy can
+              significantly impact one&quot;s ability to navigate daily life,
+              from understanding contracts to knowing rights in various legal
+              situations.
             </p>
           </div>
-          <Image
-            src={SuitPic}
-            alt="image"
-            className="w-[208px] h-[180px] max-md:hidden my-auto custom:w-[394px] custom:h-[343px]"
-          />
-        </div>
 
-        <AboutSection />
+          <div className="mb-16 max-w-[1000px] w-full flex flex-col mid:flex-row mt-16 sm:mt-20 justify-between gap-8 mid:gap-12">
+            <div className="w-full mid:w-[60%] flex flex-col">
+              <h2 className="font-georgia font-bold text-[24px] xs:text-[24px] sm:text-[28px] mid:text-[32px] lg:text-[36px] leading-[1.2] -tracking-[0.02em] text-[#1B2128] text-center mid:text-left">
+                Our Journey
+              </h2>
 
-        <p className="mt-[40px] w-[86%] md:w-full text-start font-georgia font-normal text-[28px] leading-[52px] -tracking-[1%] md:text-[25px] md:leading-[28px] custom:text-[48px] custom:leading-[52px] ">
-          {" "}
-          Program Benefits
-        </p>
-        <div className="w-[86%] mt-[24px] md:w-full flex flex-wrap gap-x-[20px] gap-y-[24px] justify-center mb-[60px] md:gap-x-[12.66px] md:gap-y-[21.1px] custom:mt-[40px] custom:gap-x-[24px] custom:gap-y-[40px]">
-          {pageText.map((item) => (
-            <BoxCard key={item.id} text={item.text} number={item.id} />
-          ))}
+              <div className="mid:hidden my-6">
+                <Image
+                  src={SuitPic}
+                  alt="Journey image"
+                  className="w-[50%] h-[160px] object-cover mx-auto"
+                />
+              </div>
+
+              <p className="font-inter font-normal text-[14px] xs:text-[14px] sm:text-[15px] mid:text-[16px] lg:text-[18px] leading-[1.6] text-justify text-[#1B2128] mt-6">
+                The idea to push legal awareness and create specialised content
+                stemmed from the pursuit of using technology to bridge gaps that
+                exist within the legal world. Whether its video explainers, our
+                unique mentorship programme or other initiatives, our journey is
+                about increasingly using technology to make law accessible to
+                everyone.
+                <br />
+                <br />
+                We started with a small team of dedicated legal researchers,
+                innovative production team and creative heads who could generate
+                legal content that has not been created before. We are a
+                non-profit initiative and we tie up with Universities and
+                educational institutes across India to reach out to students and
+                aspiring lawyers.
+              </p>
+            </div>
+
+            <div className="hidden mid:block w-[35%] my-auto">
+              <Image
+                src={SuitPic}
+                alt="Journey image"
+                className="w-full h-auto object-cover"
+              />
+            </div>
+          </div>
+
+          <AboutSection />
+
+          <div className="w-full mt-16 sm:mt-20 max-w-[1000px]">
+            <h2 className="font-georgia font-bold text-[24px] xs:text-[24px] sm:text-[28px] mid:text-[32px] lg:text-[36px] leading-[1.2] -tracking-[0.02em] text-[#1B2128] text-center mid:text-left">
+              Program Benefits
+            </h2>
+
+            <div className="w-full mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {pageText.map((item) => (
+                <BoxCard key={item.id} text={item.text} number={item.id} />
+              ))}
+            </div>
+          </div>
+
+          <div className="w-full mt-16 max-w-[1000px]">
+            <AboutSajan />
+          </div>
         </div>
-        <AboutSajan />
       </div>
     </>
   );
 };
 
-export default page;
+export default Page;
 
 const BoxCard = ({ text, number }: { text: string; number: number }) => {
   return (
-    <>
-      <div className="w-[160px] h-[120px] bg-[#7E352517] flex flex-col px-[15px] md:w-[227px] md:h-[135px] md:px-[16px] rounded-[7.5px] md:rounded-[8.5px] custom:w-[432px] custom:h-[256px] custom:px-[32px]">
-        <div className="w-[24px] h-[24px] rounded-full flex justify-center items-center bg-[#711400] mt-[14.99px] md:mt-[16px] md:w-[34px] md:h-[34px] custom:mt-[32px] custom:w-[64px] custom:h-[64px]">
-          <p className="text-[#EFEAEA] font-inter font-semibold text-[12px] leading-[16px] -tracking-[0.5%] md:text-[16.7px] md:leading-[22px] custom:text-[32px] custom:leading-[42px]">
-            {number}
-          </p>
-        </div>
-        <p className="mt-[11.24px] font-sans font-normal text-[11.24px] leading-[14.99px] -tracking-[0.5%] text-[#281D1B] md:mt-[12.66px] md:text-[12.66px] md:leading-[16.8px] custom:mt-[32px] custom:text-[24px] custom:leading-[32px]">
-          {text}
+    <div className="bg-[#7E352517] rounded-lg p-6">
+      <div className="w-12 h-12 rounded-full flex justify-center items-center bg-[#711400]">
+        <p className="text-[#EFEAEA] font-inter font-normal text-[14px] xs:text-[14px] sm:text-[15px] mid:text-[16px] lg:text-[18px]">
+          {number}
         </p>
       </div>
-    </>
+      <p className="font-inter font-normal text-[14px] xs:text-[14px] sm:text-[15px] mid:text-[16px] lg:text-[18px] leading-[1.6] text-[#281D1B] mt-4">
+        {text}
+      </p>
+    </div>
   );
 };

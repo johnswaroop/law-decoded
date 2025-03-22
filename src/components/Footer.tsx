@@ -20,14 +20,38 @@ const Footer = () => {
             />
           </Link>
           <div className="hidden mid:flex justify-start mid:gap-[6.36px] lg:gap-[9px] custom:gap-[12px]">
-            <Link href="https://facebook.com/lawdecoded" target="_blank" rel="noopener noreferrer">
-              <Image src={Face} alt="Facebook" className="mid:w-[12.72px] mid:h-[12.72px] lg:w-[18px] lg:h-[18px] custom:w-[24px] custom:h-[24px]" />
+            <Link
+              href="https://facebook.com/lawdecoded"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                src={Face}
+                alt="Facebook"
+                className="mid:w-[12.72px] mid:h-[12.72px] lg:w-[18px] lg:h-[18px] custom:w-[24px] custom:h-[24px]"
+              />
             </Link>
-            <Link href="https://instagram.com/lawdecodedwithsp" target="_blank" rel="noopener noreferrer">
-              <Image src={Insta} alt="Instagram" className="mid:w-[12.72px] mid:h-[12.72px] lg:w-[18px] lg:h-[18px] custom:w-[24px] custom:h-[24px]" />
+            <Link
+              href="https://instagram.com/lawdecodedwithsp"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                src={Insta}
+                alt="Instagram"
+                className="mid:w-[12.72px] mid:h-[12.72px] lg:w-[18px] lg:h-[18px] custom:w-[24px] custom:h-[24px]"
+              />
             </Link>
-            <Link href="https://x.com/poovayya" target="_blank" rel="noopener noreferrer">
-              <Image src={Twitter} alt="Twitter" className="mid:w-[12.72px] mid:h-[12.72px] lg:w-[18px] lg:h-[18px] custom:w-[24px] custom:h-[24px]" />
+            <Link
+              href="https://x.com/poovayya"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                src={Twitter}
+                alt="Twitter"
+                className="mid:w-[12.72px] mid:h-[12.72px] lg:w-[18px] lg:h-[18px] custom:w-[24px] custom:h-[24px]"
+              />
             </Link>
           </div>
         </div>
@@ -37,41 +61,128 @@ const Footer = () => {
           <div className="w-[340px] flex justify-between max-xs:w-[250px] mid:justify-center mid:gap-[25.44px] mid:w-auto lg:gap-[36px] custom:gap-[48px]">
             <div className="flex flex-col gap-[8px] text-base mid:text-[10px] lg:text-[12px] custom:text-[16px] font-inter font-medium mid:w-[106.02px] lg:w-[150px] custom:w-[200px]">
               <p className="text-[#281D1B]">About Us</p>
-              <Link href="/about-us/#sajan-poovayya" className="text-[#2E19149E] hover:text-[#281D1B]">Sajan Poovayya</Link>
-              <Link href="/law-decoded" className="text-[#2E19149E] hover:text-[#281D1B]">Law Decoded<br />with Us</Link>
-              <Link href="/about-team" className="text-[#2E19149E] hover:text-[#281D1B]">Our team</Link>
+              <Link
+                href="/about-us/#sajan-poovayya"
+                className="text-[#2E19149E] hover:text-[#281D1B]"
+              >
+                Sajan Poovayya
+              </Link>
+              <Link
+                href="/law-decoded"
+                className="text-[#2E19149E] hover:text-[#281D1B]"
+              >
+                Law Decoded
+                <br />
+                with SP
+              </Link>
+              <Link
+                href="/about-team"
+                className="text-[#2E19149E] hover:text-[#281D1B]"
+              >
+                Our Team
+              </Link>
             </div>
             <div className="flex flex-col gap-[8px] text-base mid:text-[10px] lg:text-[12px] custom:text-[16px] font-inter font-medium w-[100px] items-start mid:w-[106.02px] lg:w-[150px] custom:w-[200px]">
               <p className="text-[#281D1B]">Resources</p>
-              <Link href="https://blog.sajanpoovayya.com/" className="text-[#2E19149E] hover:text-[#281D1B]">Blogs</Link>
-              <Link href="/videos" className="text-[#2E19149E] hover:text-[#281D1B]">Videos</Link>
+              <Link
+                href="https://blog.sajanpoovayya.com/"
+                className="text-[#2E19149E] hover:text-[#281D1B]"
+              >
+                Blogs
+              </Link>
+              <Link
+                href="/videos"
+                className="text-[#2E19149E] hover:text-[#281D1B]"
+              >
+                Videos
+              </Link>
             </div>
           </div>
           {/* Second two */}
           <div className="w-[340px] flex justify-between max-xs:w-[250px] mid:justify-center mid:gap-[25.44px] mid:w-auto lg:gap-[36px] custom:gap-[48px]">
             <div className="flex flex-col gap-[8px] text-base mid:text-[10px] lg:text-[12px] custom:text-[16px] font-inter font-medium mid:w-[106.02px] lg:w-[150px] custom:w-[200px]">
               <p className="text-[#281D1B]">Follow Us</p>
-              <Link href="https://wa.me/+919220949124" className="text-[#2E19149E] hover:text-[#281D1B]" target="_blank" rel="noopener noreferrer">Whatsapp</Link>
-              <Link href="https://x.com/poovayya" className="text-[#2E19149E] hover:text-[#281D1B]" target="_blank" rel="noopener noreferrer">Twitter/X</Link>
-              <Link href="https://instagram.com/lawdecodedwithsp" className="text-[#2E19149E] hover:text-[#281D1B]" target="_blank" rel="noopener noreferrer">Instagram</Link>
-              <Link href="https://www.linkedin.com/in/poovayya/" className="text-[#2E19149E] hover:text-[#281D1B]" target="_blank" rel="noopener noreferrer">LinkedIn</Link>
+              <Link
+                href="https://wa.me/+919220949124"
+                className="text-[#2E19149E] hover:text-[#281D1B]"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Whatsapp
+              </Link>
+              <Link
+                href="https://www.youtube.com/@LawDecodedwithSP"
+                className="text-[#2E19149E] hover:text-[#281D1B]"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Youtube
+              </Link>
+              <Link
+                href="https://x.com/poovayya"
+                className="text-[#2E19149E] hover:text-[#281D1B]"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Twitter/X
+              </Link>
+              <Link
+                href="https://instagram.com/lawdecodedwithsp"
+                className="text-[#2E19149E] hover:text-[#281D1B]"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Instagram
+              </Link>
+              <Link
+                href="https://www.linkedin.com/in/poovayya/"
+                className="text-[#2E19149E] hover:text-[#281D1B]"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                LinkedIn
+              </Link>
             </div>
             <div className="flex flex-col gap-[8px] text-base mid:text-[10px] lg:text-[12px] custom:text-[16px] font-inter font-medium w-[100px] items-start mid:w-[106.02px] lg:w-[150px] custom:w-[200px]">
               <p className="text-[#281D1B]">Legal</p>
-              <Link href="/legal-terms" className="text-[#2E19149E] hover:text-[#281D1B]">Terms of<br />Service</Link>
-              <Link href="/cookie-policy" className="text-[#2E19149E] hover:text-[#281D1B]">Cookie Policy</Link>
+              <Link
+                href="/legal-terms"
+                className="text-[#2E19149E] hover:text-[#281D1B]"
+              >
+                Terms of
+                <br />
+                Service
+              </Link>
+              <Link
+                href="/cookie-policy"
+                className="text-[#2E19149E] hover:text-[#281D1B]"
+              >
+                Cookie Policy
+              </Link>
             </div>
           </div>
         </div>
         {/*Social Media Mobile */}
         <div className="mt-[48px] mb-[49px] w-[340px] flex justify-start gap-[12px] max-xs:w-[250px] mid:hidden">
-          <Link href="https://facebook.com/lawdecoded" target="_blank" rel="noopener noreferrer">
+          <Link
+            href="https://facebook.com/lawdecoded"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Image src={Face} alt="Facebook" />
           </Link>
-          <Link href="https://instagram.com/lawdecodedwithsp" target="_blank" rel="noopener noreferrer">
+          <Link
+            href="https://instagram.com/lawdecodedwithsp"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Image src={Insta} alt="Instagram" />
           </Link>
-          <Link href="https://x.com/poovayya" target="_blank" rel="noopener noreferrer">
+          <Link
+            href="https://x.com/poovayya"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Image src={Twitter} alt="Twitter" />
           </Link>
         </div>

@@ -1,4 +1,6 @@
 import React from "react";
+import Image from "next/image";
+import YouIcon from "@/assets/ReviewAndLinks/youtube.svg";
 
 const ConnectWithUS = () => {
   return (
@@ -14,11 +16,7 @@ const ConnectWithUS = () => {
       >
         Connect with Mentors to Advance Your Legal Journey
       </h1>
-      <div
-        className="w-full xs:w-[342px] mid:w-[506px] custom:w-[949px] 
-          h-auto xs:h-[179.45px] mid:h-[264px] custom:h-[550px] 
-          mb-12 xs:mb-[90px] custom:mb-[120px]"
-      >
+      <div className="relative w-full xs:w-[342px] mid:w-[506px] custom:w-[949px] h-auto xs:h-[179.45px] mid:h-[264px] custom:h-[550px] mb-12 xs:mb-[90px] custom:mb-[120px]">
         <iframe
           width="100%"
           height="100%"
@@ -29,6 +27,15 @@ const ConnectWithUS = () => {
           allowFullScreen
           className="rounded-[20px] shadow-md"
         ></iframe>
+        <a
+          href="https://www.youtube.com/watch?v=tzr2FBIDkX4"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-2 text-[#281D1B] hover:text-[#DD4826] transition-colors mt-4 justify-center"
+        >
+          <Image src={YouIcon} alt="YouTube" width={20} height={20} />
+          <span className="font-inter text-sm">View on YouTube</span>
+        </a>
       </div>
       {/* First box */}
       <div

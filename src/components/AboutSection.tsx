@@ -60,8 +60,10 @@ const AboutSection = () => {
               {/* Mobile Text */}
               <span className="md:hidden">Read More</span>
               {/* Desktop Text */}
-              <Link href="/about-us" className="hidden md:block">Know More about Sajan</Link>
-            </span>          
+              <Link href="/about-us" className="hidden md:block">
+                Know More about Sajan
+              </Link>
+            </span>
           </button>
         </div>
       </div>

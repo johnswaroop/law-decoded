@@ -3,24 +3,28 @@
 import YouIcon from "@/assets/ReviewAndLinks/youtube.svg";
 import WhatIacon from "@/assets/ReviewAndLinks/whatsapp.svg";
 import Image from "next/image";
+import Link from "next/link";
 
 const ReviewsAndLinks = () => {
   const selectedVideos = [
     {
       title: "Understanding Constitutional Rights",
       url: "https://www.youtube.com/embed/gI-6Xtkh1Qw",
-      duration: "15:24"
+      youtubeUrl: "https://www.youtube.com/watch?v=gI-6Xtkh1Qw",
+      duration: "15:24",
     },
     {
       title: "Criminal Procedure Explained",
       url: "https://www.youtube.com/embed/uXZSjs3K26c",
-      duration: "22:10"
+      youtubeUrl: "https://www.youtube.com/watch?v=uXZSjs3K26c",
+      duration: "22:10",
     },
     {
       title: "Is India ready for One Nation, One Election?",
       url: "https://www.youtube.com/embed/wE-5cZianYo",
-      duration: "10:52"
-    }
+      youtubeUrl: "https://www.youtube.com/watch?v=wE-5cZianYo",
+      duration: "10:52",
+    },
   ];
 
   return (
@@ -36,7 +40,12 @@ const ReviewsAndLinks = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
             {selectedVideos.map((video, index) => (
               <div key={index} className="flex flex-col space-y-2">
-                <div className="relative w-full" style={{ paddingTop: '56.25%' }}> {/* 16:9 aspect ratio */}
+                <div
+                  className="relative w-full"
+                  style={{ paddingTop: "56.25%" }}
+                >
+                  {" "}
+                  {/* 16:9 aspect ratio */}
                   <iframe
                     src={video.url}
                     title={video.title}
@@ -51,20 +60,44 @@ const ReviewsAndLinks = () => {
                 <p className="font-inter font-semibold text-xs xs:text-sm text-[#DD4826] -mt-1">
                   {video.duration}
                 </p>
+                <a
+                  href={video.youtubeUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-[#281D1B] hover:text-[#DD4826] transition-colors mt-2"
+                >
+                  <Image src={YouIcon} alt="YouTube" className="w-5 h-5" />
+                  <span className="font-inter text-sm">View on YouTube</span>
+                </a>
               </div>
             ))}
+          </div>
+
+          {/* View More Button */}
+          <div className="flex justify-center mt-8">
+            <Link
+              href="/videos"
+              className="inline-flex items-center px-6 py-3 bg-[#DD4826] hover:bg-[#B33D1F] transition-colors text-white font-inter font-medium text-base"
+            >
+              View More Videos
+            </Link>
           </div>
         </div>
 
         {/* Community Section */}
-        <div id='community' className="space-y-12 lg:space-y-16 pt-12">
+        <div id="community" className="space-y-12 lg:space-y-16 pt-12">
           <h2 className="text-center font-georgia text-3xl sm:text-4xl lg:text-5xl mb-12">
             Join our community
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-[10%] max-w-4xl mx-auto">
             {/* YouTube Box */}
-            <a href="https://www.youtube.com/@LawDecodedwithSP" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center p-10 lg:p-12 rounded-lg bg-white shadow-sm space-y-6">
+            <a
+              href="https://www.youtube.com/@LawDecodedwithSP"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex flex-col items-center p-10 lg:p-12 rounded-lg bg-white shadow-sm space-y-6"
+            >
               <Image
                 src={YouIcon}
                 alt="YouTube"
@@ -83,7 +116,10 @@ const ReviewsAndLinks = () => {
             </a>
 
             {/* WhatsApp Box */}
-            <a href="https://chat.whatsapp.com/Fep7RIpEo6M8FgGLrVdAuY" className="flex flex-col items-center p-10 lg:p-12 rounded-lg bg-white shadow-sm space-y-6">
+            <a
+              href="https://chat.whatsapp.com/Fep7RIpEo6M8FgGLrVdAuY"
+              className="flex flex-col items-center p-10 lg:p-12 rounded-lg bg-white shadow-sm space-y-6"
+            >
               <Image
                 src={WhatIacon}
                 alt="WhatsApp"
