@@ -21,22 +21,25 @@ const EfficientModel = () => {
     <div className="w-full px-4 py-8 xs:px-6 sm:px-8 mid:px-10 lg:px-12 custom:px-16">
       <div className="max-w-[1440px] mx-auto">
         {/* Title */}
-        <h1 className="text-2xl xs:text-3xl sm:text-4xl mid:text-5xl lg:text-6xl custom:text-5xl font-georgia font-normal leading-tight -tracking-[1.2px] text-center mb-4 sm:mb-6 mid:mb-8 lg:mb-10 custom:mb-[24px]">
+        <h1 className="font-georgia text-center text-[24px] leading-[32px] xs:text-[28px] xs:leading-[36px] sm:text-[32px] sm:leading-[40px] mid:text-[34px] mid:leading-[42px] lg:text-[36px] lg:leading-[45px] custom:text-[40px] custom:leading-[50px] tracking-[-0.5px] mb-4">
           Sajan Poovayya Mentorship Programme
         </h1>
 
         {/* Description */}
-        <p className="max-w-[300px] xs:max-w-[338px] sm:max-w-[500px] mid:max-w-[600px] lg:max-w-[700px] custom:max-w-[844px] mx-auto text-sm xs:text-base sm:text-lg mid:text-xl lg:text-2xl custom:text-[17.66px] font-inter text-[#000000BF] leading-relaxed text-left  mb-6 sm:mb-8 mid:mb-10 lg:mb-12 custom:mb-[56px]">
-          A unique mentorship programme that offers law students and young lawyers an opportunity to engage with real time litigation. We also host special seminars and conversations that help young lawyers make strides in the profession of law.
+        <p className="text-base md:text-xs lg:text-base mx-auto max-w-[300px] xs:max-w-[338px] sm:max-w-[500px] mid:max-w-[600px] lg:max-w-[700px] text-center font-inter text-[#000000BF] leading-relaxed   mb-6 sm:mb-8 mid:mb-10 lg:mb-12 custom:mb-[56px]">
+          A unique mentorship programme that offers law students and young
+          lawyers an opportunity to engage with real time litigation. We also
+          host special seminars and conversations that help young lawyers make
+          strides in the profession of law.
         </p>
 
         {/* Main Content Container */}
         <div className="flex flex-col mid:flex-row items-center justify-center gap-6 mid:gap-8 lg:gap-10 custom:gap-[41px]">
           {/* Image Container */}
           <div className="w-full max-w-[342px] xs:max-w-[368px] sm:max-w-[450px] mid:max-w-[500px] lg:max-w-[600px] custom:max-w-[695px] rounded-xl overflow-hidden">
-            <Image 
-              src={LaywerImage} 
-              alt="Lawyer" 
+            <Image
+              src={LaywerImage}
+              alt="Lawyer"
               className="w-full h-auto"
               priority
             />
@@ -49,48 +52,58 @@ const EfficientModel = () => {
                 key={num}
                 onClick={() => handleClick(index)}
                 className={`rounded-[9px] px-4 sm:px-6 mid:px-6 lg:px-8 custom:px-[40px] py-4 sm:py-6 mid:py-5 lg:py-6 custom:py-[32px] bg-white shadow-lg cursor-pointer transition-all duration-300 hover:border-[0.75px] hover:border-[#FC5A5A] ${
-                  expand === index
-                    ? "border-t-[0.75px] border-[#FC5A5A]"
-                    : ""
+                  expand === index ? "border-t-[0.75px] border-[#FC5A5A]" : ""
                 }`}
               >
                 <div className="flex items-center gap-2 sm:gap-3 mid:gap-3 lg:gap-4 custom:gap-[13px]">
-                  <div className={`rounded-full w-[30px] h-[30px] sm:w-[35px] sm:h-[35px] mid:w-[32px] mid:h-[32px] lg:w-[36px] lg:h-[36px] custom:w-[40px] custom:h-[40px] ${
-                    index === 0 ? "bg-[#FFF2CF]" : "bg-white"
-                  } border-[0.75px] border-black flex items-center justify-center`}>
+                  <div
+                    className={`rounded-full w-[30px] h-[30px] sm:w-[35px] sm:h-[35px] mid:w-[32px] mid:h-[32px] lg:w-[36px] lg:h-[36px] custom:w-[40px] custom:h-[40px] ${
+                      index === 0 ? "bg-[#FFF2CF]" : "bg-white"
+                    } border-[0.75px] border-black flex items-center justify-center`}
+                  >
                     <span className="font-inter font-semibold text-sm sm:text-base mid:text-base lg:text-lg custom:text-[21px]">
                       {num}
                     </span>
                   </div>
                   <span className="font-inter font-semibold text-sm sm:text-base mid:text-base lg:text-lg custom:text-[21px]">
-                    {index === 0 ? "Engage" : index === 1 ? "Ideate" : "Join Us"}
+                    {index === 0
+                      ? "Engage"
+                      : index === 1
+                      ? "Ideate"
+                      : "Join Us"}
                   </span>
                 </div>
 
-                <p className={`mt-2 font-inter text-xs sm:text-sm mid:text-sm lg:text-base custom:text-[14px] text-[#000000BF] transition-all duration-300 ${
-                  expand === index
-                    ? "opacity-100 max-h-20"
-                    : "opacity-0 max-h-0 overflow-hidden"
-                }`}>
-                  {index === 0 
+                <p
+                  className={`mt-2 font-inter text-xs lg:text-sm  custom:text-[14px] text-[#000000BF] transition-all duration-300 ${
+                    expand === index
+                      ? "opacity-100 max-h-20"
+                      : "opacity-0 max-h-0 overflow-hidden"
+                  }`}
+                >
+                  {index === 0
                     ? "Gain hands-on experience in litigation by working on real cases under the guidance of Sajan Poovayya, a distinguished Senior Advocate."
-                    : index === 1 
+                    : index === 1
                     ? "Participate in specialized seminars and workshops designed to enhance your legal knowledge and practical skills."
-                    : "Become part of an exclusive community of aspiring lawyers mentored by one of India's leading legal professionals."
-                  }
+                    : "Become part of an exclusive community of aspiring lawyers mentored by one of India's leading legal professionals."}
                   <br />
                   <Link
-                    href={index === 0 ? "https://www.linkedin.com/in/poovayya/" : index === 1 ? "https://instagram.com/lawdecodedwithsp" : "https://x.com/poovayya"}
+                    href={
+                      index === 0
+                        ? "https://www.linkedin.com/in/poovayya/"
+                        : index === 1
+                        ? "https://instagram.com/lawdecodedwithsp"
+                        : "https://x.com/poovayya"
+                    }
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-[#FC5A5A] hover:underline mt-2 inline-block"
                   >
-                    {index === 0 
-                      ? "Learn more on LinkedIn →" 
-                      : index === 1 
-                      ? "Follow our updates on Instagram →" 
-                      : "Join our community on Twitter →"
-                    }
+                    {index === 0
+                      ? "Learn more on LinkedIn →"
+                      : index === 1
+                      ? "Follow our updates on Instagram →"
+                      : "Join our community on Twitter →"}
                   </Link>
                 </p>
               </div>

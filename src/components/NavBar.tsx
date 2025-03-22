@@ -12,13 +12,16 @@ const NavBar = () => {
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
-      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+      if (
+        dropdownRef.current &&
+        !dropdownRef.current.contains(event.target as Node)
+      ) {
         setShowMentorshipDropdown(false);
       }
     };
 
-    document.addEventListener('mousedown', handleClickOutside);
-    return () => document.removeEventListener('mousedown', handleClickOutside);
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
   useEffect(() => {
@@ -41,14 +44,16 @@ const NavBar = () => {
         </div>
 
         {/* middle buttons - hidden on mobile */}
-        <div className="hidden mid:flex items-center">
+        <div className="hidden lg:flex items-center">
           <div className="font-inter font-medium text-[15px] flex items-center gap-[16px] text-[#281D1B]">
             <Link href={"/"}>Home</Link>
             <Link href={"/about-us"}>About Us</Link>
             <div className="relative" ref={dropdownRef}>
               <button
                 className="flex items-center gap-1"
-                onClick={() => setShowMentorshipDropdown(!showMentorshipDropdown)}
+                onClick={() =>
+                  setShowMentorshipDropdown(!showMentorshipDropdown)
+                }
               >
                 Mentorship Programme
                 <MdKeyboardArrowDown className="text-lg" />
@@ -79,14 +84,14 @@ const NavBar = () => {
         </div>
 
         {/* Subscribe ContactUS */}
-        <div className="font-inter font-medium text-[15px] leading-[20px] text-[#F72C00] hidden mid:flex justify-center gap-[32px]">
+        <div className="font-inter font-medium text-[15px] leading-[20px] text-[#F72C00] hidden lg:flex justify-center gap-[32px]">
           <div className="flex justify-center items-center">
             <Link href={"/#contact"}>Contact Us</Link>
           </div>
         </div>
 
         {/* mobile hamburger menu button */}
-        <div className="mid:hidden relative z-20">
+        <div className="lg:hidden relative z-20">
           <MobileMenu />
         </div>
       </div>
@@ -101,22 +106,25 @@ const MobileMenu = () => {
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
-      if (mobileDropdownRef.current && !mobileDropdownRef.current.contains(event.target as Node)) {
+      if (
+        mobileDropdownRef.current &&
+        !mobileDropdownRef.current.contains(event.target as Node)
+      ) {
         setShowMentorshipDropdown(false);
       }
     };
 
-    document.addEventListener('mousedown', handleClickOutside);
-    return () => document.removeEventListener('mousedown', handleClickOutside);
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
     setShowMentorshipDropdown(false);
     if (!isOpen) {
-      document.body.style.overflow = 'hidden';
+      document.body.style.overflow = "hidden";
     } else {
-      document.body.style.overflow = 'unset';
+      document.body.style.overflow = "unset";
     }
   };
 
@@ -152,7 +160,7 @@ const MobileMenu = () => {
         className={`fixed inset-0 bg-white transition-all duration-300 ease-in-out ${
           isOpen ? "opacity-100 visible" : "opacity-0 invisible"
         }`}
-        style={{ top: '60px' }}
+        style={{ top: "60px" }}
       >
         <div className="h-full overflow-y-auto">
           <div className="pt-6 pb-8 px-6 xs:px-8 sm:px-10 font-inter">
@@ -178,7 +186,9 @@ const MobileMenu = () => {
               <li>
                 <div ref={mobileDropdownRef}>
                   <button
-                    onClick={() => setShowMentorshipDropdown(!showMentorshipDropdown)}
+                    onClick={() =>
+                      setShowMentorshipDropdown(!showMentorshipDropdown)
+                    }
                     className="flex items-center text-lg xs:text-xl font-medium hover:text-[#E43D12] transition-colors"
                   >
                     Mentorship Programme
