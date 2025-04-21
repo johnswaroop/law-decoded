@@ -234,7 +234,7 @@ const MobileMenu = () => {
               </li>
               <li>
                 <Link
-                  href="/latestNews"
+                  href="https://blog.sajanpoovayya.com"
                   className="block text-lg xs:text-xl font-medium hover:text-[#E43D12] transition-colors"
                   onClick={toggleMenu}
                 >
